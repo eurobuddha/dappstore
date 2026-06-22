@@ -1,0 +1,655 @@
+{
+  "name": "eurobuddha.com Dapp Store",
+  "description": "Community Minima dApp store",
+  "icon": "https://eurobuddha.com/store/icon.jpg",
+  "version": "1.0",
+  "dapps": [
+    {
+      "file": "https://eurobuddha.com/store/dapps/wallet-3.1.3.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/wallet.png",
+      "name": "Wallet",
+      "description": "Official Minima wallet.",
+      "category": "Wallet",
+      "version": "3.1.3",
+      "about": [
+        "Official Minima Wallet"
+      ],
+      "update": [
+        "- Transaction message is now unencoded on the transaction history page",
+        "- The message if present on a transaction is now shown on the transaction page",
+        "- Hidden balance change on the transaction history page",
+        "- Fixed issue where copying Mx and 0x address on validate address page was bugged",
+        "- Hopefully fixes issues the device width issue in Vivo browser"
+      ],
+      "date": "April 14, 2025",
+      "history": [],
+      "gallery": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/dappStore-1.5.2.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/dappstore.png",
+      "name": "Dapp Store",
+      "description": "Download and update MiniDapps using the DappStore MiniDapp.",
+      "category": "Misc",
+      "version": "1.5.2",
+      "about": [
+        "NOTE: If you're installing the MiniDapp from the DappStore, you will have to close the tab and go back to the MiniHub manually."
+      ],
+      "update": [
+        "- The description for MiniDapp stores are now correctly truncated on mobile devices"
+      ],
+      "date": "March 25, 2025",
+      "history": [],
+      "gallery": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/axes3-1.0.0.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/axes3.png",
+      "name": "Axe S3",
+      "description": "Prove ownership of tokens",
+      "version": "1.0.0",
+      "about": [
+        "AxeS3 (pronounced Access-3) enables the holder of a token to prove ownership to a third party verifier. The verifier must know the token id of the token they wish to verify, the prover then simply scans a QR code presented by the verifier and is required to provide a digital signature to prove ownership of the token. The verifier will be notified whether the verification has been successful or not."
+      ],
+      "update": [
+        "- Remove node locked and instead send to pending command",
+        "- Remove pre-requisite of having to have an unlocked node & in write mode on the Help section"
+      ],
+      "date": "Mar 25, 2025",
+      "history": [
+        {}
+      ]
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/block-3.3.4.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/block.png",
+      "name": "Block",
+      "description": "Explore the Minima blockchain",
+      "version": "3.3.4",
+      "about": "The Block Explorer lets you view the latest blocks and transactions on the Minima blockchain.",
+      "update": [
+        "- Removed secondary title bar\n",
+        "- Refreshing on the transaction page now works"
+      ],
+      "date": "Jan 29, 2025",
+      "history": [
+        {
+          "version": "3.2.2",
+          "file": "",
+          "update": "New User Interface"
+        }
+      ]
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/chainmail-1.12.5.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/chainmail.png",
+      "name": "ChainMail",
+      "description": "Decentralized email ",
+      "version": "1.12.5",
+      "about": [
+        "Every Minima user has a chainmail address, like an email address. Users of chainmail can add contacts and send on-chain messages to other chainmail users. All messages are signed and end-to-end encrypted so the sender, recipient and content are hidden. Each message costs 0.001 Minima."
+      ],
+      "update": [
+        ""
+      ],
+      "date": "Mar 25, 2025",
+      "history": [
+        {}
+      ]
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/chatter-1.12.0.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/chatter.png",
+      "name": "Chatter",
+      "description": "Social media and messaging over Maxima",
+      "version": "1.12.0",
+      "about": [
+        "Chatter is a decentralized, scalable, and permissionless microblogging and social network MiniDapp.\n\n",
+        " It allows users to share text, images, and basic HTML, or link audio and video files from the web to their Maxima contacts.\n\n",
+        "Re-chatting or replying to a post you receive will forward it onto your contacts, serving to spread the post further across the network.\n\n",
+        "There is no limit to how far a post could reach. Great chats will spread, but unpopular chats will not. \n\n",
+        "Not like Twitter, not like Facebook, not like TikTok\u2026 Chatter is its own thing."
+      ],
+      "update": [
+        "- Superchatter now set as default"
+      ],
+      "date": "Oct 24, 2024",
+      "history": [
+        {
+          "version": "1.10.3",
+          "file": "",
+          "update": "Requires Minima v1.0.41, Added Icon Support, Clicking your profile in the home page header will now open MaxContacts on your profile page, Fix copy on empty feed, Fix overflowing of username on reply, user's posts & normal display"
+        }
+      ]
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/docs-2.1.0.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/helpdocs.png",
+      "name": "Docs",
+      "description": "Minima Documentation and Tutorials",
+      "version": "2.1.0",
+      "about": [
+        "The Docs MiniDapp is where you can learn about the Minima Protocol.\n\n",
+        "Here you will find our documentation and developer tutorial, which introduces Minima\u2019s KISS scripting language for creating smart contracts on Minima."
+      ],
+      "update": [
+        "- New interface"
+      ],
+      "date": "Oct 24, 2024",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/ethwallet-1.11.0.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/ethwallet.png",
+      "name": "Ethwallet",
+      "description": "Non-custodial Ethereum wallet",
+      "version": "1.11.0",
+      "about": [
+        "ETH Wallet is a non-custodial Ethereum wallet for holding, sending and receiving ETH, WMINIMA, USDT and other ERC-20 tokens. Like Metamask but decentralised.\n\n",
+        "Also includes an interface to swap USDT-WMINIMA via the UniSwap pool."
+      ],
+      "update": [
+        "- Design tweaks"
+      ],
+      "date": "Jan 29, 2025",
+      "history": [
+        {
+          "version": "1.9.4",
+          "file": "",
+          "update": [
+            "- Multi-account support\n",
+            "- Ledger account support w/ signing\n",
+            "- SwapWidget design lift & re-factoring\n",
+            "- SwapWidget now supports cross-directional input (will calculate your input if you enter output)\n",
+            "- SwapWidget opts (slippage, deadline support)\n",
+            "- Debouncing API calls to lessen load on Infura API calls\n",
+            "- Move rate + additional info to first step for SwapWidget\n",
+            "- Design tweaks"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/filez-1.9.4.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/filez.png",
+      "name": "Filez",
+      "description": "A simple file manager",
+      "version": "1.9.4",
+      "about": [
+        "Filez is a simple file manager that allows you to:\n\n",
+        "- Upload and download files between your phone and desktop\n",
+        "- Export backups or transactions to the MiniDapp by specifying the Filez path."
+      ],
+      "update": [
+        "- Minor bug fixes"
+      ],
+      "date": "Jan 29, 2025",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/futurecash-2.7.1.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/futurecash.png",
+      "name": "Future Cash",
+      "description": "Send cash to the Future!",
+      "version": "2.7.1",
+      "about": "Lock up funds for yourself or for another to save, invest or secure, and unlock in the future.",
+      "update": [
+        "- Added burn for transactional features\n",
+        "- Added MDS Fail Unavailable feature\n",
+        "- Design tweaks"
+      ],
+      "date": "Oct 24, 2024",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/health-1.3.2.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/health.png",
+      "name": "Health",
+      "description": "Check the status and health of your node",
+      "version": "1.3.2",
+      "about": "Health shows Minima, Maxima and Network details for your node.\n\n Minima: Information about your node's version, chain, RAM and disk space. \n\n Maxima: Check whether your Maxima contacts are connected and on the same chain as you. \n\n Network: Check how many peers you are currently connected to and the amount of data read from/written to the network",
+      "update": [
+        "- Minor UI updates",
+        "- New Network data backwards compatible with Minima nodes older than 1.0.43"
+      ],
+      "date": "Mar 25, 2025",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/logs-1.0.4.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/logs.png",
+      "name": "Logs",
+      "description": "View and download the logs for your node",
+      "version": "1.0.4",
+      "about": [
+        "Logs show detailed activity of the processes and actions running on the node."
+      ],
+      "update": [
+        "- Logs are now purged once every hour instead of after every log entry"
+      ],
+      "date": "Jan 29, 2025",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/lotto-1.0.0.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/lotto.png",
+      "name": "Lotto",
+      "description": "Secure, fair, unstoppable lotto game",
+      "category": "Gaming",
+      "version": "1.0.0",
+      "about": [
+        "Lotto is a decentralized, smart contract driven lotto between two players. Start your own lotto game that anyone else can choose to play - set the odds of winning, the minimum and maximum bet size and the percentage fee required for players to play."
+      ],
+      "update": [
+        ""
+      ],
+      "date": "Mar 25, 2025",
+      "history": [
+        {}
+      ]
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/maxcontacts-1.14.0.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/maxcontacts.png",
+      "name": "MaxContacts",
+      "description": "Manage your Maxima contacts",
+      "version": "1.14.0",
+      "about": "Set your Maxima profile name and add, remove or share Maxima contact addresses.",
+      "update": [
+        "- Added Profile icon support - 50kb max size (Supports .png?raw=true,.jpeg,.jpg,.svg,.xml,.gif)\n",
+        "- Added QR Code to profiles"
+      ],
+      "date": "Jul 05, 2024",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/maximize-1.4.0.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/maximize.png",
+      "name": "Maximize",
+      "description": "Stake native Minima and earn yield",
+      "version": "1.4.0",
+      "about": [
+        "Maximize is a non-custodial yield product.\n\n",
+        "",
+        "Earn a yield on your native Minima by staking for 1, 3, 6, 9 or 12 months.\n\n",
+        "",
+        "Open stakes will show in your Future Cash MiniDapp for the duration of the staking period."
+      ],
+      "update": [
+        "- Updated Maximize yield rates"
+      ],
+      "date": "Jan 01, 2026",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/maxsolo-2.7.5.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/maxsolo.png",
+      "name": "MaxSolo",
+      "description": "P2P chat app running over Maxima",
+      "version": "2.7.5",
+      "about": [
+        "MaxSolo is an encrypted, peer-to-peer messaging application, which uses Minima\u2019s information transfer layer, Maxima. Learn more about Maxima below.\n\n",
+        "",
+        "Using MaxSolo you can:\n\n",
+        "",
+        "- Send your Maxima Contacts messages, images and $MINIMA coins or Custom Tokens/NFTs created on Minima\n",
+        "- Experience freedom of information\n\n",
+        "",
+        "To use MaxSolo, you must add your Maxima Contacts using the MaxContacts MiniDapp."
+      ],
+      "update": [
+        "- Fixes issues with apostrophes",
+        "- Longer messages is now ran on the client side as well as service.js",
+        "- Longer messages can now be sent",
+        "- Bug fix where messages with multiple apostrophes would not be seen by recipient"
+      ],
+      "date": "15 April, 2025",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/minifs-1.4.4.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/minifs.png",
+      "name": "MiniFS",
+      "description": "Minima Decentralised File System",
+      "version": "1.4.4",
+      "about": [
+        "Minima decentralised File System that requires MiniWeb for viewing files.\n",
+        "MiniFS enables Minima users to publish MiniDapps, simple websites and other small zip files to other MiniFS users in a normal transaction.\n",
+        "All files shared over MiniFS are digitally signed by the publisher and have a unique Mx record.\n",
+        "The maximum size for a MiniFS file is 50k, and multiple files can be linked together in one site.\n",
+        "These files can only be updated by the User who created them - whilst preserving the Mx.. address.\n",
+        "Files are picked up by anyone running the MiniFS application and can be accessed by other MiniDAPPs.\n",
+        "Files can be republished so that new users of MiniFS receive the file.\n",
+        "MiniWeb must be installed to be able to view and search file descriptions stored in MiniFS.\n\n",
+        "To publish a MiniSite to MiniFS:\n",
+        "1. Create a basic webpage via MiniWeb, or create a custom web app with an index.html page.\n",
+        "2. Zip the contents from within the root folder or if using MiniWeb, simply download the zip file.\n",
+        "3. Upload to MiniFS and add a description for your file to improve search results from MiniWeb.\n",
+        "4. Publish the file. This requires a transaction.\n",
+        "5. Share your Mx record with others or be discovered from keywords in your description.\n",
+        "6. Once confirmed on-chain, other MiniFS and MiniWeb users will be able to search for your site!\n\n",
+        "To publish a MiniDapp to MiniFS:\n",
+        "1. Upload your MiniDapp (.mds.zip file) to MiniFS.\n",
+        "2. Add a description for your MiniDapp to improve search results from MiniWeb.\n",
+        "3. Publish the Dapp. This requires a transaction.\n",
+        "4. Share your Mx record with others.\n\n",
+        "Once confirmed on-chain, other MiniFS and MiniWeb users will be able to search for and use your MiniDapp!\n\n",
+        "Note: MiniDapps shared via MiniFS can be searched for and used in READ only mode via MiniWeb.\n"
+      ],
+      "update": [
+        ""
+      ],
+      "date": "Mar 25, 2025",
+      "history": [
+        {}
+      ]
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/miniswap-2.20.0.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/miniswap.png",
+      "name": "MiniSwap",
+      "description": "P2P trading of USDT or WMINIMA for native MINIMA",
+      "version": "2.20.0",
+      "about": [
+        "MiniSwap is a cross-chain swap dapp that uses hashed timelock contracts (HTLCs) to trade USDT or WMINIMA for native MINIMA between the Ethereum and Minima blockchains, peer-to-peer.\n\n",
+        "Users can provide liquidity to the orderbook or trade OTC with a chosen peer.\n\n",
+        "MiniSwap also comes with its own Ethereum wallet for holding, sending and receiving ETH, USDT and WMINIMA."
+      ],
+      "update": [
+        "- Removed WMINIMA asset"
+      ],
+      "date": "Mar 25, 2025",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/miniweb-1.6.1.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/miniweb.png",
+      "name": "MiniWEB",
+      "description": "Create and browse decentralised websites and minidapps",
+      "dependencies": [
+        "MiniFS"
+      ],
+      "version": "1.6.1",
+      "about": [
+        "MiniWeb allows users to search, view and MiniDapps, MiniSites and other files that have been shared on-chain via MiniFS.\n\n",
+        "Functionality:\n",
+        "- Search for MiniFS files via the unique Mx record or description\n",
+        "- Browse MiniSites, MiniDapps and images\n",
+        "- Basic MiniSite generator for non-technical users.\n",
+        "- Bookmark favourite MiniWeb pages\n"
+      ],
+      "update": [
+        ""
+      ],
+      "date": "Mar 25, 2025",
+      "history": [
+        {}
+      ]
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/news-2.0.1.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/news.png",
+      "name": "News Feed",
+      "description": "Keep up to date with Minima News",
+      "version": "2.0.1",
+      "about": "The News Feed is a simple MiniDapp where you can find all our latest blog posts and community updates.",
+      "update": "- New Substack news",
+      "date": "Mar 25, 2025",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/pending-1.2.10.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/pending.png",
+      "name": "Pending",
+      "description": "Accept or deny pending actions",
+      "version": "1.2.10",
+      "about": "Review and accept or deny any pending actions triggered by read-only MiniDapps.",
+      "update": [
+        "- Includes explanation for commands\n",
+        "- Fixed an issue where the send command was breaking the MiniDapp if the multi command help text could not be rendered\n"
+      ],
+      "date": "Feb 24, 2025",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/thesafe-1.7.0.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/safe.png",
+      "name": "The Safe",
+      "description": "Lock your funds in a Safe",
+      "version": "1.7.0",
+      "about": [
+        "Lock the majority of your Minima coins or custom tokens in a Safe, secured with a separate seed phrase.\n\n",
+        "This allows you to keep your node unlocked with a small amount of Minima for daily transactions and to send the remainder to a Safe.\n\n",
+        "When resyncing your original seed phrase, all your Safes will be retrieved and remain locked.\n\n",
+        "If your original seed phrase is compromised, your Safes are not compromised and can be recovered safely."
+      ],
+      "update": [
+        "Requires Minima v1.0.41\n",
+        "- UI updates"
+      ],
+      "date": "Jul 05, 2024",
+      "history": [
+        {
+          "version": "1.6.3",
+          "file": "https://storage.googleapis.com/minidapps-363120.appspot.com/minidapps_history/security-1.6.3.mds.zip",
+          "update": [
+            "First release. Requires Minima v1.0.41."
+          ]
+        }
+      ]
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/scriptide-3.1.4.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/scriptide.png",
+      "name": "Script IDE",
+      "description": "Minima Script IDE",
+      "version": "3.1.4",
+      "about": [
+        "Script IDE is an Integrated Development Environment for developers to easily write and test Minima scripts.\n\n",
+        "",
+        "Using Script IDE, you can:\n\n",
+        "",
+        "- Write, Clean and Save Minima scripts\n",
+        "- Test Minima scripts by running them to determine their result and script address\n",
+        "",
+        "Script IDE is best used on your Desktop interface. Minima scripts are written in Minima\u2019s KISS scripting language. Learn more by following the Transaction Tutorial in the Docs MiniDapp."
+      ],
+      "update": [
+        "- New interface\n",
+        "- Automatically run and load outputs for a given script.\n",
+        "- Updated text editor with tailored code completion and code snippets for KISS VM.\n",
+        "- Added an overview and console section to monitor script outputs.\n",
+        "- Enhanced file storage and explorer, enabling script saving in separate workspaces.\n",
+        "- Revamped UI for setting variables and signatures without requiring writing in JSON.\n",
+        "- Introduced an experimental extra script section for dynamically inserting and testing extra scripts within scripts. Use '@X0' to '@X9' to insert extra scripts before execution."
+      ],
+      "date": "Mar 25, 2025",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/security-1.16.0.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/security.png",
+      "name": "Security",
+      "description": "Keep your data and funds safe",
+      "version": "1.16.0",
+      "about": [
+        "Use Security to:\n",
+        "- Lock your node to secure your private keys\n",
+        "- Backup your node\n",
+        "- Restore a backup\n",
+        "- Chain re-sync your node\n",
+        "- View or import a seed phrase\n",
+        "- Download your archive export (archive nodes)\n"
+      ],
+      "update": [
+        "- You can now select a random megammr node when using quick syncing",
+        "- Only allow QuickSync with an unlocked node"
+      ],
+      "date": "Mar 25, 2025",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/shoutout-1.4.1.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/shoutout.png",
+      "name": "Shout Out",
+      "description": "A social forum for threaded, categorised discussions",
+      "version": "1.4.1",
+      "about": [
+        "ShoutOut posts reach all Minima users by sending the message within a transaction. For spam prevention there is a cost of 0.01 native Minima for each post.\n\n",
+        "Messages are temporarily stored on chain then discarded, after which messages will only be stored on the user\u2019s device.\n\n",
+        "Users will start to receive posts once they have installed the app and are able to create new discussion categories or hide categories they do not wish to see."
+      ],
+      "update": [
+        "Requires Minima v1.0.41\n"
+      ],
+      "date": "Jul 05, 2024",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/soko-1.0.1.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/soko.png",
+      "name": "soko",
+      "description": "Decentralized NFT Marketplace for listing, selling and purchasing NFTs over Minima. ",
+      "version": "1.0.1",
+      "about": [
+        "soko is a smart contract driven, decentralized NFT marketplace for listing and trading NFTs that have been created on Minima. soko consists of a live marketplace feed where users can purchase NFTs at the floor price, an activity feed featuring all trades between users, a standalone wallet for NFTs and soko transactions and detailed help section. Explore the market, start collecting, and trade with ease."
+      ],
+      "update": [
+        "- Made Global Activity feed interactive (click on profile to open profile, nft to open listing)",
+        "- Added Mx address & public key to profile",
+        "- Fixed bug where user could not click, drag and copy on the listing page"
+      ],
+      "date": "Mar 25, 2025",
+      "history": [
+        {}
+      ]
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/sqlbench-0.6.1.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/sql.png",
+      "name": "SQL Bench",
+      "description": "Basic development tool for testing SQL",
+      "version": "0.6.1",
+      "about": [
+        "Minima and the MiniDAPP System use the H2 Database. This dev tool enables you to test SQL functionality when building MiniDapps."
+      ],
+      "update": [
+        "- Remove weblink"
+      ],
+      "date": "Oct 24, 2024",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/terminal-3.1.8.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/terminal.png",
+      "name": "Terminal",
+      "description": "Terminal CLI for Minima",
+      "version": "3.1.8",
+      "about": [
+        "The Terminal MiniDapp is a developer app used to execute Minima commands directly on your node without a user interface.\n\n",
+        "",
+        "Using the Terminal MiniDapp, you can:\n\n",
+        "",
+        "- Check the Status of your node and the blockchain\n",
+        "- Set and check your Incentive Program Account (during Testnet only)\n",
+        "- Manually construct and post transactions\n",
+        "- Create and run Minima scripts\n",
+        "- Install and uninstall MiniDapps\n",
+        "",
+        "Type 'help' in the Terminal to see a list of all the commands."
+      ],
+      "update": [
+        "- Fix issue where tab could not be deleted",
+        "- Reworked renderer so that lots of logs don't lag the UI",
+        "- Added the ability to clear the terminal",
+        "- Added tooltips to each button to explain what they do"
+      ],
+      "date": "Mar 25, 2025",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/token-studio-1.5.0.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/tokenstudio.png",
+      "name": "Token Studio",
+      "description": "Mint simple, custom and non-fungible tokens (NFTs) on Minima",
+      "version": "1.5.0",
+      "about": [
+        ""
+      ],
+      "update": [
+        "- Fix bug on space error in name for simple tokens",
+        "- Added external_url default property for NFTs"
+      ],
+      "date": "Mar 25, 2025",
+      "history": [
+        {}
+      ]
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/vestr-1.8.1.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/vestr.png",
+      "name": "Vestr",
+      "description": "Create vesting contracts and collect payments",
+      "version": "1.8.1",
+      "about": [
+        "Vestr facilitates the creation of vesting contracts for long term, regular payment to Minima users.\n\n",
+        "Can use Minima or custom tokens\n\n",
+        "Set the start/end dates, cliff period and grace period to create a contract, or collect payments from a contract."
+      ],
+      "update": [
+        "- Add burn feature on transactional features",
+        "- Added alias name for contracts",
+        "- Design tweaks"
+      ],
+      "date": "Oct 24, 2024",
+      "history": [
+        {
+          "version": "1.8.0",
+          "file": "https://storage.googleapis.com/minidapps-363120.appspot.com/minidapps_history/vestr-1.8.0.mds.zip",
+          "update": "Correctly collects full amount on contract expiration"
+        }
+      ]
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/webWallet-2.5.2.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/webwallet.png",
+      "name": "Web Wallet",
+      "description": "Simple Minima web wallet",
+      "version": "2.5.2",
+      "about": [
+        "Web wallet"
+      ],
+      "update": [],
+      "date": "Mar 25, 2025",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/history-0.2.1.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/history.png",
+      "name": "History",
+      "description": "History MiniDapp that periodically backs up your history transaction",
+      "version": "0.2.1",
+      "about": [
+        "Please note that this will not restore transactions that are no longer in available in your history prior to installing the Minidapp"
+      ],
+      "update": [],
+      "date": "Mar 31, 2025",
+      "history": []
+    },
+    {
+      "file": "https://eurobuddha.com/store/dapps/wallet-2.47.2.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/wallet.png",
+      "name": "Wallet 2.47.2",
+      "description": "Legacy 2.47.2 release of the official Minima Wallet",
+      "category": "Wallet",
+      "version": "2.47.2",
+      "about": [
+        "Older 2.47.2 build of the official Minima Wallet, preserved for users who need this specific version."
+      ],
+      "update": [],
+      "date": "November 11, 2024",
+      "history": [],
+      "gallery": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="16" fill="#FFFFFF"/>
+  
+  <!-- Mailbox/Envelope -->
+  <g fill="none" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Envelope body -->
+    <rect x="18" y="30" width="64" height="44" rx="4" fill="none"/>
+    <!-- Envelope flap -->
+    <path d="M18 34 L50 55 L82 34"/>
+    <!-- Notification dot -->
+    <circle cx="74" cy="28" r="8" fill="#D35400" stroke="none"/>
+  </g>
+</svg>

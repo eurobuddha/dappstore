@@ -1,0 +1,162 @@
+{
+  "name": "PandaDapps",
+  "description": "Unofficial Panda miniDapp Store",
+  "icon": "https://eurobuddha.com/panda_dapps/panda.jpg",
+  "version": "2.0",
+  "dapps": [
+    {
+      "file": "https://eurobuddha.com/panda_dapps/faucet-1.0.5.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/faucet.svg",
+      "name": "Faucet",
+      "description": "Request free Minima from the eurobuddha faucet \u2014 0.0001 per request with cooldown",
+      "version": "1.0.5"
+    },
+    {
+      "file": "https://github.com/eurobuddha/PocketWeb/releases/latest/download/pocketWeb.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/pocketweb.png",
+      "name": "PocketWeb",
+      "description": "Decentralised web browser for the Minima network with Linternet dapp installer and light/dark themes",
+      "version": "0.5.9"
+    },
+    {
+      "file": "https://github.com/eurobuddha/PocketWeb/releases/latest/download/pocketFS.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/pocketfs.png",
+      "name": "PocketFS",
+      "description": "Decentralised file system MiniDapp for storing and sharing files on Minima",
+      "version": "0.4.4"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/LinternetPlaza-0.7.0.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/linternetplaza.png",
+      "name": "Linternet Plaza",
+      "description": "Dynamic catalogue of all sites on the PocketWeb / Linternet \u2014 browse the decentralised web",
+      "version": "0.7.0"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/history-0.2.2.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/history.svg",
+      "name": "History",
+      "description": "Reconstruct and search your node's full transaction history from block.minima.global (survives re-syncs), with CSV/JSON export and a signature key-reuse check.",
+      "version": "0.2.2"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/maximize-1.4.0_newrates.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/maxi.png",
+      "name": "Maximize",
+      "description": "Minima yield and staking rewards maximizer",
+      "version": "1.4.0"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/2048_103.1.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/2048.png",
+      "name": "Powers of 2",
+      "description": "Addictive number puzzle game \u2014 slide tiles to reach 2048",
+      "version": "1.0"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/calcul8_103.1.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/calc.jpg",
+      "name": "Calculator",
+      "description": "Simple calculator for everyday arithmetic",
+      "version": "1.0"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/bip39-lint-dapp-1.0.0.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/bip39.png",
+      "name": "BIP39 Seed Generator",
+      "description": "Generate BIP39 mnemonic seed phrases - deterministic or random",
+      "version": "1.0.13"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/brain-lint-dapp-1.0.0.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/brain.jpg",
+      "name": "Brain Wallet",
+      "description": "Generate BTC and LTC addresses from a passphrase via scrypt",
+      "version": "1.0.13"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/breaklock103.1.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/breaklock.png",
+      "name": "Breaklock",
+      "description": "Pattern lock puzzle game \u2014 crack the code to win",
+      "version": "1.0"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/alien103.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/alien.png",
+      "name": "Alien Invasion",
+      "description": "Retro space shooter \u2014 defend Earth from alien invaders",
+      "version": "1.0"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/seed.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/seed.png",
+      "name": "Seed Gen",
+      "description": "Securely generate a new 24-word mnemonic seed phrase",
+      "version": "1.0"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/ZeroEdgeCasino-v2.6.1.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/zec.png",
+      "name": "Zero Edge Casino",
+      "description": "Provably fair on-chain casino \u2014 3-phase commit-reveal with coin flip, dice, and roulette. PS1-era cyber aesthetic.",
+      "version": "2.6.1"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/Limit-1.0.13.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/limit.png",
+      "name": "Limit",
+      "description": "On-chain limit order DEX for MINIMA/USDT \u2014 trustless fills via VERIFYOUT smart contract",
+      "version": "1.0.13"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/minArmyKnife-v1.0.6.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/minarmyknife.png",
+      "name": "minArmyKnife",
+      "description": "Node hygiene toolkit \u2014 tracking audit, stuck txns, coin manager, token dust, balance health",
+      "version": "1.0.6"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/asteroids-2.0.0.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/asteroids.ico",
+      "name": "Asteroids",
+      "description": "Classic Asteroids arcade game \u2014 shoot asteroids, dodge UFOs, survive waves. Touch and keyboard controls with persistent high scores.",
+      "version": "1.0.6"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/lunar-lander-2.0.0.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/lunar-lander.ico",
+      "name": "Lunar Lander",
+      "description": "Classic 1979 Atari Lunar Lander \u2014 thrust, rotate, land on pads. Manage fuel and angle for bonus points. Persistent high scores.",
+      "version": "1.0.6"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/staticmls-1.2.0.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/staticmls.png",
+      "name": "staticMLS",
+      "description": "Set up a permanent Maxima address with a hosted static MLS",
+      "version": "1.2.0"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/wallet-2.47.2.mds.zip",
+      "icon": "https://eurobuddha.com/store/icons/wallet.png",
+      "name": "Wallet 2.47.2",
+      "description": "Legacy 2.47.2 release of the official Minima Wallet \u2014 exchange tokens with Minimalists",
+      "version": "2.47.2"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/anyphraserecovery-0.4.19.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/anyphraserecovery.svg",
+      "name": "AnyPhraseRecovery",
+      "description": "Sweep funds out of a webwallet seed without giving up control of this Minima node \u2014 snapshot, borrow the seed via megammrsync, sweep, restore. Also lets you become a MegaMMR host for other recovery users.",
+      "version": "0.4.19"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/utxowallet-1.0.52.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/utxowallet.png",
+      "name": "utxoWallet",
+      "description": "Explicit UTXO-selection wallet for Minima \u2014 pick exactly which coins you spend. Send, Split, Distribute, Consolidate and QR receive, with full coin and token detail. Light + dark themes.",
+      "version": "1.0.52"
+    }
+  ]
+}
