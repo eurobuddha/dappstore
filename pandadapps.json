@@ -15,7 +15,7 @@
       "file": "https://eurobuddha.com/panda_dapps/faucet-1.0.5.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/faucet.svg",
       "name": "Faucet",
-      "description": "Request free Minima from the eurobuddha faucet \u2014 0.0001 per request with cooldown",
+      "description": "Request free Minima from the eurobuddha faucet — 0.0001 per request with cooldown",
       "version": "1.0.5"
     },
     {
@@ -36,15 +36,15 @@
       "file": "https://eurobuddha.com/panda_dapps/LinternetPlaza-0.7.0.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/linternetplaza.png",
       "name": "Linternet Plaza",
-      "description": "Dynamic catalogue of all sites on the PocketWeb / Linternet \u2014 browse the decentralised web",
+      "description": "Dynamic catalogue of all sites on the PocketWeb / Linternet — browse the decentralised web",
       "version": "0.7.0"
     },
     {
-      "file": "https://eurobuddha.com/panda_dapps/history-0.2.5.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/history-0.2.6.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/history.svg",
       "name": "History",
-      "description": "Reconstruct and search your node's full default-wallet transaction history from block.minima.global \u2014 survives re-syncs, updates live from your local node, with CSV/JSON export and a signature key-reuse check.",
-      "version": "0.2.5"
+      "description": "Reconstruct and search your node's full default-wallet transaction history from block.minima.global — survives re-syncs, updates live from your local node, with CSV/JSON export and a signature key-reuse check.",
+      "version": "0.2.6"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/maximize-1.4.0_newrates.mds.zip",
@@ -57,7 +57,7 @@
       "file": "https://eurobuddha.com/panda_dapps/2048_103.1.zip",
       "icon": "https://eurobuddha.com/panda_dapps/2048.png",
       "name": "Powers of 2",
-      "description": "Addictive number puzzle game \u2014 slide tiles to reach 2048",
+      "description": "Addictive number puzzle game — slide tiles to reach 2048",
       "version": "1.0"
     },
     {
@@ -85,14 +85,14 @@
       "file": "https://eurobuddha.com/panda_dapps/breaklock103.1.zip",
       "icon": "https://eurobuddha.com/panda_dapps/breaklock.png",
       "name": "Breaklock",
-      "description": "Pattern lock puzzle game \u2014 crack the code to win",
+      "description": "Pattern lock puzzle game — crack the code to win",
       "version": "1.0"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/alien103.zip",
       "icon": "https://eurobuddha.com/panda_dapps/alien.png",
       "name": "Alien Invasion",
-      "description": "Retro space shooter \u2014 defend Earth from alien invaders",
+      "description": "Retro space shooter — defend Earth from alien invaders",
       "version": "1.0"
     },
     {
@@ -106,35 +106,35 @@
       "file": "https://eurobuddha.com/panda_dapps/ZeroEdgeCasino-v2.6.1.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/zec.png",
       "name": "Zero Edge Casino",
-      "description": "Provably fair on-chain casino \u2014 3-phase commit-reveal with coin flip, dice, and roulette. PS1-era cyber aesthetic.",
+      "description": "Provably fair on-chain casino — 3-phase commit-reveal with coin flip, dice, and roulette. PS1-era cyber aesthetic.",
       "version": "2.6.1"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/Limit-1.1.1.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/limit.png",
       "name": "Limit",
-      "description": "On-chain limit order DEX for MINIMA/USDT \u2014 trustless fills via VERIFYOUT smart contract. Good-till-cancelled orders auto-renew so they never expire, and you can edit an order's price.",
+      "description": "On-chain limit order DEX for MINIMA/USDT — trustless fills via VERIFYOUT smart contract. Good-till-cancelled orders auto-renew so they never expire, and you can edit an order's price.",
       "version": "1.1.1"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/minArmyKnife-v1.0.6.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/minarmyknife.png",
       "name": "minArmyKnife",
-      "description": "Node hygiene toolkit \u2014 tracking audit, stuck txns, coin manager, token dust, balance health",
+      "description": "Node hygiene toolkit — tracking audit, stuck txns, coin manager, token dust, balance health",
       "version": "1.0.6"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/asteroids-2.0.0.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/asteroids.ico",
       "name": "Asteroids",
-      "description": "Classic Asteroids arcade game \u2014 shoot asteroids, dodge UFOs, survive waves. Touch and keyboard controls with persistent high scores.",
+      "description": "Classic Asteroids arcade game — shoot asteroids, dodge UFOs, survive waves. Touch and keyboard controls with persistent high scores.",
       "version": "1.0.6"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/lunar-lander-2.0.0.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/lunar-lander.ico",
       "name": "Lunar Lander",
-      "description": "Classic 1979 Atari Lunar Lander \u2014 thrust, rotate, land on pads. Manage fuel and angle for bonus points. Persistent high scores.",
+      "description": "Classic 1979 Atari Lunar Lander — thrust, rotate, land on pads. Manage fuel and angle for bonus points. Persistent high scores.",
       "version": "1.0.6"
     },
     {
@@ -148,28 +148,28 @@
       "file": "https://eurobuddha.com/panda_dapps/wallet-2.47.2.mds.zip",
       "icon": "https://eurobuddha.com/store/icons/wallet.png",
       "name": "Wallet 2.47.2",
-      "description": "Legacy 2.47.2 release of the official Minima Wallet \u2014 exchange tokens with Minimalists",
+      "description": "Legacy 2.47.2 release of the official Minima Wallet — exchange tokens with Minimalists",
       "version": "2.47.2"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/anyphraserecovery-0.4.19.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/anyphraserecovery.svg",
       "name": "AnyPhraseRecovery",
-      "description": "Sweep funds out of a webwallet seed without giving up control of this Minima node \u2014 snapshot, borrow the seed via megammrsync, sweep, restore. Also lets you become a MegaMMR host for other recovery users.",
+      "description": "Sweep funds out of a webwallet seed without giving up control of this Minima node — snapshot, borrow the seed via megammrsync, sweep, restore. Also lets you become a MegaMMR host for other recovery users.",
       "version": "0.4.19"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/utxowallet-1.0.52.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/utxowallet.png",
       "name": "utxoWallet",
-      "description": "Explicit UTXO-selection wallet for Minima \u2014 pick exactly which coins you spend. Send, Split, Distribute, Consolidate and QR receive, with full coin and token detail. Light + dark themes.",
+      "description": "Explicit UTXO-selection wallet for Minima — pick exactly which coins you spend. Send, Split, Distribute, Consolidate and QR receive, with full coin and token detail. Light + dark themes.",
       "version": "1.0.52"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/futurecash-3.1.15.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/futurecash.png",
       "name": "Future Cash",
-      "description": "Lock payments to the future \u2014 WOTS key-reuse safe. Audits your node's keys, collects matured stakes, and rescues at-risk ones to a safe wallet before they can be forged.",
+      "description": "Lock payments to the future — WOTS key-reuse safe. Audits your node's keys, collects matured stakes, and rescues at-risk ones to a safe wallet before they can be forged.",
       "version": "3.1.15"
     }
   ]
