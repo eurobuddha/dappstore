@@ -5,6 +5,13 @@
   "version": "2.0",
   "dapps": [
     {
+      "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.0/PandaPools_0.6.0.mds.zip",
+      "icon": "https://raw.githubusercontent.com/eurobuddha/pandapools-mds/master/favicon.png",
+      "name": "PandaPools",
+      "description": "Constant-product AMM: swap MINIMA/token across aggregated pools, provide liquidity and earn the 0.5% swap fee. Trustless VERIFYOUT covenant; shares live pools with the native app. Always free.",
+      "version": "0.6.0"
+    },
+    {
       "file": "https://eurobuddha.com/panda_dapps/keyuses-0.1.51.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/keyuses.svg",
       "name": "KeyUses",
@@ -45,13 +52,6 @@
       "name": "History",
       "description": "Reconstruct and search your node's full default-wallet transaction history from block.minima.global \u2014 survives re-syncs, updates live from your local node, with CSV/JSON export and a signature key-reuse check.",
       "version": "0.2.6"
-    },
-    {
-      "file": "https://eurobuddha.com/panda_dapps/maximize-1.4.0_newrates.mds.zip",
-      "icon": "https://eurobuddha.com/panda_dapps/maxi.png",
-      "name": "Maximize",
-      "description": "Minima yield and staking rewards maximizer",
-      "version": "1.4.0"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/2048_103.1.zip",
