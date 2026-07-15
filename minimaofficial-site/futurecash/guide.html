@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Future Cash — User Guide</title>
+<style>
+/* ═══════════════════════════════════════════════════════
+   FUTURE CASH USER GUIDE · matches minidapps.minima.global
+   ═══════════════════════════════════════════════════════ */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+	--bg: #06060c;
+	--bg-card: #0f0f1a;
+	--border: #1a1a2e;
+	--text: #b8b8c8;
+	--text-strong: #e8e8f0;
+	--text-dim: #4a4a5e;
+	--orange: #ff7b00;
+	--orange-dim: #ff7b0030;
+	--pink: #ff3366;
+	--pink-dim: #ff336618;
+	--cyan: #00ccff;
+	--cyan-dim: #00ccff25;
+	--green: #3ddc84;
+	--green-dim: #3ddc8418;
+	--card-radius: 12px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+	font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+	background: var(--bg);
+	color: var(--text);
+	min-height: 100vh;
+	-webkit-font-smoothing: antialiased;
+	font-size: 16.5px;
+	line-height: 1.7;
+}
+body::before {
+	content: '';
+	position: fixed; inset: 0; pointer-events: none; z-index: 9998;
+	background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; position: relative; z-index: 1; }
+
+/* header */
+.crumb { font-family: 'JetBrains Mono', monospace; font-size: 12px; margin-bottom: 28px; }
+.crumb a { color: var(--cyan); text-decoration: none; }
+.crumb a:hover { text-decoration: underline; }
+.eyebrow { font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--orange); letter-spacing: .1em; margin-bottom: 16px; }
+h1 { color: var(--text-strong); font-weight: 700; font-size: clamp(30px, 6vw, 42px); line-height: 1.15; text-wrap: balance; margin-bottom: 12px; }
+.lede { font-size: 19px; font-weight: 300; color: var(--text); margin-bottom: 8px; }
+.lede b { color: var(--text-strong); font-weight: 600; }
+
+/* sections */
+h2 {
+	color: var(--text-strong); font-size: 22px; font-weight: 600; text-wrap: balance;
+	margin: 52px 0 14px; padding-top: 24px; border-top: 1px solid var(--border);
+}
+h3 { color: var(--text-strong); font-size: 17px; font-weight: 600; margin: 26px 0 8px; }
+p { margin: 0 0 14px; }
+b, strong { color: var(--text-strong); font-weight: 600; }
+a { color: var(--cyan); }
+
+ol, ul { margin: 0 0 16px 22px; }
+li { margin-bottom: 8px; }
+li::marker { color: var(--orange); font-family: 'JetBrains Mono', monospace; font-weight: 600; }
+
+/* callouts */
+.callout {
+	background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--cyan);
+	border-radius: var(--card-radius); padding: 16px 18px; margin: 18px 0;
+}
+.callout.good { border-left-color: var(--green); background: linear-gradient(var(--green-dim), var(--green-dim)), var(--bg-card); }
+.callout.warn { border-left-color: var(--orange); background: linear-gradient(var(--pink-dim), var(--pink-dim)), var(--bg-card); }
+.callout p:last-child { margin-bottom: 0; }
+
+/* status pills */
+.pill {
+	display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600;
+	padding: 2px 10px; border-radius: 999px; border: 1px solid; white-space: nowrap;
+}
+.pill.g { color: var(--green); border-color: var(--green); background: var(--green-dim); }
+.pill.o { color: var(--orange); border-color: var(--orange); background: var(--orange-dim); }
+.pill.c { color: var(--cyan); border-color: var(--cyan); background: var(--cyan-dim); }
+
+/* tables */
+.tablewrap { overflow-x: auto; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; padding: 10px 14px; border: 1px solid var(--border); vertical-align: top; }
+th { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--orange); background: var(--bg-card); }
+td b { color: var(--text-strong); }
+
+/* FAQ */
+details {
+	background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--card-radius);
+	padding: 14px 18px; margin-bottom: 10px;
+}
+details summary { cursor: pointer; color: var(--text-strong); font-weight: 600; }
+details summary:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 4px; }
+details[open] summary { margin-bottom: 8px; }
+details p:last-child { margin-bottom: 0; }
+
+.footer {
+	margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border);
+	font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-dim);
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+	<nav class="crumb"><a href="/">← minidapps.minima.global</a></nav>
+
+	<div class="eyebrow">MINIDAPP GUIDE</div>
+	<h1>Future Cash</h1>
+	<p class="lede"><b>Send money to the future.</b> Lock up MINIMA so it can only be spent after a date you choose — for yourself (savings you can't touch early) or for someone else (a gift that unlocks on their birthday). Future Cash does the locking, watches the clock, and collects the money safely when the time comes.</p>
+
+	<h2>The 30-second version</h2>
+	<ol>
+		<li><b>Install Future Cash</b> and switch it to <b>WRITE</b> in MiniHub (it will remind you if you forget).</li>
+		<li>Open the <b>Stakes</b> tab, type an amount, pick an unlock date, press <b>Lock it</b>.</li>
+		<li>That's it. When the date arrives, the <b>Guardian</b> collects the money for you, safely.</li>
+	</ol>
+	<p>Everything else on this page is detail. If you only do the three steps above, Future Cash works.</p>
+
+	<h2>Why there's a "Guardian"</h2>
+	<p>Minima wallets sign with <b>one-time keys</b>. Each key is meant to be used <b>once</b> — like a stamp that fades every time you press it. Use the same key twice and it becomes weaker; use it many times and, in theory, someone could copy your stamp.</p>
+	<p>Most wallets quietly reuse keys and nobody notices. Future Cash doesn't leave that to chance:</p>
+	<ul>
+		<li>Before touching your money, it <b>checks all your keys</b> (the audit).</li>
+		<li>Money unlocking onto a <b>fresh, never-reused address</b> is simply collected. Nothing to worry about.</li>
+		<li>Money unlocking onto a <b>reused address</b> is treated as urgent: the Guardian collects it and <b>immediately moves it to a safe wallet</b>, before anyone could take advantage.</li>
+	</ul>
+	<p>You don't need to understand the cryptography. Just know: <span class="pill g">green</span> means relax, <span class="pill o">orange</span> means the Guardian is handling it, and this guide covers the few things only you can do (like choosing where rescued money should go).</p>
+	<div class="callout good">
+		<p><b>Your money can never be stolen at collection time.</b> The lock is enforced by the blockchain itself: collected coins can <em>only</em> go to the address you chose when you locked them. The Guardian's job is what happens <em>after</em> they land.</p>
+	</div>
+
+	<h2>First time you open Future Cash</h2>
+	<ol>
+		<li><b>The audit runs by itself.</b> You'll see "Auditing your 64 keys…" and then one of:
+			<ul>
+				<li><span class="pill g">✓ No key-reuse risk</span> — perfect, nothing to do.</li>
+				<li><span class="pill o">⚠ Key-reuse risk detected</span> — don't panic. Your money is still yours. See <a href="#warning">If you see a key-reuse warning</a>.</li>
+				<li><span class="pill c">Audit incomplete</span> — the checking service couldn't be reached. Automatic collecting pauses (on purpose, to be safe) and resumes after the next successful audit. Try <b>Re-audit</b> later.</li>
+			</ul>
+		</li>
+		<li><b>If you see a big orange banner saying "READ mode — your funds are NOT protected":</b> open <b>MiniHub</b>, find <b>Future Cash</b>, and switch it to <b>WRITE</b>. In READ mode the app can watch but not act — it can't collect or rescue anything. This is a Minima safety rule; only you can grant it.</li>
+		<li>Only your <b>public</b> keys are ever sent to the audit service. Public keys are safe to share — they can't be used to take your money.</li>
+	</ol>
+
+	<h2>Locking a payment (Stakes tab)</h2>
+	<ol>
+		<li>Enter the <b>amount</b> of MINIMA.</li>
+		<li>Choose when it <b>unlocks</b>: pick a <b>date &amp; time</b> (quick buttons for +1 hour / day / week / month), or count in <b>blocks</b> if you're technical (one block ≈ 50 seconds).</li>
+		<li>Choose who it <b>pays out to</b>: <b>Me</b> — the app automatically uses a fresh, safe address on your node (recommended) — or <b>Someone else</b>: paste their Mx… address and tell them to install Future Cash too, so their Guardian collects it when it matures.</li>
+		<li>Press <b>Lock it</b>.</li>
+	</ol>
+	<p>Your stake now appears under <b>Pending</b> with a countdown. When it matures it moves to <b>Matured</b>, and the Guardian takes over.</p>
+	<div class="callout warn">
+		<p><b>Once locked, nobody — not even you — can unlock it early.</b> That's the point. Double-check the amount and date before pressing the button.</p>
+	</div>
+
+	<h2>When a stake matures (usually: nothing you need to do)</h2>
+	<p>The Guardian runs in the background whenever your node is on, even with the app closed. On every new block it checks your stakes:</p>
+	<ul>
+		<li><b>Safe stake</b> (pays out to a clean address) → collected automatically, as long as your key audit is fresh (less than 30 minutes old — the app re-audits when you open it, so just open the app now and then, or leave auto-collect on). You'll see it in the <b>"Ready to collect — SAFE"</b> card and in the Activity log.</li>
+		<li><b>At-risk stake</b> (pays out to a reused address) → the Guardian collects it and <b>immediately sweeps it onward to your safe wallet</b>, then verifies it actually arrived. For this it needs three things from you, one time only:
+			<ol>
+				<li><b>Rescue turned on</b> (the app walks you through this),</li>
+				<li><b>A safe destination</b> chosen (see below),</li>
+				<li><b>Your vault unlocked</b> (if you use a vault password, the Guardian can't sign while it's locked — you'll see "🔒 vault locked").</li>
+			</ol>
+		</li>
+	</ul>
+	<p>If it can't act — READ mode, locked vault, stale audit — it <b>waits and tells you why</b> rather than doing something unsafe. Nothing is ever lost by waiting: matured coins stay locked to your payout address until collected.</p>
+
+	<h2 id="warning">If you see a key-reuse warning</h2>
+	<p>The orange <b>"Rescue your at-risk stakes"</b> panel offers two paths:</p>
+	<ul>
+		<li><b>Quick sweep</b> (the usual choice) — each matured at-risk stake is collected and immediately moved to a safe place. You pick where:
+			<ul>
+				<li><b>"Fresh clean address on THIS node"</b> — easiest, best if you only have one device. Funds stay on your node, on a brand-new unused address.</li>
+				<li><b>An external wallet</b> — paste an Mx… address from a <em>different</em> node/seed if you have one. Strongest option.</li>
+			</ul>
+		</li>
+		<li><b>Full seed migration</b> — only if the audit shows <em>lots</em> of reused addresses, meaning your whole wallet seed should be considered compromised. The app hands you off to the <b>AnyPhraseRecovery</b> MiniDapp with step-by-step instructions to move <em>everything</em> to a clean wallet.</li>
+	</ul>
+	<p>After a rescue, the Guardian confirms every coin arrived. In the extremely unlikely case a coin was spent but never arrived, you'll get a loud <b>"TAKEN"</b> alert in the Activity log and a notification — that's the one alarm that means "someone exploited a reused key; check your node and consider full seed migration."</p>
+
+	<h3>The "Harden" panel</h3>
+	<p>If the audit finds reused addresses, a <b>Harden</b> panel appears. Your node keeps a rotation of "change" addresses, and if a reused one is still in that rotation, fresh money keeps landing on it — like re-locking a broken lock. For each reused address the panel offers:</p>
+	<ul>
+		<li><b>Sweep</b> — move any coins sitting on it to a fresh clean address (one click, coins stay on your node).</li>
+		<li><b>Retire</b> — once empty, drop it from the rotation for good so it's never used again. No funds move.</li>
+	</ul>
+	<p>Do the sweeps, then <b>Retire all</b>, then restart your node to top up the rotation with fresh addresses. Two minutes, done. (If you ever reinstall your node from seed, run Harden again — retirements don't survive a reseed.)</p>
+
+	<h2>The four tabs at a glance</h2>
+	<div class="tablewrap">
+		<table>
+			<tr><th>Tab</th><th>What it's for</th></tr>
+			<tr><td><b>Guardian</b></td><td>Health check. Audit result, what's ready to collect, rescue setup, Harden panel. Green = relax.</td></tr>
+			<tr><td><b>Stakes</b></td><td>Your money. See pending/matured stakes, lock new payments.</td></tr>
+			<tr><td><b>Activity</b></td><td>The diary. Every action the Guardian took, with times. "Reset history" clears the log only — it never touches your coins.</td></tr>
+			<tr><td><b>Help</b></td><td>The short version of this guide, always in your pocket.</td></tr>
+		</table>
+	</div>
+
+	<h2>Questions people actually ask</h2>
+	<details>
+		<summary>Do I need to keep the app open?</summary>
+		<p>No. The Guardian runs with your node. But open the app occasionally — that's when the key audit refreshes, and a fresh audit (under 30 min) is what allows automatic safe collecting.</p>
+	</details>
+	<details>
+		<summary>My stake matured but nothing happened. Why?</summary>
+		<p>In order of likelihood: ① the app is in <b>READ mode</b> (fix in MiniHub), ② the audit isn't fresh — open the app or press <b>Re-audit</b>, ③ for at-risk stakes: rescue isn't set up or your <b>vault is locked</b>, ④ auto-collect is switched off — press the <b>Collect … safely</b> button. The Guardian card always tells you which one it's waiting on.</p>
+	</details>
+	<details>
+		<summary>Can I cancel a lock or get the money early?</summary>
+		<p>No. Locks are enforced by the blockchain and cannot be undone by anyone. That's the feature.</p>
+	</details>
+	<details>
+		<summary>Someone locked money for me. What do I do?</summary>
+		<p>Install Future Cash on your node and switch it to WRITE. Your Guardian will spot the stake and collect it when it matures.</p>
+	</details>
+	<details>
+		<summary>What does the audit send over the internet?</summary>
+		<p>Only your <b>public</b> keys and addresses — never anything secret. Safe to share by design.</p>
+	</details>
+	<details>
+		<summary>What's the "reused ×N" in the key table?</summary>
+		<p>How many times that key has signed. 1 = normal. 2+ = reused, and the app treats everything landing there as at-risk.</p>
+	</details>
+	<details>
+		<summary>Does "Reset history" delete my stakes?</summary>
+		<p>No. It only clears the Activity log and status display. Your coins and locks live on the blockchain, untouched.</p>
+	</details>
+
+	<div class="footer">FUTURE CASH v3.1.17 · runs entirely on your own Minima node · <a href="/">minidapps.minima.global</a></div>
+</div>
+</body>
+</html>

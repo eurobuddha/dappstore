@@ -187,18 +187,20 @@
       "history": []
     },
     {
-      "file": "https://eurobuddha.com/store/dapps/futurecash-2.7.1.mds.zip",
+      "file": "https://eurobuddha.com/store/dapps/futurecash-3.1.17.mds.zip",
       "icon": "https://eurobuddha.com/store/icons/futurecash.png",
       "name": "Future Cash",
-      "description": "Send cash to the Future!",
-      "version": "2.7.1",
-      "about": "Lock up funds for yourself or for another to save, invest or secure, and unlock in the future.",
+      "description": "Send cash to the Future — now with key-reuse protection.",
+      "version": "3.1.17",
+      "about": "Lock up MINIMA for yourself or for another and unlock it in the future. The new Guardian watches your stakes for you: it audits your node's keys, collects matured stakes automatically when they're safe, and rescues any that would land on a reused (at-risk) address by sweeping them straight to a safe wallet. Includes an in-app Help tab and a full guide at minidapps.minima.global/futurecash/guide.html",
       "update": [
-        "- Added burn for transactional features\n",
-        "- Added MDS Fail Unavailable feature\n",
-        "- Design tweaks"
+        "- NEW: Guardian — automatic safe collection of matured stakes\n",
+        "- NEW: WOTS key-reuse audit with at-risk rescue (collect + sweep to a safe wallet)\n",
+        "- NEW: Harden panel — retire reused change addresses\n",
+        "- NEW: in-app Help tab and full online user guide\n",
+        "- Successor to Future Cash 2.7.1 — existing stakes are detected and collected"
       ],
-      "date": "Oct 24, 2024",
+      "date": "Jul 15, 2026",
       "history": []
     },
     {
