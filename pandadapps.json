@@ -5,11 +5,11 @@
   "version": "2.0",
   "dapps": [
     {
-      "file": "https://eurobuddha.com/panda_dapps/minimaCore-App-Store-0.2.0.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/minimaCore-App-Store-0.2.1.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/minimacore-appstore.png",
       "name": "minimaCore App Store",
       "description": "Native Android apps AND MiniDapps for Minima, from your node. Download the minimaCore node APK, PandaApps store and every companion app - plus one-tap install of MiniDapps from the PandaDapps and official Minima catalogs straight onto this node. Always free.",
-      "version": "0.2.0"
+      "version": "0.2.1"
     },
     {
       "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.4/PandaPools_0.6.4.mds.zip",
