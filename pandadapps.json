@@ -12,11 +12,11 @@
       "version": "0.1.0"
     },
     {
-      "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.0/PandaPools_0.6.0.mds.zip",
+      "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.4/PandaPools_0.6.4.mds.zip",
       "icon": "https://raw.githubusercontent.com/eurobuddha/pandapools-mds/master/favicon.png",
       "name": "PandaPools",
       "description": "Constant-product AMM: swap MINIMA/token across aggregated pools, provide liquidity and earn the 0.5% swap fee. Trustless VERIFYOUT covenant; shares live pools with the native app. Always free.",
-      "version": "0.6.0"
+      "version": "0.6.4"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/keyuses-0.1.51.mds.zip",
@@ -54,11 +54,11 @@
       "version": "0.7.0"
     },
     {
-      "file": "https://eurobuddha.com/panda_dapps/history-0.2.6.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/history-0.2.7.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/history.svg",
       "name": "History",
       "description": "Reconstruct and search your node's full default-wallet transaction history from block.minima.global — survives re-syncs, updates live from your local node, with CSV/JSON export and a signature key-reuse check.",
-      "version": "0.2.6"
+      "version": "0.2.7"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/2048_103.1.zip",
