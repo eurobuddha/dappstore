@@ -173,11 +173,11 @@
       "version": "1.0.52"
     },
     {
-      "file": "https://eurobuddha.com/panda_dapps/futurecash-3.1.17.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/futurecash-3.1.18.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/futurecash.png",
       "name": "Future Cash",
       "description": "Lock payments to the future — with WOTS key-reuse protection: audits your node's keys, safely collects matured stakes, and moves any at-risk (key-reused) ones to a safe wallet. Full guide: minidapps.minima.global/futurecash/guide.html",
-      "version": "3.1.17"
+      "version": "3.1.18"
     }
   ]
 }

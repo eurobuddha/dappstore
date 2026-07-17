@@ -149,7 +149,7 @@ details p:last-child { margin-bottom: 0; }
 				<li><span class="pill c">Audit incomplete</span> — the checking service couldn't be reached. Automatic collecting pauses (on purpose, to be safe) and resumes after the next successful audit. Try <b>Re-audit</b> later.</li>
 			</ul>
 		</li>
-		<li><b>If you see a big orange banner saying "READ mode — your funds are NOT protected":</b> open <b>MiniHub</b>, find <b>Future Cash</b>, and switch it to <b>WRITE</b>. In READ mode the app can watch but not act — it can't collect or rescue anything. This is a Minima safety rule; only you can grant it.</li>
+		<li><b>If you see a big orange banner saying "READ mode — Future Cash cannot work like this":</b> open <b>MiniHub</b>, find <b>Future Cash</b>, and switch it to <b>WRITE</b>. Future Cash runs as a background daemon that auto-collects your stakes the moment they mature — in READ mode every action gets stuck as a "pending request", and approving those by hand will not work, because the daemon must act unattended. WRITE is required; it's a Minima safety rule that only you can grant. Prefer a fully manual app with no background daemon? <a href="https://eurobuddha.com/store/dapps/futurecash-2.7.1.mds.zip">Download classic Future Cash 2.7.1</a> (no key-reuse protection).</li>
 		<li>Only your <b>public</b> keys are ever sent to the audit service. Public keys are safe to share — they can't be used to take your money.</li>
 	</ol>
 
@@ -168,7 +168,7 @@ details p:last-child { margin-bottom: 0; }
 	<h2>When a stake matures (usually: nothing you need to do)</h2>
 	<p>The Guardian runs in the background whenever your node is on, even with the app closed. On every new block it checks your stakes:</p>
 	<ul>
-		<li><b>Safe stake</b> (pays out to a clean address) → collected automatically, as long as your key audit is fresh (less than 30 minutes old — the app re-audits when you open it, so just open the app now and then, or leave auto-collect on). You'll see it in the <b>"Ready to collect — SAFE"</b> card and in the Activity log.</li>
+		<li><b>Safe stake</b> (pays out to a clean address) → collected automatically, as long as your key audit is fresh (less than 30 minutes old — the app re-audits when you open it, so just open the app now and then, or leave auto-collect on). You'll see it in the <b>"Ready to collect — SAFE"</b> card and in the Activity log. Prefer to do it yourself? Every safe matured stake also has its own <b>Collect now</b> button on the Stakes tab, and the Guardian tab has <b>Collect all now</b>.</li>
 		<li><b>At-risk stake</b> (pays out to a reused address) → the Guardian collects it and <b>immediately sweeps it onward to your safe wallet</b>, then verifies it actually arrived. For this it needs three things from you, one time only:
 			<ol>
 				<li><b>Rescue turned on</b> (the app walks you through this),</li>
@@ -218,7 +218,7 @@ details p:last-child { margin-bottom: 0; }
 	</details>
 	<details>
 		<summary>My stake matured but nothing happened. Why?</summary>
-		<p>In order of likelihood: ① the app is in <b>READ mode</b> (fix in MiniHub), ② the audit isn't fresh — open the app or press <b>Re-audit</b>, ③ for at-risk stakes: rescue isn't set up or your <b>vault is locked</b>, ④ auto-collect is switched off — press the <b>Collect … safely</b> button. The Guardian card always tells you which one it's waiting on.</p>
+		<p>In order of likelihood: ① the app is in <b>READ mode</b> (fix in MiniHub — pending approvals don't work), ② the audit isn't fresh — open the app or press <b>Re-audit</b>, ③ for at-risk stakes: rescue isn't set up or your <b>vault is locked</b>, ④ auto-collect is switched off — press <b>Collect now</b> on the stake itself, or <b>Collect all now</b> on the Guardian tab. The Guardian card always tells you which one it's waiting on.</p>
 	</details>
 	<details>
 		<summary>Can I cancel a lock or get the money early?</summary>
@@ -241,7 +241,7 @@ details p:last-child { margin-bottom: 0; }
 		<p>No. It only clears the Activity log and status display. Your coins and locks live on the blockchain, untouched.</p>
 	</details>
 
-	<div class="footer">FUTURE CASH v3.1.17 · runs entirely on your own Minima node · <a href="/">minidapps.minima.global</a></div>
+	<div class="footer">FUTURE CASH v3.1.18 · runs entirely on your own Minima node · <a href="/">minidapps.minima.global</a></div>
 </div>
 </body>
 </html>

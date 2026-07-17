@@ -108,7 +108,7 @@
         " It allows users to share text, images, and basic HTML, or link audio and video files from the web to their Maxima contacts.\n\n",
         "Re-chatting or replying to a post you receive will forward it onto your contacts, serving to spread the post further across the network.\n\n",
         "There is no limit to how far a post could reach. Great chats will spread, but unpopular chats will not. \n\n",
-        "Not like Twitter, not like Facebook, not like TikTok\u2026 Chatter is its own thing."
+        "Not like Twitter, not like Facebook, not like TikTok… Chatter is its own thing."
       ],
       "update": [
         "- Superchatter now set as default"
@@ -130,7 +130,7 @@
       "version": "2.1.0",
       "about": [
         "The Docs MiniDapp is where you can learn about the Minima Protocol.\n\n",
-        "Here you will find our documentation and developer tutorial, which introduces Minima\u2019s KISS scripting language for creating smart contracts on Minima."
+        "Here you will find our documentation and developer tutorial, which introduces Minima’s KISS scripting language for creating smart contracts on Minima."
       ],
       "update": [
         "- New interface"
@@ -187,20 +187,18 @@
       "history": []
     },
     {
-      "file": "https://eurobuddha.com/store/dapps/futurecash-3.1.17.mds.zip",
+      "file": "https://eurobuddha.com/store/dapps/futurecash-3.1.18.mds.zip",
       "icon": "https://eurobuddha.com/store/icons/futurecash.png",
       "name": "Future Cash",
       "description": "Send cash to the Future — now with key-reuse protection.",
-      "version": "3.1.17",
+      "version": "3.1.18",
       "about": "Lock up MINIMA for yourself or for another and unlock it in the future. The new Guardian watches your stakes for you: it audits your node's keys, collects matured stakes automatically when they're safe, and rescues any that would land on a reused (at-risk) address by sweeping them straight to a safe wallet. Includes an in-app Help tab and a full guide at minidapps.minima.global/futurecash/guide.html",
       "update": [
-        "- NEW: Guardian — automatic safe collection of matured stakes\n",
-        "- NEW: WOTS key-reuse audit with at-risk rescue (collect + sweep to a safe wallet)\n",
-        "- NEW: Harden panel — retire reused change addresses\n",
-        "- NEW: in-app Help tab and full online user guide\n",
-        "- Successor to Future Cash 2.7.1 — existing stakes are detected and collected"
+        "- NEW: Collect now button on every safe matured stake, plus Collect all now on the Guardian tab\n",
+        "- Clearer READ-mode messaging: pending approvals don't work, WRITE is required\n",
+        "- (3.1.17) Guardian, key-reuse audit, at-risk rescue, Harden panel, Help tab + online guide"
       ],
-      "date": "Jul 15, 2026",
+      "date": "Jul 17, 2026",
       "history": []
     },
     {
@@ -290,7 +288,7 @@
       "description": "P2P chat app running over Maxima",
       "version": "2.7.5",
       "about": [
-        "MaxSolo is an encrypted, peer-to-peer messaging application, which uses Minima\u2019s information transfer layer, Maxima. Learn more about Maxima below.\n\n",
+        "MaxSolo is an encrypted, peer-to-peer messaging application, which uses Minima’s information transfer layer, Maxima. Learn more about Maxima below.\n\n",
         "",
         "Using MaxSolo you can:\n\n",
         "",
@@ -454,7 +452,7 @@
         "- Write, Clean and Save Minima scripts\n",
         "- Test Minima scripts by running them to determine their result and script address\n",
         "",
-        "Script IDE is best used on your Desktop interface. Minima scripts are written in Minima\u2019s KISS scripting language. Learn more by following the Transaction Tutorial in the Docs MiniDapp."
+        "Script IDE is best used on your Desktop interface. Minima scripts are written in Minima’s KISS scripting language. Learn more by following the Transaction Tutorial in the Docs MiniDapp."
       ],
       "update": [
         "- New interface\n",
@@ -498,7 +496,7 @@
       "version": "1.4.1",
       "about": [
         "ShoutOut posts reach all Minima users by sending the message within a transaction. For spam prevention there is a cost of 0.01 native Minima for each post.\n\n",
-        "Messages are temporarily stored on chain then discarded, after which messages will only be stored on the user\u2019s device.\n\n",
+        "Messages are temporarily stored on chain then discarded, after which messages will only be stored on the user’s device.\n\n",
         "Users will start to receive posts once they have installed the app and are able to create new discussion categories or hide categories they do not wish to see."
       ],
       "update": [
