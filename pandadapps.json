@@ -178,6 +178,13 @@
       "name": "Future Cash",
       "description": "Lock payments to the future — with WOTS key-reuse protection: audits your node's keys, safely collects matured stakes, and moves any at-risk (key-reused) ones to a safe wallet. Full guide: minidapps.minima.global/futurecash/guide.html",
       "version": "3.1.18"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/futurecash-2.7.1.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/futurecash-classic.png",
+      "name": "Future Cash Classic",
+      "description": "The original official Future Cash — lock up Minima for yourself or another and unlock it in the future. Keep this classic build to view and collect locks created with the original version (including old Maximize stakes).",
+      "version": "2.7.1"
     }
   ]
 }
