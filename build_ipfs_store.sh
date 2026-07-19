@@ -9,6 +9,10 @@
 # Deployed copy: /usr/local/bin/build_ipfs_store.sh
 set -euo pipefail
 
+# single-instance guard: a slow run (big downloads) must not overlap the next cron fire
+exec 9>/var/lock/build_ipfs_store.lock
+flock -n 9 || { echo "[ipfs-store] another build is running - exiting"; exit 0; }
+
 STAGE=/var/ipfs-store
 WEB=/var/www/html
 GATEWAY_BASE=https://ipfs.eurobuddha.com
