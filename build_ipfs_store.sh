@@ -25,6 +25,35 @@ CACHE=$STATE_DIR/cache
 as_ipfs(){ sudo -u ipfs env IPFS_PATH=/home/ipfs/.ipfs "$@"; }
 log(){ echo "[ipfs-store $(date '+%F %T')] $*"; }
 
+# Ensure $1 is pinned at Pinata and drop superseded pins. Safe to re-run: called
+# on publish AND on no-change runs, so a pin that failed (or a service registered
+# after the last content change) gets retried rather than waiting for a new CID.
+sync_remote_pin(){
+    local cid="$1"
+    as_ipfs ipfs pin remote service ls 2>/dev/null | awk '{print $1}' | grep -qx pinata || {
+        log "pinata not configured - skipping remote pin"; return 0; }
+
+    local existing
+    existing=$(as_ipfs ipfs pin remote ls --service=pinata --status=queued,pinning,pinned 2>/dev/null || true)
+    if grep -q "$cid" <<<"$existing"; then
+        log "already pinned/queued at pinata: $cid"
+    elif as_ipfs ipfs pin remote add --service=pinata --background \
+             --name "pandastore-$(date +%Y%m%d-%H%M)" "/ipfs/$cid"; then
+        log "queued pin at pinata: $cid"
+    else
+        log "WARN pinata pin failed (will retry next run)"
+        return 0
+    fi
+
+    # rotate: remove anything that isn't the current snapshot
+    as_ipfs ipfs pin remote ls --service=pinata --status=queued,pinning,pinned 2>/dev/null \
+        | awk -v cid="$cid" '$1 ~ /^(baf|Qm)/ && $1 != cid {print $1}' \
+        | while read -r old; do
+            as_ipfs ipfs pin remote rm --service=pinata --cid="$old" --force >/dev/null 2>&1 \
+                && log "unpinned superseded $old" || true
+          done
+}
+
 mkdir -p "$STAGE" "$STATE_DIR" "$CACHE"
 
 # ── 1. Mirror the two MiniDapp catalogs from the live webroot ────────────────
@@ -204,7 +233,10 @@ chmod -R a+rX "$STAGE"
 HASH=$(cd "$STAGE" && find . -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum | cut -d' ' -f1)
 LAST=$(cat "$STATE_DIR/last.hash" 2>/dev/null || echo none)
 if [ "$HASH" = "$LAST" ]; then
-    log "no changes since last publish - nothing to do"
+    log "no changes since last publish"
+    # still reconcile the remote pin - covers a pin that failed earlier or a
+    # pinning service registered after the most recent content change
+    sync_remote_pin "$(cat "$WEB/ipfs-cid.txt" 2>/dev/null || echo '')"
     exit 0
 fi
 
@@ -215,19 +247,7 @@ as_ipfs ipfs name publish --key="$IPNS_KEY" --lifetime 48h "/ipfs/$CID"
 log "IPNS published"
 
 # ── 8. Pinata: pin new CID, drop superseded pins ─────────────────────────────
-if as_ipfs ipfs pin remote service ls 2>/dev/null | awk '{print $1}' | grep -qx pinata; then
-    if as_ipfs ipfs pin remote add --service=pinata --name "pandastore-$(date +%Y%m%d-%H%M)" "/ipfs/$CID"; then
-        log "pinned to pinata"
-        as_ipfs ipfs pin remote ls --service=pinata | awk -v cid="$CID" '$1 ~ /^(baf|Qm)/ && $1 != cid {print $1}' | \
-        while read -r old; do
-            as_ipfs ipfs pin remote rm --service=pinata --cid="$old" --force && log "unpinned old $old" || true
-        done
-    else
-        log "WARN pinata pin failed (will retry next run)"
-    fi
-else
-    log "pinata not configured - skipping remote pin"
-fi
+sync_remote_pin "$CID"
 
 # ── 9. Record + local GC of superseded snapshots ─────────────────────────────
 echo "$CID"  > "$WEB/ipfs-cid.txt" && chmod 644 "$WEB/ipfs-cid.txt"
