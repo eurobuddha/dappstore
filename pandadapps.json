@@ -12,6 +12,13 @@
       "version": "0.2.1"
     },
     {
+      "file": "https://eurobuddha.com/panda_dapps/AtomiX-0.1.9.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/atomix.png",
+      "name": "AtomiX",
+      "description": "Trustless cross-chain atomic swaps: MINIMA or bridged mxUSDT ⇄ Ethereum ERC20 USDT. Live order book, depth-ladder market-making, best-price sweeps, OTC deals, market history chart and a built-in ETH wallet (fund/QR, send, export). Interoperates on the SAME on-chain books as the native AtomiX Android app — verified with real mainnet swaps between the two. Needs WRITE permission (it derives your keys and signs swaps). EXPERIMENTAL; test small.",
+      "version": "0.1.9"
+    },
+    {
       "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.4/PandaPools_0.6.4.mds.zip",
       "icon": "https://raw.githubusercontent.com/eurobuddha/pandapools-mds/master/favicon.png",
       "name": "PandaPools",
@@ -24,6 +31,13 @@
       "name": "KeyUses",
       "description": "Audit your node's 64 keys for one-time-key RE-USE (stateful-signature safety)",
       "version": "0.1.51"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/maximizeSaver-0.1.30.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/maximizesaver.svg",
+      "name": "maximizeSaver",
+      "description": "Autonomous daemon that rescues matured FutureCash stakes off reused-key collection addresses. Auto-collects each stake the instant it matures, then sweeps it to a safe address you set once. Only ever moves the stakes it collects — never your other balances. Needs WRITE permission and an unlocked vault. Run it on the node that ran Maximize.",
+      "version": "0.1.30"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/faucet-1.0.5.mds.zip",
@@ -110,11 +124,11 @@
       "version": "1.0"
     },
     {
-      "file": "https://eurobuddha.com/panda_dapps/ZeroEdgeCasino-v2.6.1.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/ZeroEdgeCasino-v2.8.5.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/zec.png",
       "name": "Zero Edge Casino",
       "description": "Provably fair on-chain casino — 3-phase commit-reveal with coin flip, dice, and roulette. PS1-era cyber aesthetic.",
-      "version": "2.6.1"
+      "version": "2.8.5"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/Limit-1.1.1.mds.zip",
