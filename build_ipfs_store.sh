@@ -4,7 +4,7 @@
 #
 # Runs on the Pi as root (cron + manually after store updates). The snapshot
 # is staged in /var/ipfs-store, added to the local kubo node, published under
-# the 'pandastore' IPNS key, and remote-pinned to Pinata (if configured).
+# the 'pandastore' IPNS key, and remote-pinned to $PIN_SERVICE (if configured).
 #
 # Deployed copy: /usr/local/bin/build_ipfs_store.sh
 set -euo pipefail
@@ -21,40 +21,45 @@ APKS_JSON_URL=https://raw.githubusercontent.com/eurobuddha/minima-core-apks/main
 SITE_SRC=/usr/local/share/ipfs-store/index.html
 STATE_DIR=/var/lib/ipfs-store
 CACHE=$STATE_DIR/cache
+# Name of the kubo remote-pinning service to mirror snapshots to (registered via
+# `ipfs pin remote service add <name> <endpoint> <token>`). Filebase (5 GB free) —
+# was Pinata (1 GB), too small for the ~615 MB snapshot with rotation.
+PIN_SERVICE="${PIN_SERVICE:-filebase}"
 
 as_ipfs(){ sudo -u ipfs env IPFS_PATH=/home/ipfs/.ipfs "$@"; }
 log(){ echo "[ipfs-store $(date '+%F %T')] $*"; }
 
-# Ensure $1 is pinned at Pinata and drop superseded pins. Safe to re-run: called
-# on publish AND on no-change runs, so a pin that failed (or a service registered
-# after the last content change) gets retried rather than waiting for a new CID.
+# Ensure $1 is pinned at the remote service and drop superseded pins. Safe to
+# re-run: called on publish AND on no-change runs, so a pin that failed (or a
+# service registered after the last content change) gets retried rather than
+# waiting for a new CID.
 #
-# UNPIN-FIRST rotation: the free tier (1 GB) cannot hold two ~600 MB snapshots at
+# UNPIN-FIRST rotation: on a small free tier two ~600 MB snapshots won't fit at
 # once, so every superseded pin is dropped BEFORE the new one is added — peak usage
 # stays at roughly one snapshot, not two. The Pi keeps the content pinned locally and
-# is directly reachable, so the brief window where Pinata holds at most one (or no)
-# pin is low-risk: Pinata is redundancy, the Pi is the primary source.
+# is directly reachable, so the brief window where the service holds at most one (or
+# no) pin is low-risk: the remote pin is redundancy, the Pi is the primary source.
 sync_remote_pin(){
     local cid="$1"
-    as_ipfs ipfs pin remote service ls 2>/dev/null | awk '{print $1}' | grep -qx pinata || {
-        log "pinata not configured - skipping remote pin"; return 0; }
+    as_ipfs ipfs pin remote service ls 2>/dev/null | awk '{print $1}' | grep -qx "$PIN_SERVICE" || {
+        log "$PIN_SERVICE not configured - skipping remote pin"; return 0; }
 
     # 1. free space first — unpin every remote pin that isn't the target CID
-    as_ipfs ipfs pin remote ls --service=pinata --status=queued,pinning,pinned 2>/dev/null \
+    as_ipfs ipfs pin remote ls --service="$PIN_SERVICE" --status=queued,pinning,pinned 2>/dev/null \
         | awk -v cid="$cid" '$1 ~ /^(baf|Qm)/ && $1 != cid {print $1}' \
         | while read -r old; do
-            as_ipfs ipfs pin remote rm --service=pinata --cid="$old" --force >/dev/null 2>&1 \
+            as_ipfs ipfs pin remote rm --service="$PIN_SERVICE" --cid="$old" --force >/dev/null 2>&1 \
                 && log "unpinned superseded $old" || true
           done
 
     # 2. now add the current snapshot (skip if already pinned/queued)
-    if as_ipfs ipfs pin remote ls --service=pinata --status=queued,pinning,pinned 2>/dev/null | grep -q "$cid"; then
-        log "already pinned/queued at pinata: $cid"
-    elif as_ipfs ipfs pin remote add --service=pinata --background \
+    if as_ipfs ipfs pin remote ls --service="$PIN_SERVICE" --status=queued,pinning,pinned 2>/dev/null | grep -q "$cid"; then
+        log "already pinned/queued at $PIN_SERVICE: $cid"
+    elif as_ipfs ipfs pin remote add --service="$PIN_SERVICE" --background \
              --name "pandastore-$(date +%Y%m%d-%H%M)" "/ipfs/$cid"; then
-        log "queued pin at pinata: $cid"
+        log "queued pin at $PIN_SERVICE: $cid"
     else
-        log "WARN pinata pin failed (will retry next run)"
+        log "WARN $PIN_SERVICE pin failed (will retry next run)"
     fi
 }
 
