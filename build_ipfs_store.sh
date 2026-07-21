@@ -28,30 +28,34 @@ log(){ echo "[ipfs-store $(date '+%F %T')] $*"; }
 # Ensure $1 is pinned at Pinata and drop superseded pins. Safe to re-run: called
 # on publish AND on no-change runs, so a pin that failed (or a service registered
 # after the last content change) gets retried rather than waiting for a new CID.
+#
+# UNPIN-FIRST rotation: the free tier (1 GB) cannot hold two ~600 MB snapshots at
+# once, so every superseded pin is dropped BEFORE the new one is added — peak usage
+# stays at roughly one snapshot, not two. The Pi keeps the content pinned locally and
+# is directly reachable, so the brief window where Pinata holds at most one (or no)
+# pin is low-risk: Pinata is redundancy, the Pi is the primary source.
 sync_remote_pin(){
     local cid="$1"
     as_ipfs ipfs pin remote service ls 2>/dev/null | awk '{print $1}' | grep -qx pinata || {
         log "pinata not configured - skipping remote pin"; return 0; }
 
-    local existing
-    existing=$(as_ipfs ipfs pin remote ls --service=pinata --status=queued,pinning,pinned 2>/dev/null || true)
-    if grep -q "$cid" <<<"$existing"; then
-        log "already pinned/queued at pinata: $cid"
-    elif as_ipfs ipfs pin remote add --service=pinata --background \
-             --name "pandastore-$(date +%Y%m%d-%H%M)" "/ipfs/$cid"; then
-        log "queued pin at pinata: $cid"
-    else
-        log "WARN pinata pin failed (will retry next run)"
-        return 0
-    fi
-
-    # rotate: remove anything that isn't the current snapshot
+    # 1. free space first — unpin every remote pin that isn't the target CID
     as_ipfs ipfs pin remote ls --service=pinata --status=queued,pinning,pinned 2>/dev/null \
         | awk -v cid="$cid" '$1 ~ /^(baf|Qm)/ && $1 != cid {print $1}' \
         | while read -r old; do
             as_ipfs ipfs pin remote rm --service=pinata --cid="$old" --force >/dev/null 2>&1 \
                 && log "unpinned superseded $old" || true
           done
+
+    # 2. now add the current snapshot (skip if already pinned/queued)
+    if as_ipfs ipfs pin remote ls --service=pinata --status=queued,pinning,pinned 2>/dev/null | grep -q "$cid"; then
+        log "already pinned/queued at pinata: $cid"
+    elif as_ipfs ipfs pin remote add --service=pinata --background \
+             --name "pandastore-$(date +%Y%m%d-%H%M)" "/ipfs/$cid"; then
+        log "queued pin at pinata: $cid"
+    else
+        log "WARN pinata pin failed (will retry next run)"
+    fi
 }
 
 mkdir -p "$STAGE" "$STATE_DIR" "$CACHE"
