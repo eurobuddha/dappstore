@@ -5,18 +5,18 @@
   "version": "2.0",
   "dapps": [
     {
-      "file": "https://eurobuddha.com/panda_dapps/minimaCore-App-Store-0.2.1.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/minimaCore-App-Store-0.2.2.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/minimacore-appstore.png",
       "name": "minimaCore App Store",
-      "description": "Native Android apps AND MiniDapps for Minima, from your node. Download the minimaCore node APK, PandaApps store and every companion app - plus one-tap install of MiniDapps from the PandaDapps and official Minima catalogs straight onto this node. Always free.",
-      "version": "0.2.1"
+      "description": "Native Android apps AND MiniDapps for Minima, from your node. Download the minimaCore node APK, PandaApps store and every companion app - plus one-tap install of MiniDapps from the PandaDapps and official Minima catalogs straight onto this node. Now with an IPFS Mirror tab that keeps working even if the store server is down. Always free.",
+      "version": "0.2.2"
     },
     {
-      "file": "https://eurobuddha.com/panda_dapps/AtomiX-0.1.9.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/AtomiX-0.1.11.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/atomix.png",
       "name": "AtomiX",
-      "description": "Trustless cross-chain atomic swaps: MINIMA or bridged mxUSDT ⇄ Ethereum ERC20 USDT. Live order book, depth-ladder market-making, best-price sweeps, OTC deals, market history chart and a built-in ETH wallet (fund/QR, send, export). Interoperates on the SAME on-chain books as the native AtomiX Android app — verified with real mainnet swaps between the two. Needs WRITE permission (it derives your keys and signs swaps). EXPERIMENTAL; test small.",
-      "version": "0.1.9"
+      "description": "Trustless cross-chain atomic swaps: MINIMA or bridged mxUSDT ⇄ Ethereum ERC20 USDT. Live order book, depth-ladder market-making, best-price sweeps, OTC deals, market history chart and a built-in ETH wallet (fund/QR, send, export). v0.1.11: fund-safety — a harvested HTLC preimage is now verified to hash to the lock before it is trusted, so a forged on-chain reveal can no longer poison the secret store and block your claim. Interoperates on the SAME on-chain books as the native AtomiX Android app — verified with real mainnet swaps between the two. Needs WRITE permission (it derives your keys and signs swaps). EXPERIMENTAL; test small.",
+      "version": "0.1.11"
     },
     {
       "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.4/PandaPools_0.6.4.mds.zip",
@@ -187,11 +187,11 @@
       "version": "1.0.52"
     },
     {
-      "file": "https://eurobuddha.com/panda_dapps/futurecash-3.1.18.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/futurecash-3.1.20.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/futurecash.png",
       "name": "Future Cash",
       "description": "Lock payments to the future — with WOTS key-reuse protection: audits your node's keys, safely collects matured stakes, and moves any at-risk (key-reused) ones to a safe wallet. Full guide: minidapps.minima.global/futurecash/guide.html",
-      "version": "3.1.18"
+      "version": "3.1.20"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/futurecash-2.7.1.mds.zip",
