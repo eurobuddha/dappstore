@@ -12,11 +12,11 @@
       "version": "0.2.2"
     },
     {
-      "file": "https://eurobuddha.com/panda_dapps/AtomiX-0.1.11.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/AtomiX-0.1.13.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/atomix.png",
       "name": "AtomiX",
-      "description": "Trustless cross-chain atomic swaps: MINIMA or bridged mxUSDT ⇄ Ethereum ERC20 USDT. Live order book, depth-ladder market-making, best-price sweeps, OTC deals, market history chart and a built-in ETH wallet (fund/QR, send, export). v0.1.11: fund-safety — a harvested HTLC preimage is now verified to hash to the lock before it is trusted, so a forged on-chain reveal can no longer poison the secret store and block your claim. Interoperates on the SAME on-chain books as the native AtomiX Android app — verified with real mainnet swaps between the two. Needs WRITE permission (it derives your keys and signs swaps). EXPERIMENTAL; test small.",
-      "version": "0.1.11"
+      "description": "Trustless cross-chain atomic swaps: MINIMA or bridged mxUSDT ⇄ Ethereum ERC20 USDT. Live order book, depth-ladder market-making, best-price sweeps, OTC deals, market history chart and a built-in ETH wallet (fund/QR, send, export). v0.1.13: the Wallet tab's red Ethereum-RPC warning now clears itself once a balance read succeeds — it used to stay on screen until reload after a single transient RPC/DNS blip — and a failed read shows '—' rather than a stale number. v0.1.11: fund-safety — a harvested HTLC preimage is now verified to hash to the lock before it is trusted, so a forged on-chain reveal can no longer poison the secret store and block your claim. Interoperates on the SAME on-chain books as the native AtomiX Android app — verified with real mainnet swaps between the two. Needs WRITE permission (it derives your keys and signs swaps). EXPERIMENTAL; test small.",
+      "version": "0.1.13"
     },
     {
       "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.4/PandaPools_0.6.4.mds.zip",
