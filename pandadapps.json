@@ -131,13 +131,6 @@
             "version": "2.8.8"
         },
         {
-            "file": "https://eurobuddha.com/panda_dapps/Limit-1.1.1.mds.zip",
-            "icon": "https://eurobuddha.com/panda_dapps/limit.png",
-            "name": "Limit",
-            "description": "On-chain limit order DEX for MINIMA/USDT — trustless fills via VERIFYOUT smart contract. Good-till-cancelled orders auto-renew so they never expire, and you can edit an order's price.",
-            "version": "1.1.1"
-        },
-        {
             "file": "https://eurobuddha.com/panda_dapps/minArmyKnife-v1.0.6.mds.zip",
             "icon": "https://eurobuddha.com/panda_dapps/minarmyknife.png",
             "name": "minArmyKnife",
