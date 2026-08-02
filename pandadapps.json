@@ -19,11 +19,11 @@
             "version": "0.1.13"
         },
         {
-            "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.8/PandaPools_0.6.8.mds.zip",
+            "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.17/PandaPools_0.6.17.mds.zip",
             "icon": "https://raw.githubusercontent.com/eurobuddha/pandapools-mds/master/favicon.png",
             "name": "PandaPools",
             "description": "Constant-product AMM: swap MINIMA/token across aggregated pools, provide liquidity and earn the 0.5% swap fee. Trustless VERIFYOUT covenant; shares live pools with the native app. Always free.",
-            "version": "0.6.8"
+            "version": "0.6.17"
         },
         {
             "file": "https://eurobuddha.com/panda_dapps/keyuses-0.1.51.mds.zip",
