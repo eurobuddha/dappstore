@@ -26,6 +26,13 @@
             "version": "0.6.17"
         },
         {
+            "file": "https://github.com/eurobuddha/pandadex-mds/releases/download/v0.3.3/PandaDEX_0.3.3.mds.zip",
+            "icon": "https://raw.githubusercontent.com/eurobuddha/pandadex-mds/master/favicon.png",
+            "name": "PandaDEX",
+            "description": "On-chain order-book DEX for MINIMA/mxUSDT. Every order is a V5 covenant coin holding your own funds — no custodian, and no server can touch or erase them. Place limit orders, or sweep several resting orders in one transaction at the best available price. Shares its order book with the PandaDEX Android app. v0.3.3: a partial fill that hit a maker's minimum-remainder floor built a transaction the covenant rejects — the node refused it every time, silently, after the taker had already paid for the proof-of-work. Also in this build: composite liquidity (order book blended with PandaPools reserves), a funding split so a ladder isn't serialised behind one wallet coin, trade export with reconciliation CSVs, and strictly serial signing so the app can never make the node reuse a one-time key leaf. Needs WRITE permission (it signs orders and takes). EXPERIMENTAL; test small.",
+            "version": "0.3.3"
+        },
+        {
             "file": "https://eurobuddha.com/panda_dapps/keyuses-0.1.51.mds.zip",
             "icon": "https://eurobuddha.com/panda_dapps/keyuses.svg",
             "name": "KeyUses",
