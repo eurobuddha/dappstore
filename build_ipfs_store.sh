@@ -39,13 +39,48 @@ log(){ echo "[ipfs-store $(date '+%F %T')] $*"; }
 # stays at roughly one snapshot, not two. The Pi keeps the content pinned locally and
 # is directly reachable, so the brief window where the service holds at most one (or
 # no) pin is low-risk: the remote pin is redundancy, the Pi is the primary source.
+#
+# REMOTE PINNING IS REDUNDANCY, NEVER A GATE. Every failure here must be a warning, because the
+# publish has ALREADY happened by the time this runs — steps 7 and 8 cannot be undone, so aborting
+# leaves the store live on a CID that was never recorded in ipfs-cid.txt, with last.hash stale and
+# superseded local pins never collected.
+#
+# That is not hypothetical. Filebase revoked the free tier's Pinning Service API
+#   Error: reason: "FORBIDDEN", details: "The Pinning Service API requires a paid account": 403
+# and because `set -euo pipefail` is in force, that 403 inside the `pin remote ls` PIPELINE killed
+# the script mid-run — after the IPNS publish, before the bookkeeping. Every hourly run since
+# 2026-08-02 re-published and died at the same line, so the published "current CID" pointed at a
+# snapshot two builds old while the store itself was correctly live.
+#
+# The `else` branch below always meant to tolerate this. It never ran: the pipeline failed first.
+# Hence `remote_ls`, which swallows the failure and yields nothing rather than exiting.
+#
+# UNPIN-FIRST rotation: on a small free tier two ~600 MB snapshots won't fit at
+# once, so every superseded pin is dropped BEFORE the new one is added — peak usage
+# stays at roughly one snapshot, not two. The Pi keeps the content pinned locally and
+# is directly reachable, so the brief window where the service holds at most one (or
+# no) pin is low-risk: the remote pin is redundancy, the Pi is the primary source.
+
+# Never fails: prints the service's pin list, or nothing at all if it cannot be read.
+remote_ls(){
+    as_ipfs ipfs pin remote ls --service="$PIN_SERVICE" --status=queued,pinning,pinned 2>/dev/null || true
+}
+
 sync_remote_pin(){
-    local cid="$1"
+    local cid="$1" listing
     as_ipfs ipfs pin remote service ls 2>/dev/null | awk '{print $1}' | grep -qx "$PIN_SERVICE" || {
         log "$PIN_SERVICE not configured - skipping remote pin"; return 0; }
 
+    listing=$(remote_ls)
+    if [ -z "$listing" ]; then
+        # Unreadable is not the same as empty: it means the service is down, unauthorised or
+        # unpaid. Say so, change nothing remotely, and let the caller finish its bookkeeping.
+        log "WARN cannot read $PIN_SERVICE pin list - skipping remote pin (local pin is unaffected)"
+        return 0
+    fi
+
     # 1. free space first — unpin every remote pin that isn't the target CID
-    as_ipfs ipfs pin remote ls --service="$PIN_SERVICE" --status=queued,pinning,pinned 2>/dev/null \
+    printf '%s\n' "$listing" \
         | awk -v cid="$cid" '$1 ~ /^(baf|Qm)/ && $1 != cid {print $1}' \
         | while read -r old; do
             as_ipfs ipfs pin remote rm --service="$PIN_SERVICE" --cid="$old" --force >/dev/null 2>&1 \
@@ -53,7 +88,7 @@ sync_remote_pin(){
           done
 
     # 2. now add the current snapshot (skip if already pinned/queued)
-    if as_ipfs ipfs pin remote ls --service="$PIN_SERVICE" --status=queued,pinning,pinned 2>/dev/null | grep -q "$cid"; then
+    if printf '%s\n' "$listing" | grep -q "$cid"; then
         log "already pinned/queued at $PIN_SERVICE: $cid"
     elif as_ipfs ipfs pin remote add --service="$PIN_SERVICE" --background \
              --name "pandastore-$(date +%Y%m%d-%H%M)" "/ipfs/$cid"; then
@@ -61,6 +96,7 @@ sync_remote_pin(){
     else
         log "WARN $PIN_SERVICE pin failed (will retry next run)"
     fi
+    return 0
 }
 
 mkdir -p "$STAGE" "$STATE_DIR" "$CACHE"
@@ -255,12 +291,17 @@ log "snapshot CID: $CID"
 as_ipfs ipfs name publish --key="$IPNS_KEY" --lifetime 48h "/ipfs/$CID"
 log "IPNS published"
 
-# ── 8. Pinata: pin new CID, drop superseded pins ─────────────────────────────
-sync_remote_pin "$CID"
-
-# ── 9. Record + local GC of superseded snapshots ─────────────────────────────
+# ── 8. Record what was just published, BEFORE anything optional ──────────────
+# Order matters. This used to run after the remote pin, so when the pin step died the store was
+# live on a CID that nothing had recorded — ipfs-cid.txt named a stale snapshot and last.hash was
+# never advanced, leaving every later run to redo the publish and die at the same line. The
+# publish is irreversible by this point, so the record of it must not sit behind anything that
+# can fail.
 echo "$CID"  > "$WEB/ipfs-cid.txt" && chmod 644 "$WEB/ipfs-cid.txt"
 echo "$HASH" > "$STATE_DIR/last.hash"
+
+# ── 9. Remote pin (redundancy only) + local GC of superseded snapshots ───────
+sync_remote_pin "$CID"
 as_ipfs ipfs pin ls --type=recursive -q | grep -v "^$(as_ipfs ipfs cid base32 "$CID" 2>/dev/null || echo "$CID")$" | \
 while read -r old; do as_ipfs ipfs pin rm "$old" >/dev/null 2>&1 || true; done
 log "done - https://ipfs.eurobuddha.com/  |  /ipns/ipfs.eurobuddha.com  |  /ipfs/$CID"

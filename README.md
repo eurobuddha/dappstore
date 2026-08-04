@@ -34,7 +34,16 @@ user, remote-pinned to Pinata for redundancy).
   root-relative paths (plus `*.abs.json` variants with absolute
   `ipfs.eurobuddha.com` URLs for MDS store clients), downloads externally
   hosted zips/APKs so the snapshot is self-contained, then
-  `ipfs add` → IPNS publish (`pandastore` key) → Pinata pin rotation.
+  `ipfs add` → IPNS publish (`pandastore` key) → record the CID → remote pin
+  rotation. The remote pin is **redundancy and never a gate**: it runs last and
+  every failure is a warning, so a pinning outage cannot leave the store live on
+  a CID that `ipfs-cid.txt` never recorded.
+
+  **The remote pin service is `filebase` (`PIN_SERVICE`), not Pinata, and it is
+  currently failing** — Filebase now returns `403 FORBIDDEN … requires a paid
+  account` for the Pinning Service API, so the off-site copy does not exist and
+  the snapshot lives only on the Pi. Pay the account or point `PIN_SERVICE` at
+  another service to restore redundancy.
 - `ipfs-site/index.html` — the gateway-agnostic three-tab store UI at the
   snapshot root (deployed at `/usr/local/share/ipfs-store/index.html`).
 
