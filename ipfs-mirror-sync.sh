@@ -21,7 +21,12 @@ CID_URL=https://eurobuddha.com/ipfs-cid.txt
 FALLBACK_URL=https://store.eurobuddha.com/ipfs-cid.txt   # sally mirrors the webroot
 IPFS_PATH=/var/lib/ipfs
 STATE=/var/lib/ipfs-mirror/current.cid
-FETCH_TIMEOUT=1800        # a first sync pulls ~1.1 GB over the Pi's home uplink
+# A FIRST sync pulls the whole ~1.1 GB snapshot off the Pi's residential UPLINK, measured at
+# ~250 KB/s — call it 70+ minutes. Later syncs move only changed blocks and finish in seconds, so
+# this ceiling exists solely to stop a dead peer wedging the timer forever. Blocks already fetched
+# survive a timeout (gc only runs after a SUCCESSFUL pin), so even a kill mid-transfer just means
+# the next tick resumes rather than starts over.
+FETCH_TIMEOUT=14400
 
 export IPFS_PATH
 as_ipfs(){ sudo -u ipfs env IPFS_PATH="$IPFS_PATH" "$@"; }
