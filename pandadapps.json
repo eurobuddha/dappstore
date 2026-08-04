@@ -199,6 +199,13 @@
       "name": "Future Cash Classic",
       "description": "The original official Future Cash — lock up Minima for yourself or another and unlock it in the future. Keep this classic build to view and collect locks created with the original version (including old Maximize stakes).",
       "version": "2.7.1"
+    },
+    {
+      "file": "https://github.com/eurobuddha/entropy/releases/download/v1.2.2/Entropy_1.2.2.mds.zip",
+      "icon": "https://raw.githubusercontent.com/eurobuddha/entropy/main/mds/entropy-icon.png",
+      "name": "Entropy",
+      "description": "Provably fair BIP39 seed phrase generator — roll animated dice for maximum entropy. Each face = SHA3(node random ++ browser random), rejection-sampled to exact uniformity (the Zero Edge Casino resolve maths, run locally — nothing ever on-chain). The phrase is produced by the embedded, unmodified iancoleman/bip39 v0.4.3 code and re-derived by an independent engine — both must agree or nothing is shown. Physical-dice mode, per-roll audit log verifiable via runscript, Last Word checksum calculator (11/14/17/20/23 words in, every valid final word out) with 4-char autocomplete and hide/blur. READ permission only; nothing stored or transmitted — closing the dapp destroys the phrase.",
+      "version": "1.2.2"
     }
   ]
 }
