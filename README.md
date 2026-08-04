@@ -41,9 +41,32 @@ user, remote-pinned to Pinata for redundancy).
 
   **The remote pin service is `filebase` (`PIN_SERVICE`), not Pinata, and it is
   currently failing** — Filebase now returns `403 FORBIDDEN … requires a paid
-  account` for the Pinning Service API, so the off-site copy does not exist and
-  the snapshot lives only on the Pi. Pay the account or point `PIN_SERVICE` at
-  another service to restore redundancy.
+  account` for the Pinning Service API. Redundancy is provided instead by a
+  second self-hosted node (below); `PIN_SERVICE` stays wired so a paid service
+  resumes automatically if one is ever configured.
+
+## Second provider — maxlite
+
+`eurobuddha.com` and `ipfs.eurobuddha.com` are **the same machine**, on a residential
+line. The App Store's IPFS Mirror tab falls back to a public gateway when the store
+server is unreachable, but a public gateway can only serve blocks it can fetch from
+somebody — so with one provider that fallback expires with the gateway's cache.
+
+`maxlite` runs a second kubo node holding the same snapshot:
+
+- `maxlite_ipfs_setup.sh` — one-time provisioning. kubo pinned to the **same version as
+  the Pi** (identical defaults ⇒ identical CIDs), DHT **client** mode, small connection
+  manager, API/gateway on loopback, swarm 4001 open. The box runs a live Maxima relay,
+  so the unit is capped (`MemoryMax=400M`, `Nice=10`, idle I/O) and cannot starve it.
+  Settles around 155 MB.
+- `ipfs-mirror-sync.sh` + timer (15 min) — **pulls**: reads `ipfs-cid.txt` over HTTPS and
+  `ipfs pin add`s it. No SSH key from the Pi, no 1.1 GB rsync, and bitswap moves only the
+  blocks that changed. If maxlite is down for a day the next tick pins whatever is current.
+- Both nodes carry each other in `Peering.Peers`, so kubo keeps the link up and reconnects
+  by itself — the Pi is NAT'd, so leaving that to chance means a snapshot maxlite cannot fetch.
+
+Note the snapshot is **~1.1 GB**, not the 615 MB the script's older comments assume; it grows
+as the catalogs gain apps.
 - `ipfs-site/index.html` — the gateway-agnostic three-tab store UI at the
   snapshot root (deployed at `/usr/local/share/ipfs-store/index.html`).
 
