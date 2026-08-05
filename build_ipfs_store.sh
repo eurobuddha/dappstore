@@ -104,7 +104,9 @@ mkdir -p "$STAGE" "$STATE_DIR" "$CACHE"
 # ── 1. Mirror the two MiniDapp catalogs from the live webroot ────────────────
 rsync -a --delete "$WEB/panda_dapps/" "$STAGE/panda_dapps/"
 rsync -a --delete "$WEB/store/" "$STAGE/store/"
+if [ -d "$WEB/skills" ]; then rsync -a --delete "$WEB/skills/" "$STAGE/skills/"; fi
 cp "$WEB/pandadapps.json" "$STAGE/pandadapps.src.json"
+if [ -f "$WEB/skills.json" ]; then cp "$WEB/skills.json" "$STAGE/skills.src.json"; fi
 
 # ── 2-4. Download external assets, rewrite catalogs (relative + absolute) ────
 STAGE=$STAGE CACHE=$CACHE GATEWAY_BASE=$GATEWAY_BASE APKS_JSON_URL=$APKS_JSON_URL \
@@ -214,6 +216,22 @@ if os.path.exists(mpath):
     print(f"official store: {len(official.get('dapps', []))} dapps")
 else:
     print("WARN store/minimadapps.json missing", file=sys.stderr)
+
+# --- skills.json (AI skills) ------------------------------------------------
+spath = os.path.join(STAGE, "skills.src.json")
+if os.path.exists(spath):
+    with open(spath) as f:
+        skills = json.load(f)
+    if isinstance(skills.get("icon"), str):
+        skills["icon"] = relativize(skills["icon"], "skills")
+    for it in skills.get("skills", []):
+        s = slug(it.get("name", "skill"))
+        for k in ("file", "icon"):
+            if isinstance(it.get(k), str):
+                it[k] = relativize(it[k], s)
+    write_pair("skills.json", skills, URL_FIELDS)
+    os.remove(spath)
+    print(f"skills: {len(skills.get('skills', []))} skills")
 
 # --- apks/apks.json (native minimaCore catalog) -----------------------------
 apks_dir = os.path.join(STAGE, "apks")
