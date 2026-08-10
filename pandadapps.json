@@ -12,10 +12,10 @@
    "version": "0.2.2"
   },
   {
-   "file": "https://github.com/eurobuddha/statenft-suite/releases/download/v0.5.1/statenft-atelier-mds-4.2.1.zip",
+   "file": "https://github.com/eurobuddha/statenft-suite/releases/download/v0.5.2/statenft-atelier-mds-4.2.2.zip",
    "icon": "https://eurobuddha.com/panda_dapps/atelier.png",
    "name": "Atelier",
-   "description": "The Minima NFT studio. StateNFT collections: 2\u201320 editions sharing one tokenid, each coin's identity sealed in state and locked by KISS VM contract \u2014 immutable even to the creator. Generative art studio with 18 on-chain SVG style packs (Mandala, Mondrian, Punks, Panda Punks\u2026): deterministic from a seed, rarity sliders, per-item traits sealed into token metadata. Also mints single NFTs and custom tokens, sends whole collections via a background queue that survives the page closing, and buries unwanted collections at the provably unspendable graveyard address. Katalog design \u2014 every mint a numbered lot. Pairs with the native Atelier Android app: the same seed mints byte-identical art on either. Needs WRITE permission (it posts transactions). EXPERIMENTAL; test small.",
+   "description": "v4.2.2: phone-friendly FILTR \u2014 the image stays pinned while editing panes flick from a bottom tab bar on narrow screens (desktop keeps the full editor); also restores the Filtr scripts missing from the 4.2.0/4.2.1 packages. The Minima NFT studio. StateNFT collections: 2\u201320 editions sharing one tokenid, each coin's identity sealed in state and locked by KISS VM contract \u2014 immutable even to the creator. Generative art studio with 18 on-chain SVG style packs (Mandala, Mondrian, Punks, Panda Punks\u2026): deterministic from a seed, rarity sliders, per-item traits sealed into token metadata. Also mints single NFTs and custom tokens, sends whole collections via a background queue that survives the page closing, and buries unwanted collections at the provably unspendable graveyard address. Katalog design \u2014 every mint a numbered lot. Pairs with the native Atelier Android app: the same seed mints byte-identical art on either. Needs WRITE permission (it posts transactions). EXPERIMENTAL; test small.",
    "version": "4.2.1"
   },
   {
