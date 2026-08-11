@@ -1,0 +1,21 @@
+{
+  "0": "render() — builds dapp card grid",
+  "1": "render() card builder",
+  "2": "pandadapps.json manifest",
+  "3": "AnyDappStore front-end (PocketWeb mini-site)",
+  "4": "Guardian background daemon",
+  "5": "MinimaOfficialDapps front-end",
+  "6": "build_ipfs_store.sh",
+  "7": "History MiniDapp",
+  "8": "Limit on-chain limit-order DEX",
+  "9": "Linternet Plaza MiniDapp",
+  "10": "maximizeSaver",
+  "11": "miniMerch merchant dapp",
+  "12": "miniMerch Inbox",
+  "13": "PocketFS decentralised file system",
+  "14": "PocketWeb decentralised browser",
+  "15": "Cross-link to MinimaOfficialDapps site",
+  "16": "ipfs-mirror-sync.sh",
+  "17": "maxlite_ipfs_setup.sh",
+  "18": "User instructions — AUTHORITATIVE. These override default behavior and must be followed exactly."
+}
