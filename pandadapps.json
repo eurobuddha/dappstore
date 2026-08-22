@@ -213,6 +213,13 @@
       "name": "Entropy",
       "description": "Provably fair BIP39 seed phrase generator — roll animated dice for maximum entropy. Each face = SHA3(node random ++ browser random), rejection-sampled to exact uniformity (the Zero Edge Casino resolve maths, run locally — nothing ever on-chain). The phrase is produced by the embedded, unmodified iancoleman/bip39 v0.4.3 code and re-derived by an independent engine — both must agree or nothing is shown. Physical-dice mode, per-roll audit log verifiable via runscript, Last Word checksum calculator (11/14/17/20/23 words in, every valid final word out) with 4-char autocomplete and hide/blur. READ permission only; nothing stored or transmitted — closing the dapp destroys the phrase.",
       "version": "1.3.0"
+    },
+    {
+      "file": "https://github.com/eurobuddha/terminal-ide-mds/releases/download/v0.1.0/terminal-ide_0.1.0.mds.zip",
+      "icon": "https://raw.githubusercontent.com/eurobuddha/terminal-ide-mds/main/favicon.svg",
+      "name": "Terminal IDE",
+      "description": "A professional Minima terminal with IDE-grade autocomplete, run straight from your node. Autocomplete is mined from the node's own help pages (125 commands) and covers command names, per-command parameters (required first, already-used ones filtered out) and the allowed values of a parameter — e.g. type 'maxima action:' and pick from info/setname/hosts/send… Includes the FULL Maxima classic set (maxima, maxcontacts, maxextra, maxcreate, maxsign, maxverify) plus mds/checkpending/checkmode/checkrestore, and on start does a live help merge so it mirrors your exact node build (adds any command it doesn't know, refreshes descriptions, never hides one). Colorized JSON output with errors highlighted, click any past command to re-run or edit, persistent history with up/down arrows, and guards that warn before node-killers like an unbounded 'coins' or a huge 'history'/'printtree'. The web/MDS sibling of the native Terminal IDE Android app. READ permission is enough to explore; grant WRITE only if you intend to post transactions.",
+      "version": "0.1.0"
     }
   ]
 }
