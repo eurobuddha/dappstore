@@ -220,6 +220,13 @@
       "name": "Terminal IDE",
       "description": "A professional Minima terminal with IDE-grade autocomplete, run straight from your node. Autocomplete is mined from the node's own help pages (125 commands) and covers command names, per-command parameters (required first, already-used ones filtered out) and the allowed values of a parameter — e.g. type 'maxima action:' and pick from info/setname/hosts/send… Includes the FULL Maxima classic set (maxima, maxcontacts, maxextra, maxcreate, maxsign, maxverify) plus mds/checkpending/checkmode/checkrestore, and on start does a live help merge so it mirrors your exact node build (adds any command it doesn't know, refreshes descriptions, never hides one). Colorized JSON output with errors highlighted, click any past command to re-run or edit, persistent history with up/down arrows, and guards that warn before node-killers like an unbounded 'coins' or a huge 'history'/'printtree'. The web/MDS sibling of the native Terminal IDE Android app. READ permission is enough to explore; grant WRITE only if you intend to post transactions.",
       "version": "0.1.0"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/parlons-1.0.0.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/parlons.png",
+      "name": "Parlons!",
+      "description": "Encrypted chat over Maxima using PERMANENT MAX# addresses — the unbreakable strand. Your contacts stay reachable even when they switch networks: every message resolves their live location via their MLS at send time, then delivers with poll-retry. Share your MAX#, add theirs, connected for good.",
+      "version": "1.0.0"
     }
   ]
 }
