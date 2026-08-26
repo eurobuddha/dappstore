@@ -40,11 +40,11 @@
       "version": "0.4.6"
     },
     {
-      "file": "https://eurobuddha.com/panda_dapps/keyuses-0.1.51.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/keyuses-0.1.52.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/keyuses.svg",
       "name": "KeyUses",
       "description": "Audit your node's 64 keys for one-time-key RE-USE (stateful-signature safety)",
-      "version": "0.1.51"
+      "version": "0.1.52"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/maximizeSaver-0.1.30.mds.zip",
