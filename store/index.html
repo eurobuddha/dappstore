@@ -5,166 +5,497 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PandaDapps — Minima apps & MiniDapps</title>
 <style>
+  /* Exact PandaApps (Android) theme — Theme.java palette, Ui.java shapes: 1.5px borders,
+     10px cards / 7px buttons / 4px badges, no shadows anywhere. */
   :root{
-    --bg:#0b0b0f; --panel:#14141b; --panel2:#1b1b24; --border:#2a2a36;
-    --text:#ececef; --dim:#9a9aa8; --accent:#f7931a; --accent-dim:#3a2c12;
-    --amber:#e0a93a; --amber-bg:#241d0d; --green:#2ecc71;
+    --bg:#0E1116; --panel:#171C23; --panel2:#1F262F; --border:#2A323D;
+    --accent:#F9A03F; --green:#36C28B; --dim:#8B97A6; --text:#ECEFF3; --on-accent:#0E1116;
+    --amber:#E0A93A; --amber-fill:rgba(224,169,58,.133); --error:#E0574A;
   }
   *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:var(--bg)}
   body{
-    background:var(--bg); color:var(--text);
+    color:var(--text);
     font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     line-height:1.5; -webkit-font-smoothing:antialiased;
   }
   a{color:inherit}
-  .wrap{max-width:960px; margin:0 auto; padding:28px 18px 64px}
-  header{display:flex; align-items:center; gap:14px; padding:8px 0 4px}
-  .mark{font-size:34px; line-height:1}
-  h1{font-size:24px; font-weight:700; letter-spacing:-.01em}
-  .sub{color:var(--dim); font-size:14px; margin-top:2px}
+  button{font-family:inherit}
+  .wrap{max-width:760px; margin:0 auto; padding:0 0 56px}
+
+  .bar{background:var(--panel); display:flex; align-items:center; padding:12px 16px; gap:12px}
+  .bar .titles{flex:1; min-width:0}
+  .bar h1{font-size:20px; font-weight:700; color:var(--accent); letter-spacing:-.01em; line-height:1.25}
+  .bar .sub{color:var(--dim); font-size:12px; margin-top:2px}
+  .bar .back{
+    background:none; border:none; color:var(--accent); font-size:26px; line-height:1;
+    padding:2px 14px 6px 6px; cursor:pointer;
+  }
+  .bar .dtitle{font-size:17px; font-weight:700; color:var(--text);
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+
+  .tabs{display:flex; gap:8px; padding:12px 14px 0; flex-wrap:wrap}
+  .tab{
+    background:var(--panel); color:var(--dim); border:1.5px solid var(--border);
+    border-radius:7px; padding:7px 14px; font-size:12px; font-weight:700; cursor:pointer;
+  }
+  .tab.active{background:var(--accent); color:var(--on-accent); border-color:var(--accent)}
+
+  .pad{padding:14px}
+
   .disclaimer{
-    background:var(--amber-bg); border:1px solid var(--amber);
-    border-radius:12px; padding:14px 16px; margin:20px 0 8px; font-size:13.5px; color:#f4e6c6;
+    background:var(--amber-fill); border:1.5px solid var(--amber); border-radius:10px;
+    padding:12px; margin-bottom:4px; font-size:12px; color:var(--text);
   }
-  .disclaimer b{color:var(--amber)}
-  h2{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--dim);
-     margin:34px 0 12px; font-weight:700}
-  .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:12px}
-  .card{
-    background:var(--panel); border:1px solid var(--border); border-radius:14px;
-    padding:16px; display:flex; flex-direction:column; gap:10px;
-  }
-  .card .top{display:flex; align-items:flex-start; gap:12px}
-  .card img,.card .ph{width:48px; height:48px; border-radius:11px; flex:0 0 48px;
-     background:var(--panel2); object-fit:cover}
-  .card .ph{display:flex; align-items:center; justify-content:center; font-size:22px; color:var(--dim)}
-  .card .name{font-weight:700; font-size:15px}
-  .card .ver{color:var(--dim); font-size:12px; font-variant-numeric:tabular-nums}
-  .card .desc{color:var(--dim); font-size:13px; flex:1}
-  .btn{
-    display:inline-block; text-align:center; text-decoration:none; font-weight:700; font-size:13px;
-    border-radius:9px; padding:10px 14px; cursor:pointer; border:1px solid transparent;
-  }
-  .btn-primary{background:var(--accent); color:#111}
-  .btn-ghost{background:transparent; color:var(--accent); border-color:var(--accent-dim)}
-  .row{display:flex; gap:8px; flex-wrap:wrap}
-  .note{background:var(--panel); border:1px solid var(--border); border-radius:12px;
-    padding:14px 16px; font-size:13.5px; color:var(--dim)}
-  .note code{background:#000; color:var(--accent); padding:2px 7px; border-radius:6px;
-    font-family:"JetBrains Mono",ui-monospace,Menlo,monospace; font-size:12.5px; word-break:break-all}
+  .note{color:var(--dim); font-size:12px; padding:10px 2px 2px}
   .note b{color:var(--text)}
-  footer{margin-top:44px; color:var(--dim); font-size:12px; text-align:center}
-  #mdLoading{color:var(--dim); font-size:13px}
+  .note code{background:var(--panel2); color:var(--accent); padding:2px 7px; border-radius:4px;
+    font-family:ui-monospace,Menlo,monospace; font-size:11px; word-break:break-all}
+
+  .ghead{font-size:11px; font-weight:700; color:var(--dim); text-transform:uppercase;
+    letter-spacing:.12em; padding:18px 0 8px 2px}
+
+  .row{
+    display:flex; align-items:center; width:100%; text-align:left;
+    background:var(--panel); border:1.5px solid var(--border); border-radius:10px;
+    padding:10px; margin-bottom:10px; cursor:pointer; gap:0;
+  }
+  .row:hover{background:var(--panel2)}
+  .row img.ico,.row .ph{width:44px; height:44px; flex:0 0 44px; margin-right:12px;
+    border-radius:8px; object-fit:cover; background:var(--panel2)}
+  .row .ph{display:flex; align-items:center; justify-content:center; font-size:20px; color:var(--dim)}
+  .row .mid{flex:1; min-width:0}
+  .row .name{font-size:15px; font-weight:700; color:var(--text);
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .row .state{font-size:11px; color:var(--dim); padding-top:3px}
+  .chev{color:var(--dim); font-size:20px; padding-left:10px; padding-bottom:2px; flex:0 0 auto}
+
+  .foot{padding:12px; margin-top:18px}
+  .foot .name{font-size:13px}
+  .foot .state{font-size:11px; padding-top:2px}
+
+  .dpad{padding:16px}
+  .hero{display:flex; align-items:center}
+  .hero img.ico,.hero .ph{width:72px; height:72px; flex:0 0 72px; margin-right:14px;
+    border-radius:12px; object-fit:cover; background:var(--panel2)}
+  .hero .ph{display:flex; align-items:center; justify-content:center; font-size:30px; color:var(--dim)}
+  .hero .hname{font-size:20px; font-weight:700; color:var(--text)}
+  .hero .hver{font-size:12px; color:var(--dim); padding-top:3px}
+  .hero .hsrc{font-size:11px; color:var(--dim); padding-top:2px}
+
+  .abtn{
+    display:block; width:100%; text-align:center; text-decoration:none;
+    background:var(--accent); color:var(--on-accent); border:none; border-radius:7px;
+    font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:.02em;
+    padding:14px 16px; margin-top:18px; cursor:pointer;
+  }
+  .sbtn{
+    display:block; width:100%; text-align:center; text-decoration:none;
+    background:var(--panel2); color:var(--text); border:none; border-radius:7px;
+    font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.02em;
+    padding:12px 16px; margin-top:12px; cursor:pointer;
+  }
+  .stateline{font-size:12px; color:var(--dim); text-align:center; padding-top:8px}
+
+  .shead{font-size:11px; font-weight:700; color:var(--dim); text-transform:uppercase;
+    letter-spacing:.12em; padding:24px 0 8px}
+  .para{font-size:13px; color:var(--text); line-height:1.45}
+  .vlabel{font-size:12px; font-weight:700; color:var(--accent); padding-bottom:3px}
+  .vnote{padding-top:12px}
+  .showall{background:none; border:none; color:var(--accent); font-size:12px; font-weight:700;
+    padding:12px 0 0; cursor:pointer}
+
+  .dtable{background:var(--panel); border:1.5px solid var(--border); border-radius:10px;
+    padding:4px 12px}
+  .drow{display:flex; padding:9px 0; align-items:baseline}
+  .drow .k{flex:0 0 84px; font-size:12px; color:var(--dim)}
+  .drow .v{flex:1; font-size:12px; color:var(--text); min-width:0; word-break:break-all}
+  .drow .v.mono{font-family:ui-monospace,Menlo,monospace; font-size:11px}
+  .drow .copy{color:var(--accent); font-size:10px; font-weight:700; padding:4px 4px 4px 10px;
+    cursor:pointer; flex:0 0 auto}
+
+  #loading{color:var(--dim); font-size:12px; padding:12px 2px}
+  #error{display:none; color:var(--error); background:var(--panel);
+    border:1.5px solid var(--border); border-radius:10px; padding:12px; margin:14px 0; font-size:12px}
+  #error a{color:var(--accent); font-weight:700; cursor:pointer; text-decoration:underline}
+
+  #toast{
+    position:fixed; left:50%; bottom:26px; transform:translateX(-50%);
+    background:var(--panel2); color:var(--text); border:1.5px solid var(--border);
+    border-radius:10px; padding:12px 18px; font-size:13px; max-width:86%;
+    display:none; z-index:50; text-align:center;
+  }
+  #toast.ok{border-color:var(--green)}
+
+  footer{margin-top:32px; color:var(--dim); font-size:11px; text-align:center; line-height:1.7;
+    padding:0 14px}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <header>
-    <span class="mark">🐼</span>
-    <div>
-      <h1>PandaDapps</h1>
-      <div class="sub">Apps and MiniDapps for the Minima network.</div>
-    </div>
-  </header>
-
-  <div class="disclaimer">
-    ⚠️ <b>All apps here are in active development — use at your own risk.</b> They are experimental software
-    provided <b>as is</b>, without warranty of any kind. They interact with a live blockchain and real funds;
-    back up your seed, test with small amounts, and only risk what you can afford to lose. Nothing here is
-    financial advice.
-  </div>
-
-  <!-- ============ ANDROID APPS (direct APK downloads) ============ -->
-  <h2>Android apps — download &amp; install</h2>
-  <div class="cards">
-
-    <div class="card">
-      <div class="top">
-        <div class="ph">◆</div>
-        <div>
-          <div class="name">Minima Core</div>
-          <div class="ver">node · v1.2.5</div>
-        </div>
-      </div>
-      <div class="desc">Run a full Minima node on Android — the node the apps below connect to. Install this first if you don't already run a node.</div>
-      <div class="row">
-        <a class="btn btn-primary" href="panda_dapps/minima-core-1.2.5.apk">Download APK</a>
+  <div id="listView">
+    <div class="bar">
+      <div class="titles">
+        <h1>PandaDapps</h1>
+        <div class="sub" id="subtitle">Apps and MiniDapps for the Minima network.</div>
       </div>
     </div>
 
-    <div class="card">
-      <div class="top">
-        <div class="ph">🐼</div>
-        <div>
-          <div class="name">PandaApps</div>
-          <div class="ver">app store · v0.2.2</div>
-        </div>
+    <div class="tabs" id="tabs"></div>
+
+    <div class="pad">
+      <div class="disclaimer" id="disclaimer">
+        All apps here are in active development — use at your own risk. They are experimental software
+        provided as is, without warranty of any kind. They interact with a live blockchain and real funds;
+        back up your seed, test with small amounts, and only risk what you can afford to lose. Nothing here
+        is financial advice.
       </div>
-      <div class="desc">A native app store for Minima — browse and install the companion apps (with SHA-256 verification) and keep them updated.</div>
-      <div class="row">
-        <a class="btn btn-primary" href="panda_dapps/pandaapps-0.2.2.apk">Download APK</a>
-      </div>
+      <div class="note" id="note"></div>
+      <div id="loading">Loading…</div>
+      <div id="error"></div>
+      <div id="groups"></div>
+      <footer>
+        PandaDapps · an unofficial Panda MiniDapp store for Minima · built by eurobuddha
+      </footer>
     </div>
-
   </div>
-  <p style="color:var(--dim);font-size:12px;margin-top:10px">
-    Android may warn about installing from outside the Play Store — allow it for your browser to install these APKs.
-  </p>
 
-  <!-- ============ MINIDAPPS (install into a node) ============ -->
-  <h2>MiniDapps — for your Minima node</h2>
-  <div class="note" style="margin-bottom:14px">
-    <b>Add the whole store to your node:</b> in Minima → MiniHub → app store, paste
-    <code>https://eurobuddha.com/pandadapps.json</code> — then browse and install any MiniDapp below.
-    Or download a <b>.mds.zip</b> and install it manually in MiniHub.
+  <div id="detailView" style="display:none">
+    <div class="bar">
+      <button class="back" id="backBtn">‹</button>
+      <div class="dtitle" id="dtitle"></div>
+    </div>
+    <div class="dpad" id="detailBody"></div>
   </div>
-  <div id="mdLoading">Loading MiniDapps…</div>
-  <div class="cards" id="minidapps"></div>
-
-  <footer>
-    PandaDapps · an unofficial Panda MiniDapp store for Minima · built by eurobuddha
-  </footer>
 
 </div>
+<div id="toast"></div>
 
 <script>
-// Render the MiniDapps live from the catalog so the page is always current.
-fetch('/pandadapps.json', {cache:'no-cache'})
-  .then(function(r){ return r.json(); })
-  .then(function(d){
-    var host = document.getElementById('minidapps');
-    var loading = document.getElementById('mdLoading');
-    var dapps = (d && d.dapps) || [];
-    if(!dapps.length){ loading.textContent = 'No MiniDapps found.'; return; }
-    loading.style.display = 'none';
-    dapps.forEach(function(a){
-      var card = document.createElement('div'); card.className = 'card';
-      var top = document.createElement('div'); top.className = 'top';
-      if(a.icon){
-        var img = document.createElement('img'); img.src = a.icon; img.alt = '';
-        img.onerror = function(){ img.replaceWith(ph('◈')); };
-        top.appendChild(img);
-      } else { top.appendChild(ph('◈')); }
-      var meta = document.createElement('div');
-      var nm = document.createElement('div'); nm.className='name'; nm.textContent = a.name || 'MiniDapp';
-      var ve = document.createElement('div'); ve.className='ver'; ve.textContent = a.version ? ('v'+a.version) : '';
-      meta.appendChild(nm); meta.appendChild(ve); top.appendChild(meta);
-      card.appendChild(top);
-      var de = document.createElement('div'); de.className='desc'; de.textContent = a.description || '';
-      card.appendChild(de);
-      if(a.file){
-        var row = document.createElement('div'); row.className='row';
-        var dl = document.createElement('a'); dl.className='btn btn-ghost'; dl.href = a.file;
-        dl.textContent = 'Download .mds.zip'; dl.setAttribute('download','');
-        row.appendChild(dl); card.appendChild(row);
-      }
-      host.appendChild(card);
-    });
-  })
-  .catch(function(){ document.getElementById('mdLoading').textContent = 'Could not load MiniDapps right now.'; });
+// ─── Sources ─────────────────────────────────────────────────────────────────
+// "apps" → the SAME apks.json the native PandaApps store reads (always-current links).
+// "mds"  → the PandaDapps MiniDapp catalog served next to this page.
+var SOURCE_ORDER = ["apps", "panda"];
+var SOURCES = {
+  apps: {
+    label: "Android Apps", type: "apk",
+    url: "https://raw.githubusercontent.com/eurobuddha/minima-core-apks/main/apks.json",
+    note: "<b>Download &amp; install on your Android phone.</b> Open an app for details — the APK downloads " +
+          "to your device; open it to install (allow installs from your browser if Android asks). Grab " +
+          "<b>PandaApps</b> first and it will install &amp; auto-update all the others for you."
+  },
+  panda: {
+    label: "MiniDapps", type: "mds",
+    url: "/pandadapps.json",
+    note: "<b>Add the whole store to your node:</b> in Minima → MiniHub → app store, paste " +
+          "<code>https://eurobuddha.com/pandadapps.json</code> — then browse and install any MiniDapp. " +
+          "Or open a dapp here, download its <b>.mds.zip</b> and install it manually in MiniHub."
+  }
+};
 
-function ph(ch){ var d=document.createElement('div'); d.className='ph'; d.textContent=ch; return d; }
+// ─── Groups — ported verbatim from the native store's Groups.java ────────────
+var GROUP_ORDER = ["GET STARTED", "WALLETS", "FINANCE & TRADING", "SHOP & SELL", "SOCIAL",
+                   "GAMES", "TOOLS", "DEVELOPER", "DESKTOP", "MORE"];
+var CAT_GROUP = {
+  core: "GET STARTED", store: "GET STARTED",
+  wallet: "WALLETS", finance: "FINANCE & TRADING", shopping: "SHOP & SELL",
+  social: "SOCIAL", games: "GAMES",
+  tools: "TOOLS", utilities: "TOOLS", security: "TOOLS",
+  developer: "DEVELOPER", desktop: "DESKTOP"
+};
+function groupFor(item) {
+  return CAT_GROUP[String(item.category || "").trim().toLowerCase()] || "MORE";
+}
+
+var current = "apps";
+var cache = {};
+var expanded = {};
+var toastTimer = null;
+
+function el(id) { return document.getElementById(id); }
+
+function ph() { var d = document.createElement("div"); d.className = "ph"; d.textContent = "◈"; return d; }
+function iconEl(item) {
+  if (!item.icon) return ph();
+  var img = document.createElement("img"); img.className = "ico"; img.src = item.icon; img.alt = "";
+  img.onerror = function () { img.replaceWith(ph()); };
+  return img;
+}
+
+function toast(msg) {
+  var t = el("toast");
+  t.textContent = msg; t.className = "ok"; t.style.display = "block";
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(function () { t.style.display = "none"; }, 4000);
+}
+function copyText(s) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(s).then(function () { toast("Copied."); });
+  } else {
+    var ta = document.createElement("textarea");
+    ta.value = s; document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); toast("Copied."); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+}
+
+function itemsOf(id) {
+  var data = cache[id];
+  if (!data) return [];
+  if (SOURCES[id].type === "apk") return (data && Array.isArray(data.apps)) ? data.apps : [];
+  return Array.isArray(data) ? data : ((data && Array.isArray(data.dapps)) ? data.dapps : []);
+}
+
+function descText(d) {
+  if (Array.isArray(d)) d = d.join(" ");
+  return d ? String(d) : "";
+}
+
+// Split a changelog-style description into lead + [{version,text}] — the native
+// store's Blurb.parse(), same marker regex.
+function blurbParse(desc) {
+  var s = descText(desc).trim();
+  var re = /\bv(\d+\.\d+(?:\.\d+)?):\s*/g;
+  var lead = s, notes = [], m, marks = [];
+  while ((m = re.exec(s)) !== null) marks.push({ idx: m.index, end: re.lastIndex, ver: m[1] });
+  if (marks.length) {
+    lead = s.slice(0, marks[0].idx).trim();
+    for (var i = 0; i < marks.length; i++) {
+      var endTxt = (i + 1 < marks.length) ? marks[i + 1].idx : s.length;
+      notes.push({ version: marks[i].ver, text: s.slice(marks[i].end, endTxt).trim() });
+    }
+  }
+  return { lead: lead, notes: notes };
+}
+
+// ─── Hash routing: "#/<tab>" list, "#/<tab>/<idx>" detail ────────────────────
+function route() {
+  var h = (location.hash || "").replace(/^#\/?/, "");
+  var parts = h.split("/");
+  var tab = parts[0] && SOURCES[parts[0]] ? parts[0] : "apps";
+  if (tab !== current) { current = tab; buildTabs(); }
+  if (parts.length > 1 && parts[1] !== "") showDetail(parts[1]);
+  else showList();
+}
+function goList(tab) { location.hash = "#/" + tab; }
+function goDetail(tab, key) { location.hash = "#/" + tab + "/" + key; }
+
+function showList() {
+  el("detailView").style.display = "none";
+  el("listView").style.display = "block";
+  el("error").style.display = "none";
+  el("groups").innerHTML = "";
+  el("note").innerHTML = SOURCES[current].note;
+  if (cache[current]) { render(); return; }
+  load();
+}
+
+function load() {
+  el("loading").style.display = "block";
+  var forId = current;
+  fetch(SOURCES[forId].url, { cache: "no-cache" })
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      cache[forId] = data;
+      if (forId === current) route();   // re-route: a cold load on a detail hash lands on the detail
+    })
+    .catch(function () {
+      if (forId === current) showError("Could not reach the catalog (network).");
+    });
+}
+
+function render() {
+  el("loading").style.display = "none";
+  el("error").style.display = "none";
+  var items = itemsOf(current);
+  var host = el("groups");
+  host.innerHTML = "";
+  if (!items.length) { showError("The catalog is empty right now."); return; }
+
+  // The APK catalog ships its own disclaimer — prefer it when present.
+  if (current === "apps" && cache.apps && cache.apps.disclaimer) {
+    el("disclaimer").textContent = cache.apps.disclaimer;
+  }
+
+  var byGroup = {};
+  items.forEach(function (it, i) {
+    var g = groupFor(it);
+    (byGroup[g] = byGroup[g] || []).push({ it: it, key: i });
+  });
+  GROUP_ORDER.forEach(function (g) {
+    var l = byGroup[g];
+    if (!l || !l.length) return;
+    var h = document.createElement("div"); h.className = "ghead"; h.textContent = g;
+    host.appendChild(h);
+    l.forEach(function (e) { host.appendChild(rowFor(e.it, e.key)); });
+  });
+  el("subtitle").textContent = items.length + " apps";
+}
+
+function showError(extra) {
+  el("loading").style.display = "none";
+  var e = el("error");
+  e.innerHTML = (extra ? (extra + " ") : "Could not load the catalog. ") + '<a id="retry">Try again</a>.';
+  e.style.display = "block";
+  var r = document.getElementById("retry");
+  if (r) r.onclick = function () { delete cache[current]; showList(); };
+}
+
+function buildTabs() {
+  var host = el("tabs");
+  host.innerHTML = "";
+  SOURCE_ORDER.forEach(function (id) {
+    var b = document.createElement("button");
+    b.className = "tab" + (id === current ? " active" : "");
+    b.textContent = SOURCES[id].label;
+    b.onclick = function () { if (current !== id) goList(id); };
+    host.appendChild(b);
+  });
+}
+
+// ─── Rows (native row() anatomy: icon · name/state · chevron) ────────────────
+function rowFor(item, key) {
+  var r = document.createElement("div"); r.className = "row";
+  r.appendChild(iconEl(item));
+  var mid = document.createElement("div"); mid.className = "mid";
+  var nm = document.createElement("div"); nm.className = "name"; nm.textContent = item.name || "App";
+  mid.appendChild(nm);
+  var st = document.createElement("div"); st.className = "state";
+  st.textContent = (current === "apps")
+    ? (item.source || "Download")
+    : ("v" + (item.version || "?") + "  ·  MiniDapp");
+  mid.appendChild(st);
+  r.appendChild(mid);
+  var ch = document.createElement("span"); ch.className = "chev"; ch.textContent = "›";
+  r.appendChild(ch);
+  var tab = current;
+  r.onclick = function () { goDetail(tab, key); };
+  return r;
+}
+
+// ─── Detail view (AppDetailActivity structure) ───────────────────────────────
+function showDetail(key) {
+  var items = itemsOf(current);
+  var item = items[parseInt(key, 10)];
+  if (!item) { showList(); return; }   // catalog not loaded yet — list re-routes after fetch
+  el("listView").style.display = "none";
+  el("detailView").style.display = "block";
+  el("dtitle").textContent = item.name || "App";
+  var tab = current;
+  el("backBtn").onclick = function () { goList(tab); };
+  renderDetail(item, key);
+}
+
+function renderDetail(item, key) {
+  var body = el("detailBody");
+  body.innerHTML = "";
+  var isApk = current === "apps";
+
+  var hero = document.createElement("div"); hero.className = "hero";
+  hero.appendChild(iconEl(item));
+  var hc = document.createElement("div");
+  var hn = document.createElement("div"); hn.className = "hname"; hn.textContent = item.name || "App";
+  hc.appendChild(hn);
+  var hv = document.createElement("div"); hv.className = "hver";
+  hv.textContent = "v" + (item.version || "?") + (item.category ? ("  ·  " + item.category) : "");
+  hc.appendChild(hv);
+  if (item.source) {
+    var hs = document.createElement("div"); hs.className = "hsrc"; hs.textContent = item.source;
+    hc.appendChild(hs);
+  }
+  hero.appendChild(hc);
+  body.appendChild(hero);
+
+  if (item.file) {
+    var a = document.createElement("a");
+    a.className = "abtn";
+    a.href = item.file; a.target = "_blank"; a.rel = "noopener";
+    a.setAttribute("download", "");
+    var f = String(item.file).toLowerCase();
+    var s = document.createElement("div"); s.className = "stateline";
+    if (isApk) {
+      var apk = f.indexOf(".apk") >= 0;
+      a.textContent = apk ? "Download APK" : (f.indexOf(".dmg") >= 0 || f.indexOf(".exe") >= 0 ? "Download" : "Get");
+      s.textContent = apk ? "Downloads to your device — open the file to install" : "Opens in your browser";
+    } else {
+      a.textContent = "Download .mds.zip";
+      s.textContent = "Install it on your node: MiniHub → install MiniDapp — or add the whole store URL instead";
+    }
+    body.appendChild(a);
+    body.appendChild(s);
+  }
+
+  if (item.repo && /^https?:\/\//i.test(item.repo)) {
+    var src = document.createElement("a");
+    src.className = "sbtn"; src.textContent = "View source code  ↗";
+    src.href = item.repo; src.target = "_blank"; src.rel = "noopener";
+    body.appendChild(src);
+  }
+
+  var b = blurbParse(item.description);
+  if (b.lead) {
+    body.appendChild(sectionHead("About"));
+    var p = document.createElement("div"); p.className = "para"; p.textContent = b.lead;
+    body.appendChild(p);
+  }
+  if (b.notes.length) {
+    body.appendChild(sectionHead("What's new"));
+    var showAll = !!expanded[current + "/" + key];
+    var shown = showAll ? b.notes : b.notes.slice(0, 2);
+    shown.forEach(function (n) {
+      var w = document.createElement("div"); w.className = "vnote";
+      var vl = document.createElement("div"); vl.className = "vlabel"; vl.textContent = "v" + n.version;
+      w.appendChild(vl);
+      var tx = document.createElement("div"); tx.className = "para"; tx.textContent = n.text;
+      w.appendChild(tx);
+      body.appendChild(w);
+    });
+    if (!showAll && b.notes.length > 2) {
+      var more = document.createElement("button"); more.className = "showall";
+      more.textContent = "Show all " + b.notes.length + " versions  ⌄";
+      more.onclick = function () { expanded[current + "/" + key] = true; renderDetail(item, key); };
+      body.appendChild(more);
+    }
+  }
+
+  body.appendChild(sectionHead("Details"));
+  var t = document.createElement("div"); t.className = "dtable";
+  detailRow(t, "Version", "v" + (item.version || "?") + (item.versionCode ? (" (" + item.versionCode + ")") : ""));
+  if (item.category) detailRow(t, "Category", item.category);
+  detailRow(t, "Publisher", item.source || "PandaDapps");
+  if (item.packageId) detailRow(t, "Package", item.packageId, true);
+  if (item.sha256) detailRow(t, "SHA-256", item.sha256, true, true);
+  if (item.file) {
+    try { detailRow(t, "Host", new URL(item.file, location.href).hostname); } catch (e) {}
+  }
+  body.appendChild(t);
+}
+
+function sectionHead(txt) {
+  var h = document.createElement("div"); h.className = "shead"; h.textContent = txt;
+  return h;
+}
+
+function detailRow(table, label, value, mono, copyable) {
+  var r = document.createElement("div"); r.className = "drow";
+  var k = document.createElement("div"); k.className = "k"; k.textContent = label;
+  r.appendChild(k);
+  var v = document.createElement("div"); v.className = "v" + (mono ? " mono" : "");
+  v.textContent = value;           // full value, never truncated
+  r.appendChild(v);
+  if (copyable) {
+    var c = document.createElement("span"); c.className = "copy"; c.textContent = "COPY";
+    r.style.cursor = "pointer";
+    r.onclick = function () { copyText(value); };
+    r.appendChild(c);
+  }
+  table.appendChild(r);
+}
+
+window.addEventListener("hashchange", route);
+buildTabs();
+route();
 </script>
 </body>
 </html>

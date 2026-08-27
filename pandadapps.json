@@ -5,11 +5,11 @@
   "version": "2.1",
   "dapps": [
     {
-      "file": "https://eurobuddha.com/panda_dapps/minimaCore-App-Store-0.2.2.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/minimaCore-App-Store-0.3.0.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/minimacore-appstore.png",
       "name": "minimaCore App Store",
-      "description": "Native Android apps AND MiniDapps for Minima, from your node. Download the minimaCore node APK, PandaApps store and every companion app - plus one-tap install of MiniDapps from the PandaDapps and official Minima catalogs straight onto this node. Now with an IPFS Mirror tab that keeps working even if the store server is down. Always free.",
-      "version": "0.2.2",
+      "description": "v0.3.0: the PandaApps makeover. Apps grouped by what they do (Get Started, Wallets, Finance & Trading, Games, Tools and more), an Updates section pinned to the top when anything you have installed is behind, and a full page per app with its description, version history, details and a link to its source code — across all four tabs. Native Android apps AND MiniDapps for Minima: one-tap install of MiniDapps from the PandaDapps and official Minima catalogs straight onto this node, the minimaCore node APK and every companion app for your phone, plus an IPFS Mirror tab that keeps working even if the store server is down.",
+      "version": "0.3.0",
       "category": "Store",
       "repo": "https://github.com/eurobuddha/minimacore-appstore"
     },
