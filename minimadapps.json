@@ -27,12 +27,12 @@
       "sha256": "36f0420ec394f94c32a9c68a834f8b36016a244921f2922bbdd9fb0f8743d06f"
     },
     {
-      "file": "https://eurobuddha.com/store/dapps/dappStore-1.5.2.mds.zip",
+      "file": "https://eurobuddha.com/store/dapps/dappStore-1.5.1.mds.zip",
       "icon": "https://eurobuddha.com/store/icons/dappstore.png",
       "name": "Dapp Store",
       "description": "Download and update MiniDapps using the DappStore MiniDapp.",
       "category": "Misc",
-      "version": "1.5.2",
+      "version": "1.5.1",
       "about": [
         "NOTE: If you're installing the MiniDapp from the DappStore, you will have to close the tab and go back to the MiniHub manually."
       ],
@@ -41,7 +41,8 @@
       ],
       "date": "March 25, 2025",
       "history": [],
-      "gallery": []
+      "gallery": [],
+      "sha256": "686d02d55da5da3cd45832ff1cb193e7d00cfac87570f60e9bdbb3d7fa90ccee"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/axes3-1.0.0.mds.zip",
@@ -226,11 +227,11 @@
       "sha256": "96fbc59061f925022ea5c5075394341d616a1805ed42094c324b62cba9fa473e"
     },
     {
-      "file": "https://eurobuddha.com/store/dapps/logs-1.0.4.mds.zip",
+      "file": "https://eurobuddha.com/store/dapps/logs-1.0.5.mds.zip",
       "icon": "https://eurobuddha.com/store/icons/logs.png",
       "name": "Logs",
       "description": "View and download the logs for your node",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "about": [
         "Logs show detailed activity of the processes and actions running on the node."
       ],
@@ -238,7 +239,8 @@
         "- Logs are now purged once every hour instead of after every log entry"
       ],
       "date": "Jan 29, 2025",
-      "history": []
+      "history": [],
+      "sha256": "077f549afa2151b2b62c13209d26232e9d9cea17c11c2336185759b35859135f"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/lotto-1.0.0.mds.zip",
@@ -256,7 +258,8 @@
       "date": "Mar 25, 2025",
       "history": [
         {}
-      ]
+      ],
+      "sha256": "4477cf3e2cddc3e6c7fa596ffc5fdba6afff465576e9f9b221af5da76815eaab"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/maxcontacts-1.14.0.mds.zip",
@@ -272,25 +275,6 @@
       "date": "Jul 05, 2024",
       "history": [],
       "sha256": "ddffbb0b03c7b9c54fdef4415329c4b6956dc2828d8f8bc378cc15456fa3d152"
-    },
-    {
-      "file": "https://eurobuddha.com/store/dapps/maximize-1.4.0.mds.zip",
-      "icon": "https://eurobuddha.com/store/icons/maximize.png",
-      "name": "Maximize",
-      "description": "Stake native Minima and earn yield",
-      "version": "1.4.0",
-      "about": [
-        "Maximize is a non-custodial yield product.\n\n",
-        "",
-        "Earn a yield on your native Minima by staking for 1, 3, 6, 9 or 12 months.\n\n",
-        "",
-        "Open stakes will show in your Future Cash MiniDapp for the duration of the staking period."
-      ],
-      "update": [
-        "- Updated Maximize yield rates"
-      ],
-      "date": "Jan 01, 2026",
-      "history": []
     },
     {
       "file": "https://eurobuddha.com/store/dapps/maxsolo-2.7.5.mds.zip",
@@ -607,7 +591,8 @@
       "date": "Mar 25, 2025",
       "history": [
         {}
-      ]
+      ],
+      "sha256": "c34bb892713a0997a1da9ca2c953f979501470b571f89d7e6932219ccfcc4183"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/vestr-1.8.1.mds.zip",
