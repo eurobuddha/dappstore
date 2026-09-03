@@ -290,14 +290,14 @@
       "sha256": "03c3f7bd9795e4e7b10d96144038bc85fc214d808053e816a92f4bd41446bdb2"
     },
     {
-      "file": "https://github.com/eurobuddha/terminal-ide-mds/releases/download/v0.1.0/terminal-ide_0.1.0.mds.zip",
+      "file": "https://github.com/eurobuddha/terminal-ide-mds/releases/download/v0.1.1/terminal-ide_0.1.1.mds.zip",
       "icon": "https://raw.githubusercontent.com/eurobuddha/terminal-ide-mds/main/favicon.svg",
       "name": "Terminal IDE",
-      "description": "A professional Minima terminal with IDE-grade autocomplete, run straight from your node. Autocomplete is mined from the node's own help pages (125 commands) and covers command names, per-command parameters (required first, already-used ones filtered out) and the allowed values of a parameter — e.g. type 'maxima action:' and pick from info/setname/hosts/send… Includes the FULL Maxima classic set (maxima, maxcontacts, maxextra, maxcreate, maxsign, maxverify) plus mds/checkpending/checkmode/checkrestore, and on start does a live help merge so it mirrors your exact node build (adds any command it doesn't know, refreshes descriptions, never hides one). Colorized JSON output with errors highlighted, click any past command to re-run or edit, persistent history with up/down arrows, and guards that warn before node-killers like an unbounded 'coins' or a huge 'history'/'printtree'. The web/MDS sibling of the native Terminal IDE Android app. READ permission is enough to explore; grant WRITE only if you intend to post transactions.",
-      "version": "0.1.0",
+      "description": "v0.1.1: complete help for every command — every parameter and action value the node accepts is now in the autocomplete and in 'help command:x' (vault password:/confirm:/numkeys: and testphrase/resetkeys, peers url:, mds folder:/locationonly:/reload, full pages for sendfrom/createfrom/signfrom/txnauto…), because the node's own help leaves them out. A professional Minima terminal with IDE-grade autocomplete, run straight from your node. Autocomplete is mined from the node's own help pages (125 commands) and covers command names, per-command parameters (required first, already-used ones filtered out) and the allowed values of a parameter — e.g. type 'maxima action:' and pick from info/setname/hosts/send… Includes the FULL Maxima classic set (maxima, maxcontacts, maxextra, maxcreate, maxsign, maxverify) plus mds/checkpending/checkmode/checkrestore, and on start does a live help merge so it mirrors your exact node build (adds any command it doesn't know, refreshes descriptions, never hides one). Colorized JSON output with errors highlighted, click any past command to re-run or edit, persistent history with up/down arrows, and guards that warn before node-killers like an unbounded 'coins' or a huge 'history'/'printtree'. The web/MDS sibling of the native Terminal IDE Android app. READ permission is enough to explore; grant WRITE only if you intend to post transactions.",
+      "version": "0.1.1",
       "category": "Developer",
       "repo": "https://github.com/eurobuddha/terminal-ide-mds",
-      "sha256": "ba792ab9b487f983e9b07d60dcb12709e0c9f0dee88eb486cc1f68404f62c099"
+      "sha256": "123ba00f02459be3a27e19d156238281c6033fd2397625fb24f2ed036570ecc1"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/parlons-1.0.0.mds.zip",
