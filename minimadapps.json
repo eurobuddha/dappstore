@@ -23,7 +23,8 @@
       ],
       "date": "April 14, 2025",
       "history": [],
-      "gallery": []
+      "gallery": [],
+      "sha256": "36f0420ec394f94c32a9c68a834f8b36016a244921f2922bbdd9fb0f8743d06f"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/dappStore-1.5.2.mds.zip",
@@ -58,7 +59,8 @@
       "date": "Mar 25, 2025",
       "history": [
         {}
-      ]
+      ],
+      "sha256": "80f4c894f9a333ef85e97e4de9f99c8555e79f38956cbc9732052917e1da11bf"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/block-3.3.4.mds.zip",
@@ -78,7 +80,8 @@
           "file": "",
           "update": "New User Interface"
         }
-      ]
+      ],
+      "sha256": "728209dfe223ff79b278c5ad09a77492bce459dca085e76d68ab2b15e9950483"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/chainmail-1.12.5.mds.zip",
@@ -95,7 +98,8 @@
       "date": "Mar 25, 2025",
       "history": [
         {}
-      ]
+      ],
+      "sha256": "726d3d74e8a8cc09ea874aaef2b57ed287f62cd5231a02e36a51bdbe1a82963f"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/chatter-1.12.0.mds.zip",
@@ -120,7 +124,8 @@
           "file": "",
           "update": "Requires Minima v1.0.41, Added Icon Support, Clicking your profile in the home page header will now open MaxContacts on your profile page, Fix copy on empty feed, Fix overflowing of username on reply, user's posts & normal display"
         }
-      ]
+      ],
+      "sha256": "72ef7cbd8355b7668e6bbc76c9031f6f246f4fe021df7b8ae6e1427c5b6c8786"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/docs-2.1.0.mds.zip",
@@ -136,7 +141,8 @@
         "- New interface"
       ],
       "date": "Oct 24, 2024",
-      "history": []
+      "history": [],
+      "sha256": "b41c4c87c471044e50154b27c4c0e0360a06780c5975154838af70498dada406"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/ethwallet-1.11.0.mds.zip",
@@ -167,7 +173,8 @@
             "- Design tweaks"
           ]
         }
-      ]
+      ],
+      "sha256": "e2e85bc0a8caf52f76f7f67d6ab6e3d2ed37d80571b797a9c20cb14485b4a6f5"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/filez-1.9.4.mds.zip",
@@ -184,7 +191,8 @@
         "- Minor bug fixes"
       ],
       "date": "Jan 29, 2025",
-      "history": []
+      "history": [],
+      "sha256": "bdd1605e0ea32cac1677ec54d3c67eeb3ad13ff34380eb89611d2f69a0385b51"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/futurecash-3.1.18.mds.zip",
@@ -199,7 +207,8 @@
         "- (3.1.17) Guardian, key-reuse audit, at-risk rescue, Harden panel, Help tab + online guide"
       ],
       "date": "Jul 17, 2026",
-      "history": []
+      "history": [],
+      "sha256": "e156d5294e0d2d74d40799d1fd2ec21221d537a1438425ad367f3bd907600369"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/health-1.3.2.mds.zip",
@@ -213,7 +222,8 @@
         "- New Network data backwards compatible with Minima nodes older than 1.0.43"
       ],
       "date": "Mar 25, 2025",
-      "history": []
+      "history": [],
+      "sha256": "96fbc59061f925022ea5c5075394341d616a1805ed42094c324b62cba9fa473e"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/logs-1.0.4.mds.zip",
@@ -260,7 +270,8 @@
         "- Added QR Code to profiles"
       ],
       "date": "Jul 05, 2024",
-      "history": []
+      "history": [],
+      "sha256": "ddffbb0b03c7b9c54fdef4415329c4b6956dc2828d8f8bc378cc15456fa3d152"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/maximize-1.4.0.mds.zip",
@@ -304,7 +315,8 @@
         "- Bug fix where messages with multiple apostrophes would not be seen by recipient"
       ],
       "date": "15 April, 2025",
-      "history": []
+      "history": [],
+      "sha256": "75c343fb8bdb06983a162cc2eb3c10f1e2ab6e3fc34fe4dfd02448c9f3439a81"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/minifs-1.4.4.mds.zip",
@@ -342,7 +354,8 @@
       "date": "Mar 25, 2025",
       "history": [
         {}
-      ]
+      ],
+      "sha256": "844799ac0252be466eb7173cf6b6c43e31f204a281ff72a6ca639a4ed47048ab"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/miniswap-2.20.0.mds.zip",
@@ -359,7 +372,8 @@
         "- Removed WMINIMA asset"
       ],
       "date": "Mar 25, 2025",
-      "history": []
+      "history": [],
+      "sha256": "dedd389b451e2c4a0ba709071cf01cf8ec6a90dab2e947dde64ee3ba50c47396"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/miniweb-1.6.1.mds.zip",
@@ -384,7 +398,8 @@
       "date": "Mar 25, 2025",
       "history": [
         {}
-      ]
+      ],
+      "sha256": "c3105cd28c23975deb4eb2a832b24c90285be0273b1c2c2083bddb71f9e18240"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/news-2.0.1.mds.zip",
@@ -395,7 +410,8 @@
       "about": "The News Feed is a simple MiniDapp where you can find all our latest blog posts and community updates.",
       "update": "- New Substack news",
       "date": "Mar 25, 2025",
-      "history": []
+      "history": [],
+      "sha256": "5eb6abff5586cb0efd3886a6c5d8c853c944c4ed144229df065ace3f8df75266"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/pending-1.2.10.mds.zip",
@@ -409,7 +425,8 @@
         "- Fixed an issue where the send command was breaking the MiniDapp if the multi command help text could not be rendered\n"
       ],
       "date": "Feb 24, 2025",
-      "history": []
+      "history": [],
+      "sha256": "cc478ae75224bb1d91a3fd600a4899578c76584623b0016452f27d8ee1992b7a"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/thesafe-1.7.0.mds.zip",
@@ -436,7 +453,8 @@
             "First release. Requires Minima v1.0.41."
           ]
         }
-      ]
+      ],
+      "sha256": "03ecc72be562e62934c6a79ea577b40b13a43b8e4fb3176cf198ce5a8979af4d"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/scriptide-3.1.4.mds.zip",
@@ -464,7 +482,8 @@
         "- Introduced an experimental extra script section for dynamically inserting and testing extra scripts within scripts. Use '@X0' to '@X9' to insert extra scripts before execution."
       ],
       "date": "Mar 25, 2025",
-      "history": []
+      "history": [],
+      "sha256": "aad261280ed92745c6a36135a9863f8898915b224c78ebd03f4b4ac8f2bbc4ec"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/security-1.16.0.mds.zip",
@@ -486,7 +505,8 @@
         "- Only allow QuickSync with an unlocked node"
       ],
       "date": "Mar 25, 2025",
-      "history": []
+      "history": [],
+      "sha256": "842aa32252de67e46caf4685de19988eb8830ddb6a96dc8581b0d3bfe34811dc"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/shoutout-1.4.1.mds.zip",
@@ -503,7 +523,8 @@
         "Requires Minima v1.0.41\n"
       ],
       "date": "Jul 05, 2024",
-      "history": []
+      "history": [],
+      "sha256": "f2722b08c089e66b7c27265f31b3cf9a9786f21a0778d1619e9e8fa74c68320a"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/soko-1.0.1.mds.zip",
@@ -522,7 +543,8 @@
       "date": "Mar 25, 2025",
       "history": [
         {}
-      ]
+      ],
+      "sha256": "0a7af15e59137a72f3cabf68f96c96ef5fab1430ca0a91ad807a7bf3e1175c06"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/sqlbench-0.6.1.mds.zip",
@@ -537,7 +559,8 @@
         "- Remove weblink"
       ],
       "date": "Oct 24, 2024",
-      "history": []
+      "history": [],
+      "sha256": "383cc9a2c067d31b4b5e4407056fd000f8033b17cc96a26af11e34c6d75d0d8f"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/terminal-3.1.8.mds.zip",
@@ -565,7 +588,8 @@
         "- Added tooltips to each button to explain what they do"
       ],
       "date": "Mar 25, 2025",
-      "history": []
+      "history": [],
+      "sha256": "c2cd0eda69fac9b676fe6e29de7db10b6f447883094e1ff1eb91c689e66ee098"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/token-studio-1.5.0.mds.zip",
@@ -608,7 +632,8 @@
           "file": "https://storage.googleapis.com/minidapps-363120.appspot.com/minidapps_history/vestr-1.8.0.mds.zip",
           "update": "Correctly collects full amount on contract expiration"
         }
-      ]
+      ],
+      "sha256": "c13ca4fa24bed16b54d02a4e577945dde109e083b1108f67735907e180628c8a"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/webWallet-2.5.2.mds.zip",
@@ -621,7 +646,8 @@
       ],
       "update": [],
       "date": "Mar 25, 2025",
-      "history": []
+      "history": [],
+      "sha256": "dcc47b8f2b1aeebedf0e5b295ab6c1844ce8bdd76dfc7579d4291188ef5d2a95"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/history-0.2.1.mds.zip",
@@ -634,7 +660,8 @@
       ],
       "update": [],
       "date": "Mar 31, 2025",
-      "history": []
+      "history": [],
+      "sha256": "366b4c2c28626bcd225851a5b3aa92f40001e6620fd289567229abf2c8ef9a3b"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/wallet-2.47.2.mds.zip",
@@ -649,7 +676,8 @@
       "update": [],
       "date": "November 11, 2024",
       "history": [],
-      "gallery": []
+      "gallery": [],
+      "sha256": "aa56bdfe0afb43276f48520d302fd5547b5b6754ff09df6615181b8eb4e80652"
     }
   ]
 }

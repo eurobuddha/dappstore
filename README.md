@@ -18,8 +18,9 @@ served from:
 ## Publishing a dapp version
 
 Upload the build to the server's `panda_dapps/` dir, point the dapp's entry in
-`pandadapps.json` at the new `file`/`version`, then mirror to the store host
-(`sync_store_to_sally.sh`). Keep this manifest in sync with the live one.
+`pandadapps.json` at the new `file`/`version`, run `python3 add_sha256.py` (stamps every row's
+`sha256`; minimaDesk verifies boot-time updates against it and the App Store shows it), then mirror
+to the store host (`sync_store_to_sally.sh`). Keep this manifest in sync with the live one.
 Finally run `/usr/local/bin/build_ipfs_store.sh` on the Pi (also runs hourly
 from cron) to publish the updated IPFS snapshot.
 
