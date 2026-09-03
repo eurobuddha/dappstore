@@ -35,14 +35,14 @@
       "sha256": "d8b326ef46ef6102256b444426e2b938b73e2a4bb094871bc7c099aa3fb67ea7"
     },
     {
-      "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.19/PandaPools_0.6.19.mds.zip",
+      "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.20/PandaPools_0.6.20.mds.zip",
       "icon": "https://raw.githubusercontent.com/eurobuddha/pandapools-mds/master/favicon.png",
       "name": "PandaPools",
-      "description": "Constant-product AMM: swap MINIMA/token across aggregated pools, provide liquidity and earn the 0.5% swap fee. Trustless VERIFYOUT covenant; shares live pools with the native app. Always free.",
-      "version": "0.6.19",
+      "description": "Constant-product AMM: swap MINIMA/token across aggregated pools, provide liquidity and earn the 0.5% swap fee. Trustless VERIFYOUT covenant; shares live pools with the native app. Always free. v0.6.20: a what-if POOL CALCULATOR (My LP, or \"What if the price moves?\" on any of your pool cards, seeded with its live reserves) — move the MINIMA price and see the reserves, their ratio, the value versus holding and the effect of fees on the pool's constant-product curve; display only.",
+      "version": "0.6.20",
       "category": "Finance",
       "repo": "https://github.com/eurobuddha/pandapools-mds",
-      "sha256": "14b6fcd5474d3aaac85febe6ce8aed1f10fd9209aece81c32269479f0ff5e9d0"
+      "sha256": "070ad2141a2b6fc99e63e977925f8920430d4840afd05e089bad0f21dcd34cfe"
     },
     {
       "file": "https://github.com/eurobuddha/pandadex-mds/releases/download/v0.4.6/PandaDEX_0.4.6.mds.zip",
