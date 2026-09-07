@@ -432,8 +432,10 @@ function renderDetail(item, key) {
     var s = document.createElement("div"); s.className = "stateline";
     if (isApk) {
       var apk = f.indexOf(".apk") >= 0;
-      a.textContent = apk ? "Download APK" : (f.indexOf(".dmg") >= 0 || f.indexOf(".exe") >= 0 ? "Download" : "Get");
-      s.textContent = apk ? "Downloads to your device — open the file to install" : "Opens in your browser";
+      var desktop = f.indexOf(".dmg") >= 0 || f.indexOf(".exe") >= 0 || f.indexOf(".appimage") >= 0;
+      a.textContent = apk ? "Download APK" : (desktop ? "Download" : "Get");
+      s.textContent = apk ? "Downloads to your device — open the file to install"
+                    : (desktop ? "Downloads to your computer — open it to install" : "Opens in your browser");
     } else {
       a.textContent = "Download .mds.zip";
       s.textContent = "Install it on your node: MiniHub → install MiniDapp — or add the whole store URL instead";
