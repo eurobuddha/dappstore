@@ -192,7 +192,7 @@
       "description": "Provably fair on-chain casino — 3-phase commit-reveal with coin flip, dice, and roulette. PS1-era cyber aesthetic. v2.8.7: the bet MAKER now sees its exact win/lose result the instant the taker resolves — reads the resolve transaction straight off-chain (the exact rolled number, no waiting for the payout coin).",
       "version": "2.8.9",
       "category": "Games",
-      "repo": "https://github.com/eurobuddha/thunder",
+      "repo": "https://github.com/eurobuddha/universal-casino",
       "sha256": "6fd3f027d24acea3de724711041725195999ca775d9d93c0b26490eba6c1f998"
     },
     {
@@ -298,16 +298,6 @@
       "category": "Developer",
       "repo": "https://github.com/eurobuddha/terminal-ide-mds",
       "sha256": "123ba00f02459be3a27e19d156238281c6033fd2397625fb24f2ed036570ecc1"
-    },
-    {
-      "file": "https://eurobuddha.com/panda_dapps/parlons-1.0.0.mds.zip",
-      "icon": "https://eurobuddha.com/panda_dapps/parlons.png",
-      "name": "Parlons!",
-      "description": "Encrypted chat over Maxima using PERMANENT MAX# addresses — the unbreakable strand. Your contacts stay reachable even when they switch networks: every message resolves their live location via their MLS at send time, then delivers with poll-retry. Share your MAX#, add theirs, connected for good.",
-      "version": "1.0.0",
-      "category": "Social",
-      "repo": "https://github.com/eurobuddha/maxima",
-      "sha256": "ef56e53a7c0d531eaa00cebfa8149a010112113c508a4713c3d78f80dd439703"
     }
   ]
 }
