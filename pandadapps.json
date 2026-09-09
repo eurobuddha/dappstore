@@ -35,14 +35,14 @@
       "sha256": "d8b326ef46ef6102256b444426e2b938b73e2a4bb094871bc7c099aa3fb67ea7"
     },
     {
-      "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.21/PandaPools_0.6.21.mds.zip",
+      "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.22/PandaPools_0.6.22.mds.zip",
       "icon": "https://raw.githubusercontent.com/eurobuddha/pandapools-mds/master/favicon.png",
       "name": "PandaPools",
-      "description": "v0.6.21: you can always withdraw. Close/Withdraw (and Add, Migrate) no longer fail with \"an input coin was already spent (the pool moved)\" on an active pool — the MiniDapp now re-reads the pool's live coin right before building the transaction, and retries once if it moves. Constant-product AMM: swap MINIMA/token across aggregated pools, provide liquidity and earn the 0.5% swap fee. Trustless VERIFYOUT covenant; shares live pools with the native app. Always free. v0.6.20: a what-if POOL CALCULATOR (My LP, or \"What if the price moves?\" on any of your pool cards, seeded with its live reserves) — move the MINIMA price and see the reserves, their ratio, the value versus holding and the effect of fees on the pool's constant-product curve; display only.",
-      "version": "0.6.21",
+      "description": "v0.6.22: real node-verified confirmation counts, receipt recovery, consistent transaction timestamps, and chronological wallet and public pool activity. Preserves original receipt IDs and failed records; incomplete lookups remain visible. Historical recovery requires retained node headers. Includes the live pool-coin refresh for Withdraw, Add and Migrate. Constant-product AMM: swap MINIMA/token, provide liquidity and earn the 0.5% swap fee. Shares live pools with the native app.",
+      "version": "0.6.22",
       "category": "Finance",
       "repo": "https://github.com/eurobuddha/pandapools-mds",
-      "sha256": "364a91ba58566b61ce1a12ee30696642c3daf2eec7b144bedba8ac6a94f6192b"
+      "sha256": "211fcdf9433f46770cbfc903cc806d130eba07df699cba39db5a2c7760b4e2ac"
     },
     {
       "file": "https://github.com/eurobuddha/pandadex-mds/releases/download/v0.4.6/PandaDEX_0.4.6.mds.zip",
