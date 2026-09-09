@@ -35,7 +35,7 @@
       "sha256": "d8b326ef46ef6102256b444426e2b938b73e2a4bb094871bc7c099aa3fb67ea7"
     },
     {
-      "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.22/PandaPools_0.6.22.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/PandaPools_0.6.22.mds.zip",
       "icon": "https://raw.githubusercontent.com/eurobuddha/pandapools-mds/master/favicon.png",
       "name": "PandaPools",
       "description": "v0.6.22: real node-verified confirmation counts, receipt recovery, consistent transaction timestamps, and chronological wallet and public pool activity. Preserves original receipt IDs and failed records; incomplete lookups remain visible. Historical recovery requires retained node headers. Includes the live pool-coin refresh for Withdraw, Add and Migrate. Constant-product AMM: swap MINIMA/token, provide liquidity and earn the 0.5% swap fee. Shares live pools with the native app.",
