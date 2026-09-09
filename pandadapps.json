@@ -25,14 +25,14 @@
       "sha256": "0547df006989e1f045dd49b9732de75666b124616f1ce3e336e5a937ae095be8"
     },
     {
-      "file": "https://github.com/eurobuddha/atomix-mds/releases/download/v0.1.15/AtomiX_0.1.15.mds.zip",
+      "file": "https://github.com/eurobuddha/atomix-mds/releases/download/v0.1.26/AtomiX_0.1.26.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/atomix.png",
       "name": "AtomiX",
-      "description": "Trustless cross-chain atomic swaps: MINIMA or bridged mxUSDT ⇄ Ethereum ERC20 USDT. Live order book, depth-ladder market-making, best-price sweeps, OTC deals, market history chart and a built-in ETH wallet (fund/QR, send, export). v0.1.15: FUNDS — a lock that was refundable could become permanently unrefundable. Refund discovery was bounded to a 256-block chain scan, so a coin went invisible ~3h33m after it was locked while it was still refundable, and a lost node reply could wedge the refund retry for good. Both fixed. v0.1.14: SECURITY — signing is now strictly serial, so this app can never ask the node to sign two things at once. Concurrent signing made the node reuse a one-time key leaf, which leaks that leaf's private key. Also fixes same-millisecond transaction-id collisions. v0.1.13: the Wallet tab's red Ethereum-RPC warning now clears itself once a balance read succeeds — it used to stay on screen until reload after a single transient RPC/DNS blip — and a failed read shows '—' rather than a stale number. v0.1.11: fund-safety — a harvested HTLC preimage is now verified to hash to the lock before it is trusted, so a forged on-chain reveal can no longer poison the secret store and block your claim. Interoperates on the SAME on-chain books as the native AtomiX Android app — verified with real mainnet swaps between the two. Needs WRITE permission (it derives your keys and signs swaps). EXPERIMENTAL; test small.",
-      "version": "0.1.15",
+      "description": "Trustless cross-chain atomic swaps: MINIMA or MxUSD with Ethereum ERC20 USDT. Live order book, market-making, best-price sweeps, OTC deals and an ETH wallet. 0.1.26 adds stale-input validation, bounded wallet reads, confirmed Minima settlement tracking, failed-trade refund recovery and clearer leg diagnostics. Signing holds no longer expire by time alone, and malformed Ethereum replies are rejected. Interoperates with native AtomiX. Needs WRITE permission to derive keys and sign swaps. EXPERIMENTAL; test small.",
+      "version": "0.1.26",
       "category": "Finance",
       "repo": "https://github.com/eurobuddha/atomix-mds",
-      "sha256": "d8b326ef46ef6102256b444426e2b938b73e2a4bb094871bc7c099aa3fb67ea7"
+      "sha256": "21b1155be1b182801859bb2fee00594dfd0119bbbce1a3450ac962e1908f0a7f"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/PandaPools_0.6.22.mds.zip",
