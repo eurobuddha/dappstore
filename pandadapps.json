@@ -12,7 +12,7 @@
       "version": "0.3.1",
       "category": "Store",
       "repo": "https://github.com/eurobuddha/minimacore-appstore",
-      "sha256": "75a0fce5a9a01e1fc93ff00018a6ca4ad5843486d0dbd1250bd964d8563bf68f"
+      "sha256": "48ae8823ed67003ca36dc2f59a6b2bd6ebd16ae05a26a55e5ac898a7270cd390"
     },
     {
       "file": "https://github.com/eurobuddha/statenft-suite/releases/download/v0.7.13/statenft-atelier-mds-4.4.8.zip",
@@ -35,14 +35,14 @@
       "sha256": "21b1155be1b182801859bb2fee00594dfd0119bbbce1a3450ac962e1908f0a7f"
     },
     {
-      "file": "https://eurobuddha.com/panda_dapps/PandaPools_0.6.22.mds.zip",
+      "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.23/PandaPools_0.6.23.mds.zip",
       "icon": "https://raw.githubusercontent.com/eurobuddha/pandapools-mds/master/favicon.png",
       "name": "PandaPools",
-      "description": "v0.6.22: real node-verified confirmation counts, receipt recovery, consistent transaction timestamps, and chronological wallet and public pool activity. Preserves original receipt IDs and failed records; incomplete lookups remain visible. Historical recovery requires retained node headers. Includes the live pool-coin refresh for Withdraw, Add and Migrate. Constant-product AMM: swap MINIMA/token, provide liquidity and earn the 0.5% swap fee. Shares live pools with the native app.",
-      "version": "0.6.22",
+      "description": "v0.6.23: keeps unresolved owned pools visible, validates current reserve recovery, preserves backup recipes and pauses uncertain signing state. Keep a current complete wallet backup and pool recipe; recovery also needs available chain proofs. v0.6.22: real node-verified confirmation counts, receipt recovery, consistent transaction timestamps, and chronological wallet and public pool activity. Preserves original receipt IDs and failed records; incomplete lookups remain visible. Historical recovery requires retained node headers. Includes the live pool-coin refresh for Withdraw, Add and Migrate. Constant-product AMM: swap MINIMA/token, provide liquidity and earn the 0.5% swap fee. Shares live pools with the native app.",
+      "version": "0.6.23",
       "category": "Finance",
       "repo": "https://github.com/eurobuddha/pandapools-mds",
-      "sha256": "211fcdf9433f46770cbfc903cc806d130eba07df699cba39db5a2c7760b4e2ac"
+      "sha256": "97630a77e184546d925b0a7026c0d2a967cd5789ec9047d0844bb1c192e79d86"
     },
     {
       "file": "https://github.com/eurobuddha/pandadex-mds/releases/download/v0.4.6/PandaDEX_0.4.6.mds.zip",
@@ -186,14 +186,14 @@
       "sha256": "3b08eb40c339090c9ad698450ad236f94f1ce02528fd9c18f44f8face530fea5"
     },
     {
-      "file": "https://github.com/eurobuddha/universal-casino/releases/download/v2.9.0/ZeroEdgeCasino-v2.9.0.mds.zip",
+      "file": "https://github.com/eurobuddha/universal-casino/releases/download/v2.9.2/ZeroEdgeCasino-v2.9.2.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/zec.png",
       "name": "Zero Edge Casino",
-      "description": "Provably fair on-chain casino — 3-phase commit-reveal with coin flip, dice, and roulette. PS1-era cyber aesthetic. v2.9.0: a MINIMA | USD toggle at the top runs the exact same casino in MxUSD (the Minima dollar-pegged token) with a green dollar theme — create/take/reveal/resolve all in MxUSD, shown at the token's true resolution, with per-currency balance, bets and history. Minima mode unchanged. (MxUSD bets pay network fees in native Minima — keep a little Minima in the wallet.)",
-      "version": "2.9.0",
+      "description": "v2.9.2: owned untaken offers renew before cascade in Minima and MxUSD using their existing collateral; durable cancellation follows renewed offers. My Bets shows both currencies together, with manual timeout claims matching the covenant deadline. Update the existing MiniDapp to retain saved secrets; keep WRITE permission and the owner node running. Fair-odds on-chain coin flip, dice and roulette with three-phase commit-reveal.",
+      "version": "2.9.2",
       "category": "Games",
       "repo": "https://github.com/eurobuddha/universal-casino",
-      "sha256": "0d885bb3c650cc2c1ec2081b54a4669e10d03b080a5be0b44efac37d3819f7d5"
+      "sha256": "eeae4c5cc1b69e72b2d71994cde78cd3d60fef3fa14d287a9c1a4b60e1240633"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/minArmyKnife-v1.0.6.mds.zip",
