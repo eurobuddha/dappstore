@@ -1,5 +1,7 @@
 # dappstore
 
+**Publishing host checked 2026-09-12:** `eurobuddha.com` and `ipfs.eurobuddha.com` resolve to Hetzner (`65.109.31.226`, SSH alias `hetzner`). Publish the public snapshot with `ssh hetzner 'sudo /usr/local/bin/build_ipfs_store.sh'`, then read back the public catalogue and compare versions and hashes. The old Pi (`pi-old`, now `minimacore.uk`) still contains a legacy publisher; running it does not establish that the current public gateway is updated. Pi-specific references below describe the original deployment.
+
 Manifests and store front-ends for the **PandaDapps** unofficial Minima MiniDapp store,
 served from:
 
@@ -21,14 +23,14 @@ Upload the build to the server's `panda_dapps/` dir, point the dapp's entry in
 `pandadapps.json` at the new `file`/`version`, run `python3 add_sha256.py` (stamps every row's
 `sha256`; minimaDesk verifies boot-time updates against it and the App Store shows it), then mirror
 to the store host (`sync_store_to_sally.sh`). Keep this manifest in sync with the live one.
-Finally run `/usr/local/bin/build_ipfs_store.sh` on the Pi (also runs hourly
+Finally run `/usr/local/bin/build_ipfs_store.sh` on Hetzner (also runs hourly
 from cron) to publish the updated IPFS snapshot.
 
 ## IPFS mirror
 
 The full store — both MiniDapp catalogs, the native minimaCore APK catalog and
 a browsable front-end — is snapshotted to IPFS by `build_ipfs_store.sh`
-(deployed at `/usr/local/bin/` on the Pi; kubo node runs there as the `ipfs`
+(deployed at `/usr/local/bin/` on Hetzner; kubo node runs there as the `ipfs`
 user, remote-pinned to Pinata for redundancy).
 
 - `build_ipfs_store.sh` — stages `/var/ipfs-store`, rewrites catalogs to
@@ -48,8 +50,8 @@ user, remote-pinned to Pinata for redundancy).
 
 ## Second provider — maxlite
 
-`eurobuddha.com` and `ipfs.eurobuddha.com` are **the same machine**, on a residential
-line. The App Store's IPFS Mirror tab falls back to a public gateway when the store
+Originally `eurobuddha.com` and `ipfs.eurobuddha.com` shared the Pi's residential
+line; the public domains now reach Hetzner. The App Store's IPFS Mirror tab falls back to a public gateway when the store
 server is unreachable, but a public gateway can only serve blocks it can fetch from
 somebody — so with one provider that fallback expires with the gateway's cache.
 
@@ -73,7 +75,7 @@ as the catalogs gain apps.
 
 Access:
 
-- https://ipfs.eurobuddha.com/ (own gateway on the Pi)
+- https://ipfs.eurobuddha.com/ (own gateway on Hetzner)
 - `/ipns/ipfs.eurobuddha.com/` on any public gateway (e.g.
   https://ipfs.io/ipns/ipfs.eurobuddha.com/)
 - `/ipns/k51qzi5uqu5dk9g8mlhkab3t2h3195r4mwf6gdgpzte3cwhjn708w89y8b6axi`
