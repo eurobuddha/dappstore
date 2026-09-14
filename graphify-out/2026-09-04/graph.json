@@ -67,53 +67,6 @@
   },
   "nodes": [
     {
-      "label": "add_sha256.py",
-      "file_type": "code",
-      "source_file": "tools/dappstore/add_sha256.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "add_sha256",
-      "community": 19,
-      "community_name": "add_sha256.py",
-      "norm_label": "add_sha256.py"
-    },
-    {
-      "label": "sha256_url()",
-      "file_type": "code",
-      "source_file": "tools/dappstore/add_sha256.py",
-      "source_location": "L27",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "add_sha256_sha256_url",
-      "community": 19,
-      "community_name": "add_sha256.py",
-      "norm_label": "sha256_url()"
-    },
-    {
-      "label": "process()",
-      "file_type": "code",
-      "source_file": "tools/dappstore/add_sha256.py",
-      "source_location": "L53",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "add_sha256_process",
-      "community": 19,
-      "community_name": "add_sha256.py",
-      "norm_label": "process()"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "tools/dappstore/add_sha256.py",
-      "source_location": "L96",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "add_sha256_main",
-      "community": 19,
-      "community_name": "add_sha256.py",
-      "norm_label": "main()"
-    },
-    {
       "label": "build_ipfs_store.sh",
       "file_type": "code",
       "source_file": "tools/dappstore/build_ipfs_store.sh",
@@ -434,7 +387,7 @@
       "label": "IPFS mirror",
       "file_type": "document",
       "source_file": "tools/dappstore/README.md",
-      "source_location": "L27",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "readme_ipfs_mirror",
       "community": 2,
@@ -445,7 +398,7 @@
       "label": "Second provider \u2014 maxlite",
       "file_type": "document",
       "source_file": "tools/dappstore/README.md",
-      "source_location": "L49",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "readme_second_provider_maxlite",
       "community": 2,
@@ -463,9 +416,8 @@
       "contributor": null,
       "community": 2,
       "norm_label": "pandadapps store",
-      "community_name": "pandadapps.json manifest",
-      "_origin": "semantic",
-      "id": "readme_pandadapps_store"
+      "id": "readme_pandadapps_store",
+      "community_name": "pandadapps.json manifest"
     },
     {
       "label": "pandadapps.json manifest",
@@ -478,9 +430,8 @@
       "contributor": null,
       "community": 2,
       "norm_label": "pandadapps.json manifest",
-      "community_name": "pandadapps.json manifest",
-      "_origin": "semantic",
-      "id": "readme_pandadapps_json"
+      "id": "readme_pandadapps_json",
+      "community_name": "pandadapps.json manifest"
     },
     {
       "label": "minimadapps.json official mirror",
@@ -493,9 +444,8 @@
       "contributor": null,
       "community": 2,
       "norm_label": "minimadapps.json official mirror",
-      "community_name": "pandadapps.json manifest",
-      "_origin": "semantic",
-      "id": "readme_minimadapps_json"
+      "id": "readme_minimadapps_json",
+      "community_name": "pandadapps.json manifest"
     },
     {
       "label": "Store front-end sources",
@@ -508,9 +458,8 @@
       "contributor": null,
       "community": 2,
       "norm_label": "store front-end sources",
-      "community_name": "pandadapps.json manifest",
-      "_origin": "semantic",
-      "id": "readme_store_frontends"
+      "id": "readme_store_frontends",
+      "community_name": "pandadapps.json manifest"
     },
     {
       "label": "panda_dapps/ icons dir",
@@ -523,9 +472,8 @@
       "contributor": null,
       "community": 2,
       "norm_label": "panda_dapps/ icons dir",
-      "community_name": "pandadapps.json manifest",
-      "_origin": "semantic",
-      "id": "readme_panda_dapps_assets"
+      "id": "readme_panda_dapps_assets",
+      "community_name": "pandadapps.json manifest"
     },
     {
       "label": "Publish flow",
@@ -538,9 +486,8 @@
       "contributor": null,
       "community": 2,
       "norm_label": "publish flow",
-      "community_name": "pandadapps.json manifest",
-      "_origin": "semantic",
-      "id": "readme_publish_flow"
+      "id": "readme_publish_flow",
+      "community_name": "pandadapps.json manifest"
     },
     {
       "label": "sync_store_to_sally.sh mirror",
@@ -553,9 +500,8 @@
       "contributor": null,
       "community": 2,
       "norm_label": "sync_store_to_sally.sh mirror",
-      "community_name": "pandadapps.json manifest",
-      "_origin": "semantic",
-      "id": "readme_sync_store_to_sally"
+      "id": "readme_sync_store_to_sally",
+      "community_name": "pandadapps.json manifest"
     },
     {
       "label": "build_ipfs_store.sh IPFS publish",
@@ -568,9 +514,8 @@
       "contributor": null,
       "community": 2,
       "norm_label": "build_ipfs_store.sh ipfs publish",
-      "community_name": "pandadapps.json manifest",
-      "_origin": "semantic",
-      "id": "readme_build_ipfs_store"
+      "id": "readme_build_ipfs_store",
+      "community_name": "pandadapps.json manifest"
     },
     {
       "label": "ipfs-site/index.html three-tab UI",
@@ -583,9 +528,8 @@
       "contributor": null,
       "community": 2,
       "norm_label": "ipfs-site/index.html three-tab ui",
-      "community_name": "pandadapps.json manifest",
-      "_origin": "semantic",
-      "id": "readme_ipfs_site_index"
+      "id": "readme_ipfs_site_index",
+      "community_name": "pandadapps.json manifest"
     },
     {
       "label": "IPNS / DNSLink gateways",
@@ -598,9 +542,8 @@
       "contributor": null,
       "community": 2,
       "norm_label": "ipns / dnslink gateways",
-      "community_name": "pandadapps.json manifest",
-      "_origin": "semantic",
-      "id": "readme_ipns_dnslink"
+      "id": "readme_ipns_dnslink",
+      "community_name": "pandadapps.json manifest"
     },
     {
       "label": "minimaCore APK catalog",
@@ -613,9 +556,8 @@
       "contributor": null,
       "community": 2,
       "norm_label": "minimacore apk catalog",
-      "community_name": "pandadapps.json manifest",
-      "_origin": "semantic",
-      "id": "readme_minimacore_apk_catalog"
+      "id": "readme_minimacore_apk_catalog",
+      "community_name": "pandadapps.json manifest"
     },
     {
       "label": "CLAUDE.md Rule 0 project rules",
@@ -628,9 +570,8 @@
       "contributor": null,
       "community": 2,
       "norm_label": "claude.md rule 0 project rules",
-      "community_name": "pandadapps.json manifest",
-      "_origin": "semantic",
-      "id": "claude_rule_0"
+      "id": "claude_rule_0",
+      "community_name": "pandadapps.json manifest"
     },
     {
       "label": "History dapp icon",
@@ -643,9 +584,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "history dapp icon",
-      "community_name": "History MiniDapp",
-      "_origin": "semantic",
-      "id": "panda_dapps_history_icon"
+      "id": "panda_dapps_history_icon",
+      "community_name": "History MiniDapp"
     },
     {
       "label": "History MiniDapp",
@@ -658,9 +598,8 @@
       "contributor": null,
       "community": 7,
       "norm_label": "history minidapp",
-      "community_name": "History MiniDapp",
-      "_origin": "semantic",
-      "id": "panda_dapps_history_concept"
+      "id": "panda_dapps_history_concept",
+      "community_name": "History MiniDapp"
     },
     {
       "label": "Limit dapp icon",
@@ -673,9 +612,8 @@
       "contributor": null,
       "community": 8,
       "norm_label": "limit dapp icon",
-      "community_name": "Limit on-chain limit-order DEX",
-      "_origin": "semantic",
-      "id": "panda_dapps_limit_icon"
+      "id": "panda_dapps_limit_icon",
+      "community_name": "Limit on-chain limit-order DEX"
     },
     {
       "label": "Limit on-chain limit-order DEX",
@@ -688,9 +626,8 @@
       "contributor": null,
       "community": 8,
       "norm_label": "limit on-chain limit-order dex",
-      "community_name": "Limit on-chain limit-order DEX",
-      "_origin": "semantic",
-      "id": "panda_dapps_limit_dex_concept"
+      "id": "panda_dapps_limit_dex_concept",
+      "community_name": "Limit on-chain limit-order DEX"
     },
     {
       "label": "Linternet Plaza dapp icon",
@@ -703,9 +640,8 @@
       "contributor": null,
       "community": 9,
       "norm_label": "linternet plaza dapp icon",
-      "community_name": "Linternet Plaza MiniDapp",
-      "_origin": "semantic",
-      "id": "panda_dapps_linternetplaza_icon"
+      "id": "panda_dapps_linternetplaza_icon",
+      "community_name": "Linternet Plaza MiniDapp"
     },
     {
       "label": "Linternet Plaza MiniDapp",
@@ -718,9 +654,8 @@
       "contributor": null,
       "community": 9,
       "norm_label": "linternet plaza minidapp",
-      "community_name": "Linternet Plaza MiniDapp",
-      "_origin": "semantic",
-      "id": "panda_dapps_linternetplaza_concept"
+      "id": "panda_dapps_linternetplaza_concept",
+      "community_name": "Linternet Plaza MiniDapp"
     },
     {
       "label": "maximizeSaver dapp icon",
@@ -733,9 +668,8 @@
       "contributor": null,
       "community": 10,
       "norm_label": "maximizesaver dapp icon",
-      "community_name": "maximizeSaver",
-      "_origin": "semantic",
-      "id": "panda_dapps_maximizesaver_icon"
+      "id": "panda_dapps_maximizesaver_icon",
+      "community_name": "maximizeSaver"
     },
     {
       "label": "maximizeSaver",
@@ -748,9 +682,8 @@
       "contributor": null,
       "community": 10,
       "norm_label": "maximizesaver",
-      "community_name": "maximizeSaver",
-      "_origin": "semantic",
-      "id": "panda_dapps_maximizesaver_concept"
+      "id": "panda_dapps_maximizesaver_concept",
+      "community_name": "maximizeSaver"
     },
     {
       "label": "miniMerch dapp icon",
@@ -763,9 +696,8 @@
       "contributor": null,
       "community": 11,
       "norm_label": "minimerch dapp icon",
-      "community_name": "miniMerch merchant dapp",
-      "_origin": "semantic",
-      "id": "panda_dapps_minimerch_icon"
+      "id": "panda_dapps_minimerch_icon",
+      "community_name": "miniMerch merchant dapp"
     },
     {
       "label": "miniMerch merchant dapp",
@@ -778,9 +710,8 @@
       "contributor": null,
       "community": 11,
       "norm_label": "minimerch merchant dapp",
-      "community_name": "miniMerch merchant dapp",
-      "_origin": "semantic",
-      "id": "panda_dapps_minimerch_concept"
+      "id": "panda_dapps_minimerch_concept",
+      "community_name": "miniMerch merchant dapp"
     },
     {
       "label": "miniMerch Inbox dapp icon",
@@ -793,9 +724,8 @@
       "contributor": null,
       "community": 12,
       "norm_label": "minimerch inbox dapp icon",
-      "community_name": "miniMerch Inbox",
-      "_origin": "semantic",
-      "id": "panda_dapps_minimerchinbox_icon"
+      "id": "panda_dapps_minimerchinbox_icon",
+      "community_name": "miniMerch Inbox"
     },
     {
       "label": "miniMerch Inbox",
@@ -808,9 +738,8 @@
       "contributor": null,
       "community": 12,
       "norm_label": "minimerch inbox",
-      "community_name": "miniMerch Inbox",
-      "_origin": "semantic",
-      "id": "panda_dapps_minimerchinbox_concept"
+      "id": "panda_dapps_minimerchinbox_concept",
+      "community_name": "miniMerch Inbox"
     },
     {
       "label": "PocketFS dapp icon",
@@ -823,9 +752,8 @@
       "contributor": null,
       "community": 13,
       "norm_label": "pocketfs dapp icon",
-      "community_name": "PocketFS decentralised file system",
-      "_origin": "semantic",
-      "id": "panda_dapps_pocketfs_icon"
+      "id": "panda_dapps_pocketfs_icon",
+      "community_name": "PocketFS decentralised file system"
     },
     {
       "label": "PocketFS decentralised file system",
@@ -838,9 +766,8 @@
       "contributor": null,
       "community": 13,
       "norm_label": "pocketfs decentralised file system",
-      "community_name": "PocketFS decentralised file system",
-      "_origin": "semantic",
-      "id": "panda_dapps_pocketfs_concept"
+      "id": "panda_dapps_pocketfs_concept",
+      "community_name": "PocketFS decentralised file system"
     },
     {
       "label": "PocketWeb dapp icon",
@@ -853,9 +780,8 @@
       "contributor": null,
       "community": 14,
       "norm_label": "pocketweb dapp icon",
-      "community_name": "PocketWeb decentralised browser",
-      "_origin": "semantic",
-      "id": "panda_dapps_pocketweb_icon"
+      "id": "panda_dapps_pocketweb_icon",
+      "community_name": "PocketWeb decentralised browser"
     },
     {
       "label": "PocketWeb decentralised browser",
@@ -868,9 +794,8 @@
       "contributor": null,
       "community": 14,
       "norm_label": "pocketweb decentralised browser",
-      "community_name": "PocketWeb decentralised browser",
-      "_origin": "semantic",
-      "id": "panda_dapps_pocketweb_concept"
+      "id": "panda_dapps_pocketweb_concept",
+      "community_name": "PocketWeb decentralised browser"
     },
     {
       "label": "PandaDapps Site index.html",
@@ -883,9 +808,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "pandadapps site index.html",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index"
+      "id": "pandadapps_site_index",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "miniweb_Init()",
@@ -898,9 +822,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "miniweb_init()",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_miniweb_init"
+      "id": "pandadapps_site_index_miniweb_init",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "miniweb_NetGET() \u2014 fetch catalog via parent proxy",
@@ -913,9 +836,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "miniweb_netget() \u2014 fetch catalog via parent proxy",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_miniweb_netget"
+      "id": "pandadapps_site_index_miniweb_netget",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "miniweb_MdsCmd() \u2014 read node state via mds command",
@@ -928,9 +850,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "miniweb_mdscmd() \u2014 read node state via mds command",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_miniweb_mdscmd"
+      "id": "pandadapps_site_index_miniweb_mdscmd",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "miniweb_InstallDapp() \u2014 install a dapp",
@@ -943,9 +864,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "miniweb_installdapp() \u2014 install a dapp",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_miniweb_installdapp"
+      "id": "pandadapps_site_index_miniweb_installdapp",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "miniweb_JumpToURL() \u2014 cross-site nav",
@@ -958,9 +878,8 @@
       "contributor": null,
       "community": 15,
       "norm_label": "miniweb_jumptourl() \u2014 cross-site nav",
-      "community_name": "Cross-link to MinimaOfficialDapps site",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_miniweb_jumptourl"
+      "id": "pandadapps_site_index_miniweb_jumptourl",
+      "community_name": "Cross-link to MinimaOfficialDapps site"
     },
     {
       "label": "miniweb.js postMessage proxy library",
@@ -973,9 +892,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "miniweb.js postmessage proxy library",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_miniweb_js"
+      "id": "pandadapps_site_index_miniweb_js",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "pandadapps.json catalog (eurobuddha.com)",
@@ -988,9 +906,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "pandadapps.json catalog (eurobuddha.com)",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_pandadapps_json_catalog"
+      "id": "pandadapps_site_index_pandadapps_json_catalog",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "loadData() \u2014 dual fetch catalog + installed",
@@ -1003,9 +920,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "loaddata() \u2014 dual fetch catalog + installed",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_loaddata"
+      "id": "pandadapps_site_index_loaddata",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "render() \u2014 builds dapp card grid",
@@ -1018,9 +934,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "render() \u2014 builds dapp card grid",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_render"
+      "id": "pandadapps_site_index_render",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "installDapp(idx) \u2014 install flow handler",
@@ -1033,9 +948,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "installdapp(idx) \u2014 install flow handler",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_installdapp_fn"
+      "id": "pandadapps_site_index_installdapp_fn",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "findInstalled() \u2014 match catalog dapp to installed",
@@ -1048,9 +962,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "findinstalled() \u2014 match catalog dapp to installed",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_findinstalled"
+      "id": "pandadapps_site_index_findinstalled",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "compareSemver() \u2014 version compare for update state",
@@ -1063,9 +976,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "comparesemver() \u2014 version compare for update state",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_comparesemver"
+      "id": "pandadapps_site_index_comparesemver",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "Dapp card (install / update / installed button states)",
@@ -1078,9 +990,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "dapp card (install / update / installed button states)",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_dapp_card"
+      "id": "pandadapps_site_index_dapp_card",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "mds command (node minidapps state)",
@@ -1093,9 +1004,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "mds command (node minidapps state)",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_mds_command"
+      "id": "pandadapps_site_index_mds_command",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "PocketWeb parent (sandboxed iframe host)",
@@ -1108,9 +1018,8 @@
       "contributor": null,
       "community": 0,
       "norm_label": "pocketweb parent (sandboxed iframe host)",
-      "community_name": "render() \u2014 builds dapp card grid",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_pocketweb_parent"
+      "id": "pandadapps_site_index_pocketweb_parent",
+      "community_name": "render() \u2014 builds dapp card grid"
     },
     {
       "label": "Cross-link to MinimaOfficialDapps site",
@@ -1123,9 +1032,8 @@
       "contributor": null,
       "community": 15,
       "norm_label": "cross-link to minimaofficialdapps site",
-      "community_name": "Cross-link to MinimaOfficialDapps site",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_minimaofficial_link"
+      "id": "pandadapps_site_index_minimaofficial_link",
+      "community_name": "Cross-link to MinimaOfficialDapps site"
     },
     {
       "label": "MinimaOfficialDapps front-end",
@@ -1138,9 +1046,8 @@
       "contributor": null,
       "community": 5,
       "norm_label": "minimaofficialdapps front-end",
-      "community_name": "MinimaOfficialDapps front-end",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_index_front"
+      "id": "minimaofficial_site_index_front",
+      "community_name": "MinimaOfficialDapps front-end"
     },
     {
       "label": "Official MiniDapp catalog (minimadapps.json)",
@@ -1153,9 +1060,8 @@
       "contributor": null,
       "community": 5,
       "norm_label": "official minidapp catalog (minimadapps.json)",
-      "community_name": "MinimaOfficialDapps front-end",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_index_catalog"
+      "id": "minimaofficial_site_index_catalog",
+      "community_name": "MinimaOfficialDapps front-end"
     },
     {
       "label": "miniweb_* PocketWeb proxy",
@@ -1168,9 +1074,8 @@
       "contributor": null,
       "community": 5,
       "norm_label": "miniweb_* pocketweb proxy",
-      "community_name": "MinimaOfficialDapps front-end",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_index_miniweb_proxy"
+      "id": "minimaofficial_site_index_miniweb_proxy",
+      "community_name": "MinimaOfficialDapps front-end"
     },
     {
       "label": "Install/update dapp flow",
@@ -1183,9 +1088,8 @@
       "contributor": null,
       "community": 5,
       "norm_label": "install/update dapp flow",
-      "community_name": "MinimaOfficialDapps front-end",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_index_install_flow"
+      "id": "minimaofficial_site_index_install_flow",
+      "community_name": "MinimaOfficialDapps front-end"
     },
     {
       "label": "No MDS in sandboxed iframe",
@@ -1199,9 +1103,8 @@
       "rationale": "The front-end runs in a sandboxed iframe with no MDS access, so it loads catalog data and installs dapps via the PocketWeb parent postMessage proxy (miniweb_*) rather than calling MDS directly.",
       "community": 5,
       "norm_label": "no mds in sandboxed iframe",
-      "community_name": "MinimaOfficialDapps front-end",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_index_no_mds_rationale"
+      "id": "minimaofficial_site_index_no_mds_rationale",
+      "community_name": "MinimaOfficialDapps front-end"
     },
     {
       "label": "PandaDapps sibling jump-link",
@@ -1214,9 +1117,8 @@
       "contributor": null,
       "community": 5,
       "norm_label": "pandadapps sibling jump-link",
-      "community_name": "MinimaOfficialDapps front-end",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_index_pandadapps_link"
+      "id": "minimaofficial_site_index_pandadapps_link",
+      "community_name": "MinimaOfficialDapps front-end"
     },
     {
       "label": "Future Cash user guide",
@@ -1229,9 +1131,8 @@
       "contributor": null,
       "community": 4,
       "norm_label": "future cash user guide",
-      "community_name": "Guardian background daemon",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_futurecash_guide"
+      "id": "minimaofficial_site_futurecash_guide",
+      "community_name": "Guardian background daemon"
     },
     {
       "label": "Time-lock stakes",
@@ -1245,9 +1146,8 @@
       "rationale": "Locks MINIMA so it can only be spent after a chosen date/block; enforced by the blockchain so nobody \u2014 not even the owner \u2014 can unlock early.",
       "community": 4,
       "norm_label": "time-lock stakes",
-      "community_name": "Guardian background daemon",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_futurecash_guide_timelock"
+      "id": "minimaofficial_site_futurecash_guide_timelock",
+      "community_name": "Guardian background daemon"
     },
     {
       "label": "Guardian background daemon",
@@ -1261,9 +1161,8 @@
       "rationale": "Runs as a background daemon with the node, checking stakes on every new block and collecting matured ones unattended.",
       "community": 4,
       "norm_label": "guardian background daemon",
-      "community_name": "Guardian background daemon",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_futurecash_guide_guardian"
+      "id": "minimaofficial_site_futurecash_guide_guardian",
+      "community_name": "Guardian background daemon"
     },
     {
       "label": "Collect flow",
@@ -1277,9 +1176,8 @@
       "rationale": "Matured safe stakes are auto-collected (given a fresh audit under 30 min); each stake also has manual Collect now, and the Guardian tab has Collect all now.",
       "community": 4,
       "norm_label": "collect flow",
-      "community_name": "Guardian background daemon",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_futurecash_guide_collect_flow"
+      "id": "minimaofficial_site_futurecash_guide_collect_flow",
+      "community_name": "Guardian background daemon"
     },
     {
       "label": "Stake maturity (Pending/Matured)",
@@ -1293,9 +1191,8 @@
       "rationale": "A stake sits under Pending with a countdown until its unlock date, then moves to Matured where the Guardian collects it.",
       "community": 4,
       "norm_label": "stake maturity (pending/matured)",
-      "community_name": "Guardian background daemon",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_futurecash_guide_maturity"
+      "id": "minimaofficial_site_futurecash_guide_maturity",
+      "community_name": "Guardian background daemon"
     },
     {
       "label": "WOTS key-reuse protection",
@@ -1309,9 +1206,8 @@
       "rationale": "Minima signs with one-time (WOTS) keys that weaken on reuse; Future Cash audits keys and, for stakes landing on reused addresses, immediately sweeps them to a safe wallet before an attacker can exploit the reused key.",
       "community": 4,
       "norm_label": "wots key-reuse protection",
-      "community_name": "Guardian background daemon",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_futurecash_guide_keyreuse"
+      "id": "minimaofficial_site_futurecash_guide_keyreuse",
+      "community_name": "Guardian background daemon"
     },
     {
       "label": "Key audit service",
@@ -1325,9 +1221,8 @@
       "rationale": "Sends only public keys/addresses to an external service to detect key reuse; a fresh audit (under 30 min) is required for automatic safe collecting, and an incomplete audit pauses auto-collect for safety.",
       "community": 4,
       "norm_label": "key audit service",
-      "community_name": "Guardian background daemon",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_futurecash_guide_audit"
+      "id": "minimaofficial_site_futurecash_guide_audit",
+      "community_name": "Guardian background daemon"
     },
     {
       "label": "WRITE vs READ mode",
@@ -1341,9 +1236,8 @@
       "rationale": "The daemon must act unattended, so Future Cash requires WRITE mode; in READ mode actions get stuck as pending requests that cannot be approved by hand \u2014 a Minima safety rule only the user can grant.",
       "community": 4,
       "norm_label": "write vs read mode",
-      "community_name": "Guardian background daemon",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_futurecash_guide_write_read_mode"
+      "id": "minimaofficial_site_futurecash_guide_write_read_mode",
+      "community_name": "Guardian background daemon"
     },
     {
       "label": "Rescue / Harden (at-risk sweep)",
@@ -1357,9 +1251,8 @@
       "rationale": "For at-risk stakes the Guardian quick-sweeps to a clean address or hands off to AnyPhraseRecovery for full seed migration; the Harden panel sweeps and retires reused change addresses so fresh money stops landing on them.",
       "community": 4,
       "norm_label": "rescue / harden (at-risk sweep)",
-      "community_name": "Guardian background daemon",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_futurecash_guide_rescue"
+      "id": "minimaofficial_site_futurecash_guide_rescue",
+      "community_name": "Guardian background daemon"
     },
     {
       "label": "Classic Future Cash 2.7.1",
@@ -1373,9 +1266,8 @@
       "rationale": "A fully manual alternative with no background daemon and no key-reuse protection, offered for users who prefer manual control.",
       "community": 4,
       "norm_label": "classic future cash 2.7.1",
-      "community_name": "Guardian background daemon",
-      "_origin": "semantic",
-      "id": "minimaofficial_site_futurecash_guide_classic_271"
+      "id": "minimaofficial_site_futurecash_guide_classic_271",
+      "community_name": "Guardian background daemon"
     },
     {
       "label": "PandaDapps store landing page",
@@ -1388,9 +1280,8 @@
       "contributor": null,
       "community": 5,
       "norm_label": "pandadapps store landing page",
-      "community_name": "MinimaOfficialDapps front-end",
-      "_origin": "semantic",
-      "id": "store_index_landing"
+      "id": "store_index_landing",
+      "community_name": "MinimaOfficialDapps front-end"
     },
     {
       "label": "pandadapps.json catalog",
@@ -1403,9 +1294,8 @@
       "contributor": null,
       "community": 5,
       "norm_label": "pandadapps.json catalog",
-      "community_name": "MinimaOfficialDapps front-end",
-      "_origin": "semantic",
-      "id": "store_index_pandadapps_catalog"
+      "id": "store_index_pandadapps_catalog",
+      "community_name": "MinimaOfficialDapps front-end"
     },
     {
       "label": "Android APK downloads (Minima Core, PandaApps, FreezePeach)",
@@ -1418,9 +1308,8 @@
       "contributor": null,
       "community": 5,
       "norm_label": "android apk downloads (minima core, pandaapps, freezepeach)",
-      "community_name": "MinimaOfficialDapps front-end",
-      "_origin": "semantic",
-      "id": "store_index_android_apks"
+      "id": "store_index_android_apks",
+      "community_name": "MinimaOfficialDapps front-end"
     },
     {
       "label": "PandaDapps IPFS Store Front-End",
@@ -1434,9 +1323,8 @@
       "rationale": "Gateway-agnostic IPFS store front-end adapted from the PocketWeb pandadapps-site but with NO MDS/PocketWeb coupling \u2014 uses plain browser fetch() and relative catalog paths so it works at any IPFS gateway or raw /ipfs/<CID>/ path.",
       "community": 1,
       "norm_label": "pandadapps ipfs store front-end",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "ipfs_site_index_front"
+      "id": "ipfs_site_index_front",
+      "community_name": "render() card builder"
     },
     {
       "label": "TABS config (3 tabs)",
@@ -1449,9 +1337,8 @@
       "contributor": null,
       "community": 1,
       "norm_label": "tabs config (3 tabs)",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "ipfs_site_index_tabs"
+      "id": "ipfs_site_index_tabs",
+      "community_name": "render() card builder"
     },
     {
       "label": "PandaDapps tab",
@@ -1465,9 +1352,8 @@
       "rationale": "Tab id 'panda', reads key 'dapps' from pandadapps.json; note 'MiniDapps \u2014 install via MiniHub'.",
       "community": 1,
       "norm_label": "pandadapps tab",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "ipfs_site_index_tab_panda"
+      "id": "ipfs_site_index_tab_panda",
+      "community_name": "render() card builder"
     },
     {
       "label": "Minima Official tab",
@@ -1481,9 +1367,8 @@
       "rationale": "Tab id 'official', reads key 'dapps' from store/minimadapps.json; official MiniDapps mirror.",
       "community": 1,
       "norm_label": "minima official tab",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "ipfs_site_index_tab_official"
+      "id": "ipfs_site_index_tab_official",
+      "community_name": "render() card builder"
     },
     {
       "label": "Android APKs tab",
@@ -1497,9 +1382,8 @@
       "rationale": "Tab id 'apks', reads key 'apps' from apks/apks.json; native minimaCore apps \u2014 sideload.",
       "community": 1,
       "norm_label": "android apks tab",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "ipfs_site_index_tab_apks"
+      "id": "ipfs_site_index_tab_apks",
+      "community_name": "render() card builder"
     },
     {
       "label": "pandadapps.json catalog",
@@ -1513,9 +1397,8 @@
       "rationale": "Relative catalog JSON consumed by PandaDapps tab; items under 'dapps' key.",
       "community": 1,
       "norm_label": "pandadapps.json catalog",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "ipfs_site_index_catalog_pandadapps"
+      "id": "ipfs_site_index_catalog_pandadapps",
+      "community_name": "render() card builder"
     },
     {
       "label": "store/minimadapps.json catalog",
@@ -1529,9 +1412,8 @@
       "rationale": "Relative catalog JSON consumed by Official tab; has the string-or-array 'description' quirk handled by normDesc.",
       "community": 1,
       "norm_label": "store/minimadapps.json catalog",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "ipfs_site_index_catalog_minimadapps"
+      "id": "ipfs_site_index_catalog_minimadapps",
+      "community_name": "render() card builder"
     },
     {
       "label": "apks/apks.json catalog",
@@ -1545,9 +1427,8 @@
       "rationale": "Relative catalog JSON consumed by Android APKs tab; items under 'apps' key.",
       "community": 1,
       "norm_label": "apks/apks.json catalog",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "ipfs_site_index_catalog_apks"
+      "id": "ipfs_site_index_catalog_apks",
+      "community_name": "render() card builder"
     },
     {
       "label": "selectTab() fetch+state",
@@ -1561,9 +1442,8 @@
       "rationale": "Sets ACTIVE tab, applies accent CSS vars, uses CACHE, fetch()es t.src, extracts data[t.key], calls render(); shows retry on error.",
       "community": 1,
       "norm_label": "selecttab() fetch+state",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "ipfs_site_index_select_tab"
+      "id": "ipfs_site_index_select_tab",
+      "community_name": "render() card builder"
     },
     {
       "label": "render() card builder",
@@ -1577,9 +1457,8 @@
       "rationale": "Builds the dapp-grid of cards, renders download-only buttons (local Download vs remote External download), surfaces sha256 hash and category badge, no install path.",
       "community": 1,
       "norm_label": "render() card builder",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "ipfs_site_index_render"
+      "id": "ipfs_site_index_render",
+      "community_name": "render() card builder"
     },
     {
       "label": "normDesc() string-or-array normalizer",
@@ -1593,9 +1472,8 @@
       "rationale": "Handles minimadapps.json quirk where description is a string OR array of strings; joins arrays with a space.",
       "community": 1,
       "norm_label": "normdesc() string-or-array normalizer",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "ipfs_site_index_norm_desc"
+      "id": "ipfs_site_index_norm_desc",
+      "community_name": "render() card builder"
     },
     {
       "label": "Download-only buttons",
@@ -1609,9 +1487,8 @@
       "rationale": "No install path \u2014 runs on a bare gateway with no Minima node; local files use download attr, remote http(s) files open External download in a new tab.",
       "community": 1,
       "norm_label": "download-only buttons",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "ipfs_site_index_download_buttons"
+      "id": "ipfs_site_index_download_buttons",
+      "community_name": "render() card builder"
     },
     {
       "label": "escHtml/escAttr escaping",
@@ -1624,9 +1501,8 @@
       "contributor": null,
       "community": 1,
       "norm_label": "eschtml/escattr escaping",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "ipfs_site_index_esc_helpers"
+      "id": "ipfs_site_index_esc_helpers",
+      "community_name": "render() card builder"
     },
     {
       "label": "PocketWeb pandadapps-site front-end",
@@ -1640,9 +1516,8 @@
       "rationale": "The MDS/PocketWeb-coupled store front-end this IPFS page was adapted from \u2014 same store UI, different execution context (node/MDS present).",
       "community": 1,
       "norm_label": "pocketweb pandadapps-site front-end",
-      "community_name": "render() card builder",
-      "_origin": "semantic",
-      "id": "pandadapps_site_index_front"
+      "id": "pandadapps_site_index_front",
+      "community_name": "render() card builder"
     },
     {
       "label": "AnyDappStore front-end (PocketWeb mini-site)",
@@ -1656,9 +1531,8 @@
       "rationale": "Generic universal MiniDapp-store installer front-end; user pastes any store JSON URL to browse and install dapps. Structurally near-identical to the PandaDapps store front-end (same miniweb_* proxy pattern, render/installDapp/semver logic), differing mainly in that the catalog URL is user-supplied rather than hardcoded \u2014 hence semantically_similar_to pandadapps_site_index_front at INFERRED ~0.85.",
       "community": 3,
       "norm_label": "anydappstore front-end (pocketweb mini-site)",
-      "community_name": "AnyDappStore front-end (PocketWeb mini-site)",
-      "_origin": "semantic",
-      "id": "anydappstore_index_front"
+      "id": "anydappstore_index_front",
+      "community_name": "AnyDappStore front-end (PocketWeb mini-site)"
     },
     {
       "label": "miniweb.js PocketWeb proxy library",
@@ -1671,9 +1545,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "miniweb.js pocketweb proxy library",
-      "community_name": "AnyDappStore front-end (PocketWeb mini-site)",
-      "_origin": "semantic",
-      "id": "anydappstore_index_miniweb_lib"
+      "id": "anydappstore_index_miniweb_lib",
+      "community_name": "AnyDappStore front-end (PocketWeb mini-site)"
     },
     {
       "label": "miniweb_Init() bootstrap",
@@ -1686,9 +1559,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "miniweb_init() bootstrap",
-      "community_name": "AnyDappStore front-end (PocketWeb mini-site)",
-      "_origin": "semantic",
-      "id": "anydappstore_index_miniweb_init"
+      "id": "anydappstore_index_miniweb_init",
+      "community_name": "AnyDappStore front-end (PocketWeb mini-site)"
     },
     {
       "label": "miniweb_NetGET() catalog fetch",
@@ -1701,9 +1573,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "miniweb_netget() catalog fetch",
-      "community_name": "AnyDappStore front-end (PocketWeb mini-site)",
-      "_origin": "semantic",
-      "id": "anydappstore_index_miniweb_netget"
+      "id": "anydappstore_index_miniweb_netget",
+      "community_name": "AnyDappStore front-end (PocketWeb mini-site)"
     },
     {
       "label": "miniweb_MdsCmd(\"mds\") installed-list query",
@@ -1716,9 +1587,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "miniweb_mdscmd(\"mds\") installed-list query",
-      "community_name": "AnyDappStore front-end (PocketWeb mini-site)",
-      "_origin": "semantic",
-      "id": "anydappstore_index_miniweb_mdscmd"
+      "id": "anydappstore_index_miniweb_mdscmd",
+      "community_name": "AnyDappStore front-end (PocketWeb mini-site)"
     },
     {
       "label": "miniweb_InstallDapp() install call",
@@ -1731,9 +1601,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "miniweb_installdapp() install call",
-      "community_name": "AnyDappStore front-end (PocketWeb mini-site)",
-      "_origin": "semantic",
-      "id": "anydappstore_index_miniweb_installdapp"
+      "id": "anydappstore_index_miniweb_installdapp",
+      "community_name": "AnyDappStore front-end (PocketWeb mini-site)"
     },
     {
       "label": "miniweb_JumpToURL(\"miniweb://pocketweb\")",
@@ -1746,9 +1615,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "miniweb_jumptourl(\"miniweb://pocketweb\")",
-      "community_name": "AnyDappStore front-end (PocketWeb mini-site)",
-      "_origin": "semantic",
-      "id": "anydappstore_index_miniweb_jumptourl"
+      "id": "anydappstore_index_miniweb_jumptourl",
+      "community_name": "AnyDappStore front-end (PocketWeb mini-site)"
     },
     {
       "label": "User-supplied store catalog JSON (name/description/dapps[])",
@@ -1762,9 +1630,8 @@
       "rationale": "Catalog schema is {name, description, dapps:[{name,version,description,icon,file}]}, matching the pandadapps.json store format; URL entered at runtime via the LOAD url-bar rather than hardcoded.",
       "community": 3,
       "norm_label": "user-supplied store catalog json (name/description/dapps[])",
-      "community_name": "AnyDappStore front-end (PocketWeb mini-site)",
-      "_origin": "semantic",
-      "id": "anydappstore_index_catalog_json"
+      "id": "anydappstore_index_catalog_json",
+      "community_name": "AnyDappStore front-end (PocketWeb mini-site)"
     },
     {
       "label": "installDapp() install handler",
@@ -1777,9 +1644,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "installdapp() install handler",
-      "community_name": "AnyDappStore front-end (PocketWeb mini-site)",
-      "_origin": "semantic",
-      "id": "anydappstore_index_installdapp_fn"
+      "id": "anydappstore_index_installdapp_fn",
+      "community_name": "AnyDappStore front-end (PocketWeb mini-site)"
     },
     {
       "label": "render() dapp-grid + install/update button logic",
@@ -1792,9 +1658,8 @@
       "contributor": null,
       "community": 3,
       "norm_label": "render() dapp-grid + install/update button logic",
-      "community_name": "AnyDappStore front-end (PocketWeb mini-site)",
-      "_origin": "semantic",
-      "id": "anydappstore_index_render_fn"
+      "id": "anydappstore_index_render_fn",
+      "community_name": "AnyDappStore front-end (PocketWeb mini-site)"
     },
     {
       "label": "compareSemver() / findInstalled() version diff",
@@ -1807,69 +1672,11 @@
       "contributor": null,
       "community": 3,
       "norm_label": "comparesemver() / findinstalled() version diff",
-      "community_name": "AnyDappStore front-end (PocketWeb mini-site)",
-      "_origin": "semantic",
-      "id": "anydappstore_index_semver"
+      "id": "anydappstore_index_semver",
+      "community_name": "AnyDappStore front-end (PocketWeb mini-site)"
     }
   ],
   "links": [
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/dappstore/add_sha256.py",
-      "source_location": "L96",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "add_sha256",
-      "target": "add_sha256_main",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/dappstore/add_sha256.py",
-      "source_location": "L53",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "add_sha256",
-      "target": "add_sha256_process",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/dappstore/add_sha256.py",
-      "source_location": "L27",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "add_sha256",
-      "target": "add_sha256_sha256_url",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/dappstore/add_sha256.py",
-      "source_location": "L68",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "add_sha256_process",
-      "target": "add_sha256_sha256_url",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "tools/dappstore/add_sha256.py",
-      "source_location": "L100",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "add_sha256_main",
-      "target": "add_sha256_process",
-      "confidence_score": 1.0
-    },
     {
       "relation": "defines",
       "confidence": "EXTRACTED",
@@ -2181,7 +1988,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tools/dappstore/README.md",
-      "source_location": "L27",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme_dappstore",
@@ -2203,7 +2010,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tools/dappstore/README.md",
-      "source_location": "L49",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme_dappstore",
@@ -2217,7 +2024,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_build_ipfs_store",
       "target": "readme_ipfs_mirror"
     },
@@ -2228,7 +2034,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_ipfs_mirror",
       "target": "readme_ipns_dnslink"
     },
@@ -2239,7 +2044,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_ipfs_mirror",
       "target": "readme_pandadapps_json"
     },
@@ -2250,7 +2054,6 @@
       "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "claude_rule_0",
       "target": "readme_pandadapps_store"
     },
@@ -2261,7 +2064,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_pandadapps_store",
       "target": "readme_minimadapps_json"
     },
@@ -2272,7 +2074,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_pandadapps_store",
       "target": "readme_pandadapps_json"
     },
@@ -2283,7 +2084,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_pandadapps_store",
       "target": "readme_store_frontends"
     },
@@ -2294,7 +2094,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_minimadapps_json",
       "target": "readme_pandadapps_json"
     },
@@ -2305,7 +2104,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_pandadapps_json",
       "target": "readme_panda_dapps_assets"
     },
@@ -2316,7 +2114,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_publish_flow",
       "target": "readme_pandadapps_json"
     },
@@ -2327,7 +2124,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_sync_store_to_sally",
       "target": "readme_pandadapps_json"
     },
@@ -2338,7 +2134,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_publish_flow",
       "target": "readme_panda_dapps_assets"
     },
@@ -2349,7 +2144,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_publish_flow",
       "target": "readme_build_ipfs_store"
     },
@@ -2360,7 +2154,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_publish_flow",
       "target": "readme_sync_store_to_sally"
     },
@@ -2371,7 +2164,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_build_ipfs_store",
       "target": "readme_ipfs_site_index"
     },
@@ -2382,7 +2174,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_build_ipfs_store",
       "target": "readme_minimacore_apk_catalog"
     },
@@ -2393,7 +2184,6 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "readme_ipns_dnslink",
       "target": "readme_ipfs_site_index"
     },
@@ -2404,7 +2194,6 @@
       "source_file": "panda_dapps/history.svg",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "panda_dapps_history_icon",
       "target": "panda_dapps_history_concept"
     },
@@ -2415,7 +2204,6 @@
       "source_file": "panda_dapps/limit.png",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "panda_dapps_limit_icon",
       "target": "panda_dapps_limit_dex_concept"
     },
@@ -2426,7 +2214,6 @@
       "source_file": "panda_dapps/linternetplaza.png",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "panda_dapps_linternetplaza_icon",
       "target": "panda_dapps_linternetplaza_concept"
     },
@@ -2437,7 +2224,6 @@
       "source_file": "panda_dapps/maximizesaver.svg",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "panda_dapps_maximizesaver_icon",
       "target": "panda_dapps_maximizesaver_concept"
     },
@@ -2448,7 +2234,6 @@
       "source_file": "panda_dapps/minimerch.png",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "panda_dapps_minimerch_icon",
       "target": "panda_dapps_minimerch_concept"
     },
@@ -2459,7 +2244,6 @@
       "source_file": "panda_dapps/minimerchinbox.svg",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "panda_dapps_minimerchinbox_icon",
       "target": "panda_dapps_minimerchinbox_concept"
     },
@@ -2470,7 +2254,6 @@
       "source_file": "panda_dapps/pocketfs.png",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "panda_dapps_pocketfs_icon",
       "target": "panda_dapps_pocketfs_concept"
     },
@@ -2481,7 +2264,6 @@
       "source_file": "panda_dapps/pocketweb.png",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "panda_dapps_pocketweb_icon",
       "target": "panda_dapps_pocketweb_concept"
     },
@@ -2492,7 +2274,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "577",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index",
       "target": "pandadapps_site_index_miniweb_js"
     },
@@ -2503,7 +2284,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "599",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index",
       "target": "pandadapps_site_index_pocketweb_parent"
     },
@@ -2514,7 +2294,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "597",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_miniweb_init",
       "target": "pandadapps_site_index_miniweb_js"
     },
@@ -2525,7 +2304,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "610",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_loaddata",
       "target": "pandadapps_site_index_miniweb_netget"
     },
@@ -2536,7 +2314,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "610",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_miniweb_netget",
       "target": "pandadapps_site_index_pandadapps_json_catalog"
     },
@@ -2547,7 +2324,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "610",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_miniweb_netget",
       "target": "pandadapps_site_index_pocketweb_parent"
     },
@@ -2558,7 +2334,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "791",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_installdapp_fn",
       "target": "pandadapps_site_index_miniweb_mdscmd"
     },
@@ -2569,7 +2344,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "624",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_loaddata",
       "target": "pandadapps_site_index_miniweb_mdscmd"
     },
@@ -2580,7 +2354,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "624",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_miniweb_mdscmd",
       "target": "pandadapps_site_index_mds_command"
     },
@@ -2591,7 +2364,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "781",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_installdapp_fn",
       "target": "pandadapps_site_index_miniweb_installdapp"
     },
@@ -2602,7 +2374,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "781",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_miniweb_installdapp",
       "target": "pandadapps_site_index_pocketweb_parent"
     },
@@ -2613,7 +2384,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "838",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_minimaofficial_link",
       "target": "pandadapps_site_index_miniweb_jumptourl"
     },
@@ -2624,7 +2394,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "764",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_installdapp_fn",
       "target": "pandadapps_site_index_pandadapps_json_catalog"
     },
@@ -2635,7 +2404,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "691",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_render",
       "target": "pandadapps_site_index_pandadapps_json_catalog"
     },
@@ -2646,7 +2414,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "620",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_loaddata",
       "target": "pandadapps_site_index_render"
     },
@@ -2657,7 +2424,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "700",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_render",
       "target": "pandadapps_site_index_comparesemver"
     },
@@ -2668,7 +2434,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "713",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_render",
       "target": "pandadapps_site_index_dapp_card"
     },
@@ -2679,7 +2444,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "693",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_render",
       "target": "pandadapps_site_index_findinstalled"
     },
@@ -2690,7 +2454,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "710",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_dapp_card",
       "target": "pandadapps_site_index_installdapp_fn"
     },
@@ -2701,7 +2464,6 @@
       "source_file": "pandadapps-site/index.html",
       "source_location": "657",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "pandadapps_site_index_findinstalled",
       "target": "pandadapps_site_index_mds_command"
     },
@@ -2712,7 +2474,6 @@
       "source_file": "minimaofficial-site/index.html",
       "source_location": "line 583",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_index_front",
       "target": "minimaofficial_site_index_catalog"
     },
@@ -2723,7 +2484,6 @@
       "source_file": "minimaofficial-site/index.html",
       "source_location": "lines 765-815",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_index_front",
       "target": "minimaofficial_site_index_install_flow"
     },
@@ -2734,7 +2494,6 @@
       "source_file": "minimaofficial-site/index.html",
       "source_location": "line 577",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_index_front",
       "target": "minimaofficial_site_index_miniweb_proxy"
     },
@@ -2745,7 +2504,6 @@
       "source_file": "minimaofficial-site/index.html",
       "source_location": "lines 842-844",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_index_front",
       "target": "minimaofficial_site_index_pandadapps_link"
     },
@@ -2756,7 +2514,6 @@
       "source_file": "store/index.html",
       "source_location": null,
       "weight": 0.8,
-      "_origin": "semantic",
       "source": "store_index_pandadapps_catalog",
       "target": "minimaofficial_site_index_catalog"
     },
@@ -2767,7 +2524,6 @@
       "source_file": "minimaofficial-site/index.html",
       "source_location": "line 786",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_index_install_flow",
       "target": "minimaofficial_site_index_miniweb_proxy"
     },
@@ -2778,7 +2534,6 @@
       "source_file": "minimaofficial-site/index.html",
       "source_location": "line 599",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_index_miniweb_proxy",
       "target": "minimaofficial_site_index_no_mds_rationale"
     },
@@ -2789,7 +2544,6 @@
       "source_file": "minimaofficial-site/index.html",
       "source_location": "lines 842-844",
       "weight": 0.7,
-      "_origin": "semantic",
       "source": "minimaofficial_site_index_pandadapps_link",
       "target": "store_index_landing"
     },
@@ -2800,7 +2554,6 @@
       "source_file": "minimaofficial-site/futurecash/guide.html",
       "source_location": "line 152",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_futurecash_guide",
       "target": "minimaofficial_site_futurecash_guide_classic_271"
     },
@@ -2811,7 +2564,6 @@
       "source_file": "minimaofficial-site/futurecash/guide.html",
       "source_location": "lines 130-141",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_futurecash_guide",
       "target": "minimaofficial_site_futurecash_guide_guardian"
     },
@@ -2822,7 +2574,6 @@
       "source_file": "minimaofficial-site/futurecash/guide.html",
       "source_location": "lines 156-166",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_futurecash_guide",
       "target": "minimaofficial_site_futurecash_guide_timelock"
     },
@@ -2833,7 +2584,6 @@
       "source_file": "minimaofficial-site/futurecash/guide.html",
       "source_location": "line 163",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_futurecash_guide_timelock",
       "target": "minimaofficial_site_futurecash_guide_maturity"
     },
@@ -2844,7 +2594,6 @@
       "source_file": "minimaofficial-site/futurecash/guide.html",
       "source_location": "lines 168-180",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_futurecash_guide_guardian",
       "target": "minimaofficial_site_futurecash_guide_collect_flow"
     },
@@ -2855,7 +2604,6 @@
       "source_file": "minimaofficial-site/futurecash/guide.html",
       "source_location": "lines 130-141",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_futurecash_guide_guardian",
       "target": "minimaofficial_site_futurecash_guide_keyreuse"
     },
@@ -2866,7 +2614,6 @@
       "source_file": "minimaofficial-site/futurecash/guide.html",
       "source_location": "line 152",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_futurecash_guide_guardian",
       "target": "minimaofficial_site_futurecash_guide_write_read_mode"
     },
@@ -2877,7 +2624,6 @@
       "source_file": "minimaofficial-site/futurecash/guide.html",
       "source_location": "line 171",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_futurecash_guide_audit",
       "target": "minimaofficial_site_futurecash_guide_collect_flow"
     },
@@ -2888,7 +2634,6 @@
       "source_file": "minimaofficial-site/futurecash/guide.html",
       "source_location": "line 163",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_futurecash_guide_collect_flow",
       "target": "minimaofficial_site_futurecash_guide_maturity"
     },
@@ -2899,7 +2644,6 @@
       "source_file": "minimaofficial-site/futurecash/guide.html",
       "source_location": "lines 143-154",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_futurecash_guide_keyreuse",
       "target": "minimaofficial_site_futurecash_guide_audit"
     },
@@ -2910,7 +2654,6 @@
       "source_file": "minimaofficial-site/futurecash/guide.html",
       "source_location": "lines 182-201",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "minimaofficial_site_futurecash_guide_keyreuse",
       "target": "minimaofficial_site_futurecash_guide_rescue"
     },
@@ -2921,7 +2664,6 @@
       "source_file": "minimaofficial-site/futurecash/guide.html",
       "source_location": "line 152",
       "weight": 0.6,
-      "_origin": "semantic",
       "source": "minimaofficial_site_futurecash_guide_classic_271",
       "target": "store_index_pandadapps_catalog"
     },
@@ -2932,7 +2674,6 @@
       "source_file": "store/index.html",
       "source_location": "lines 79-124",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "store_index_landing",
       "target": "store_index_android_apks"
     },
@@ -2943,7 +2684,6 @@
       "source_file": "store/index.html",
       "source_location": "line 147",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "store_index_landing",
       "target": "store_index_pandadapps_catalog"
     },
@@ -2954,7 +2694,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "ipfs_site_index_front",
       "target": "ipfs_site_index_tabs"
     },
@@ -2965,7 +2704,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 0.85,
-      "_origin": "semantic",
       "source": "ipfs_site_index_front",
       "target": "pandadapps_site_index_front"
     },
@@ -2976,7 +2714,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "ipfs_site_index_tabs",
       "target": "ipfs_site_index_tab_apks"
     },
@@ -2987,7 +2724,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "ipfs_site_index_tabs",
       "target": "ipfs_site_index_tab_official"
     },
@@ -2998,7 +2734,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "ipfs_site_index_tabs",
       "target": "ipfs_site_index_tab_panda"
     },
@@ -3009,7 +2744,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "ipfs_site_index_tab_panda",
       "target": "ipfs_site_index_catalog_pandadapps"
     },
@@ -3020,7 +2754,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "ipfs_site_index_tab_official",
       "target": "ipfs_site_index_catalog_minimadapps"
     },
@@ -3031,7 +2764,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "ipfs_site_index_tab_apks",
       "target": "ipfs_site_index_catalog_apks"
     },
@@ -3042,7 +2774,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "ipfs_site_index_select_tab",
       "target": "ipfs_site_index_catalog_pandadapps"
     },
@@ -3053,7 +2784,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 0.95,
-      "_origin": "semantic",
       "source": "ipfs_site_index_norm_desc",
       "target": "ipfs_site_index_catalog_minimadapps"
     },
@@ -3064,7 +2794,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "ipfs_site_index_select_tab",
       "target": "ipfs_site_index_render"
     },
@@ -3075,7 +2804,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "ipfs_site_index_render",
       "target": "ipfs_site_index_download_buttons"
     },
@@ -3086,7 +2814,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "ipfs_site_index_render",
       "target": "ipfs_site_index_esc_helpers"
     },
@@ -3097,7 +2824,6 @@
       "source_file": "ipfs-site/index.html",
       "source_location": null,
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "ipfs_site_index_render",
       "target": "ipfs_site_index_norm_desc"
     },
@@ -3108,7 +2834,6 @@
       "source_file": "anydappstore/index.html",
       "source_location": null,
       "weight": 0.85,
-      "_origin": "semantic",
       "source": "anydappstore_index_front",
       "target": "pandadapps_site_index_front"
     },
@@ -3119,7 +2844,6 @@
       "source_file": "anydappstore/index.html",
       "source_location": "line 293",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "anydappstore_index_front",
       "target": "anydappstore_index_miniweb_init"
     },
@@ -3130,7 +2854,6 @@
       "source_file": "anydappstore/index.html",
       "source_location": "line 514",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "anydappstore_index_front",
       "target": "anydappstore_index_miniweb_jumptourl"
     },
@@ -3141,7 +2864,6 @@
       "source_file": "anydappstore/index.html",
       "source_location": "line 277",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "anydappstore_index_front",
       "target": "anydappstore_index_miniweb_lib"
     },
@@ -3152,7 +2874,6 @@
       "source_file": "anydappstore/index.html",
       "source_location": "line 315",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "anydappstore_index_front",
       "target": "anydappstore_index_miniweb_netget"
     },
@@ -3163,7 +2884,6 @@
       "source_file": "anydappstore/index.html",
       "source_location": null,
       "weight": 0.85,
-      "_origin": "semantic",
       "source": "anydappstore_index_miniweb_init",
       "target": "anydappstore_index_miniweb_lib"
     },
@@ -3174,7 +2894,6 @@
       "source_file": "anydappstore/index.html",
       "source_location": "lines 315-330",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "anydappstore_index_miniweb_netget",
       "target": "anydappstore_index_catalog_json"
     },
@@ -3185,7 +2904,6 @@
       "source_file": "anydappstore/index.html",
       "source_location": "line 480",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "anydappstore_index_installdapp_fn",
       "target": "anydappstore_index_miniweb_mdscmd"
     },
@@ -3196,7 +2914,6 @@
       "source_file": "anydappstore/index.html",
       "source_location": null,
       "weight": 0.85,
-      "_origin": "semantic",
       "source": "anydappstore_index_semver",
       "target": "anydappstore_index_miniweb_mdscmd"
     },
@@ -3207,7 +2924,6 @@
       "source_file": "anydappstore/index.html",
       "source_location": "line 471",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "anydappstore_index_installdapp_fn",
       "target": "anydappstore_index_miniweb_installdapp"
     },
@@ -3218,7 +2934,6 @@
       "source_file": "anydappstore/index.html",
       "source_location": "lines 404-441",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "anydappstore_index_render_fn",
       "target": "anydappstore_index_catalog_json"
     },
@@ -3229,7 +2944,6 @@
       "source_file": "anydappstore/index.html",
       "source_location": "lines 406-412",
       "weight": 1.0,
-      "_origin": "semantic",
       "source": "anydappstore_index_render_fn",
       "target": "anydappstore_index_semver"
     }
@@ -3295,6 +3009,5 @@
       "source_location": "lines 130-201",
       "weight": 1.0
     }
-  ],
-  "built_at_commit": "d2b457d575bf2a31a3d64f6f87c4846180c7ad08"
+  ]
 }

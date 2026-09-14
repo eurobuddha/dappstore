@@ -1,18 +1,13 @@
-# Graph Report - tools/dappstore  (2026-09-04)
+# Graph Report - tools/dappstore  (2026-08-05)
 
 ## Corpus Check
-- 9 files · ~26,068 words
+- 8 files · ~22,922 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 118 nodes · 128 edges · 20 communities (10 shown, 10 thin omitted)
-- Extraction: 82% EXTRACTED · 18% INFERRED · 0% AMBIGUOUS · INFERRED: 23 edges (avg confidence: 0.85)
+- 114 nodes · 123 edges · 19 communities (9 shown, 10 thin omitted)
+- Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 23 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
-
-## Graph Freshness
-- Built from commit: `d2b457d5`
-- Run `git rev-parse HEAD` and compare to check if the graph is stale.
-- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - render() — builds dapp card grid
@@ -34,7 +29,6 @@
 - ipfs-mirror-sync.sh
 - maxlite_ipfs_setup.sh
 - User instructions — AUTHORITATIVE. These override default behavior and must be followed exactly.
-- add_sha256.py
 
 ## God Nodes (most connected - your core abstractions)
 1. `pandadapps.json manifest` - 6 edges
@@ -69,7 +63,7 @@
 - **Lock → mature → Guardian collect lifecycle** — minimaofficial_site_futurecash_guide_timelock, minimaofficial_site_futurecash_guide_maturity, minimaofficial_site_futurecash_guide_guardian, minimaofficial_site_futurecash_guide_collect_flow [EXTRACTED 1.00]
 - **Key audit → reuse detection → rescue/harden** — minimaofficial_site_futurecash_guide_audit, minimaofficial_site_futurecash_guide_keyreuse, minimaofficial_site_futurecash_guide_rescue [EXTRACTED 1.00]
 
-## Communities (20 total, 10 thin omitted)
+## Communities (19 total, 10 thin omitted)
 
 ### Community 0 - "render() — builds dapp card grid"
 Cohesion: 0.18
@@ -107,10 +101,6 @@ Nodes (3): as_ipfs(), log(), ipfs-mirror-sync.sh script
 Cohesion: 0.60
 Nodes (4): as_ipfs(), IPFS_PATH, say(), maxlite_ipfs_setup.sh script
 
-### Community 19 - "add_sha256.py"
-Cohesion: 0.83
-Nodes (3): main(), process(), sha256_url()
-
 ## Knowledge Gaps
 - **35 isolated node(s):** `IPFS_PATH`, `RULE 0 (highest priority) — Follow the user's explicit instructions. They are BLOCKING, not suggestions.`, `Contents`, `Publishing a dapp version`, `Second provider — maxlite` (+30 more)
   These have ≤1 connection - possible missing edges or undocumented components.
@@ -120,7 +110,7 @@ Nodes (3): main(), process(), sha256_url()
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `AnyDappStore front-end (PocketWeb mini-site)` connect `AnyDappStore front-end (PocketWeb mini-site)` to `render() card builder`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `pandadapps.json manifest` (e.g. with `IPFS mirror` and `minimadapps.json official mirror`) actually correct?**
   _`pandadapps.json manifest` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `IPFS_PATH`, `RULE 0 (highest priority) — Follow the user's explicit instructions. They are BLOCKING, not suggestions.`, `Contents` to the rest of the system?**
