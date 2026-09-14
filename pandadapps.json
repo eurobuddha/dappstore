@@ -25,14 +25,14 @@
       "sha256": "0547df006989e1f045dd49b9732de75666b124616f1ce3e336e5a937ae095be8"
     },
     {
-      "file": "https://github.com/eurobuddha/atomix-mds/releases/download/v0.1.26/AtomiX_0.1.26.mds.zip",
+      "file": "https://github.com/eurobuddha/atomix-mds/releases/download/v0.1.29/AtomiX_0.1.29.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/atomix.png",
       "name": "AtomiX",
-      "description": "Trustless cross-chain atomic swaps: MINIMA or MxUSD with Ethereum ERC20 USDT. Live order book, market-making, best-price sweeps, OTC deals and an ETH wallet. 0.1.26 adds stale-input validation, bounded wallet reads, confirmed Minima settlement tracking, failed-trade refund recovery and clearer leg diagnostics. Signing holds no longer expire by time alone, and malformed Ethereum replies are rejected. Interoperates with native AtomiX. Needs WRITE permission to derive keys and sign swaps. EXPERIMENTAL; test small.",
-      "version": "0.1.26",
+      "description": "Trustless cross-chain atomic swaps: MINIMA or MxUSD with Ethereum ERC20 USDT. Live order book, market-making, best-price sweeps, OTC deals and an ETH wallet. 0.1.29 scopes your swap history to the currency you are actually trading, so switching markets no longer leaves the other one's history on screen \u2014 while any unfinished swap in the other currency stays visible, so a claimable or refundable leg is never hidden. Market prints are tagged per market, so the price chart no longer mixes the two. Interoperates with native AtomiX. Needs WRITE permission to derive keys and sign swaps. EXPERIMENTAL; test small.",
+      "version": "0.1.29",
       "category": "Finance",
       "repo": "https://github.com/eurobuddha/atomix-mds",
-      "sha256": "21b1155be1b182801859bb2fee00594dfd0119bbbce1a3450ac962e1908f0a7f"
+      "sha256": "8d4209bc736601615266bcc5d5b5064a2b33d98f69fc96bdf39e7bcc46b894d8"
     },
     {
       "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.23/PandaPools_0.6.23.mds.zip",
