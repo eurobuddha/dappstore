@@ -25,14 +25,14 @@
       "sha256": "0547df006989e1f045dd49b9732de75666b124616f1ce3e336e5a937ae095be8"
     },
     {
-      "file": "https://github.com/eurobuddha/atomix-mds/releases/download/v0.1.29/AtomiX_0.1.29.mds.zip",
+      "file": "https://github.com/eurobuddha/atomix-mds/releases/download/v0.1.33/AtomiX_0.1.33.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/atomix.png",
       "name": "AtomiX",
-      "description": "Trustless cross-chain atomic swaps: MINIMA or MxUSD with Ethereum ERC20 USDT. Live order book, market-making, best-price sweeps, OTC deals and an ETH wallet. 0.1.29 scopes your swap history to the currency you are actually trading, so switching markets no longer leaves the other one's history on screen \u2014 while any unfinished swap in the other currency stays visible, so a claimable or refundable leg is never hidden. Market prints are tagged per market, so the price chart no longer mixes the two. Interoperates with native AtomiX. Needs WRITE permission to derive keys and sign swaps. EXPERIMENTAL; test small.",
-      "version": "0.1.29",
+      "description": "Trustless cross-chain atomic swaps: MINIMA or MxUSD with Ethereum ERC20 USDT. Live order book, market-making, best-price sweeps, OTC deals and an ETH wallet. 0.1.29 scopes your swap history to the currency you are actually trading, so switching markets no longer leaves the other one's history on screen — while any unfinished swap in the other currency stays visible, so a claimable or refundable leg is never hidden. Market prints are tagged per market, so the price chart no longer mixes the two. Interoperates with native AtomiX. Needs WRITE permission to derive keys and sign swaps. EXPERIMENTAL; test small.",
+      "version": "0.1.33",
       "category": "Finance",
       "repo": "https://github.com/eurobuddha/atomix-mds",
-      "sha256": "8d4209bc736601615266bcc5d5b5064a2b33d98f69fc96bdf39e7bcc46b894d8"
+      "sha256": "07cac4766c8e31d858bd7d810359301e394c24b6c18d20b8cd73defd259331b7"
     },
     {
       "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.23/PandaPools_0.6.23.mds.zip",
@@ -186,14 +186,14 @@
       "sha256": "3b08eb40c339090c9ad698450ad236f94f1ce02528fd9c18f44f8face530fea5"
     },
     {
-      "file": "https://github.com/eurobuddha/universal-casino/releases/download/v2.9.2/ZeroEdgeCasino-v2.9.2.mds.zip",
+      "file": "https://github.com/eurobuddha/universal-casino/releases/download/v2.9.3/ZeroEdgeCasino-v2.9.3.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/zec.png",
       "name": "Zero Edge Casino",
-      "description": "v2.9.2: owned untaken offers renew before cascade in Minima and MxUSD using their existing collateral; durable cancellation follows renewed offers. My Bets shows both currencies together, with manual timeout claims matching the covenant deadline. Update the existing MiniDapp to retain saved secrets; keep WRITE permission and the owner node running. Fair-odds on-chain coin flip, dice and roulette with three-phase commit-reveal.",
-      "version": "2.9.2",
+      "description": "v2.9.3: the covenant script row is re-verified on the node every 10 blocks and re-registered when it is gone, so a node that drops its script rows mid-run no longer strands every timeout claim until a restart. owned untaken offers renew before cascade in Minima and MxUSD using their existing collateral; durable cancellation follows renewed offers. My Bets shows both currencies together, with manual timeout claims matching the covenant deadline. Update the existing MiniDapp to retain saved secrets; keep WRITE permission and the owner node running. Fair-odds on-chain coin flip, dice and roulette with three-phase commit-reveal.",
+      "version": "2.9.3",
       "category": "Games",
       "repo": "https://github.com/eurobuddha/universal-casino",
-      "sha256": "eeae4c5cc1b69e72b2d71994cde78cd3d60fef3fa14d287a9c1a4b60e1240633"
+      "sha256": "b2f728541d15e0fcb44b515c16b17f9170a10b0594363738b851a806d723560e"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/minArmyKnife-v1.0.6.mds.zip",
