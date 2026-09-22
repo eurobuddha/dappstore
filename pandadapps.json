@@ -15,6 +15,16 @@
       "sha256": "48ae8823ed67003ca36dc2f59a6b2bd6ebd16ae05a26a55e5ac898a7270cd390"
     },
     {
+      "file": "https://github.com/eurobuddha/dappstore-minidapp/releases/download/v1.5.3/dappStore-1.5.3.mds.zip",
+      "icon": "https://raw.githubusercontent.com/eurobuddha/dappstore-minidapp/v1.5.3/public/icon.png",
+      "name": "Dapp Store",
+      "description": "v1.5.3: the Minima Dapp Store with the narrow-screen fix. On a phone the page was laid out wider than the screen and the overflow was clipped rather than scrollable, so the settings, search and add-store (+) buttons sat off screen with no way to reach them - each route is now allowed to take the width it is given, the title bar shrinks into it, and there is safe-area padding above the title bar and below the page for the Android status and navigation bars. Otherwise the official 1.5.2 app: add any MiniDapp store by URL, browse and install MiniDapps, get notified when the ones you have installed have updates, and publish your own store from a JSON file. Installs over the Dapp Store already on your node. Built from minima-global/DappStore feature-1-5-2; the fix is offered upstream as minima-global/DappStore#1.",
+      "version": "1.5.3",
+      "category": "Store",
+      "repo": "https://github.com/eurobuddha/dappstore-minidapp",
+      "sha256": "0b6c4d7b35a1c48ee1f6d141ecb91470613537698616346ab6116acf83afd7dc"
+    },
+    {
       "file": "https://github.com/eurobuddha/statenft-suite/releases/download/v0.7.13/statenft-atelier-mds-4.4.8.zip",
       "icon": "https://eurobuddha.com/panda_dapps/atelier.png",
       "name": "Atelier",
