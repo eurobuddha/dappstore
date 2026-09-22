@@ -45,14 +45,14 @@
       "sha256": "07cac4766c8e31d858bd7d810359301e394c24b6c18d20b8cd73defd259331b7"
     },
     {
-      "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.25/PandaPools_0.6.25.mds.zip",
+      "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.26/PandaPools_0.6.26.mds.zip",
       "icon": "https://raw.githubusercontent.com/eurobuddha/pandapools-mds/master/favicon.png",
       "name": "PandaPools",
       "description": "v0.6.23: keeps unresolved owned pools visible, validates current reserve recovery, preserves backup recipes and pauses uncertain signing state. Keep a current complete wallet backup and pool recipe; recovery also needs available chain proofs. v0.6.22: real node-verified confirmation counts, receipt recovery, consistent transaction timestamps, and chronological wallet and public pool activity. Preserves original receipt IDs and failed records; incomplete lookups remain visible. Historical recovery requires retained node headers. Includes the live pool-coin refresh for Withdraw, Add and Migrate. Constant-product AMM: swap MINIMA/token, provide liquidity and earn the 0.5% swap fee. Shares live pools with the native app.",
-      "version": "0.6.25",
+      "version": "0.6.26",
       "category": "Finance",
       "repo": "https://github.com/eurobuddha/pandapools-mds",
-      "sha256": "6c1cf81b6652f43b84fa65480df8758f5d50407fa74de5962e909e0424ba66ef"
+      "sha256": "da64cd7c202b3ef49d4eccc816bcfc1ad7053dd6937a05264197ccc820e7a6fc"
     },
     {
       "file": "https://github.com/eurobuddha/pandadex-mds/releases/download/v0.4.6/PandaDEX_0.4.6.mds.zip",
