@@ -27,22 +27,31 @@
       "sha256": "36f0420ec394f94c32a9c68a834f8b36016a244921f2922bbdd9fb0f8743d06f"
     },
     {
-      "file": "https://eurobuddha.com/store/dapps/dappStore-1.5.1.mds.zip",
+      "file": "https://eurobuddha.com/store/dapps/dappStore-1.5.3.mds.zip",
       "icon": "https://eurobuddha.com/store/icons/dappstore.png",
       "name": "Dapp Store",
-      "description": "Download and update MiniDapps using the DappStore MiniDapp.",
+      "description": "Download and update MiniDapps using the DappStore MiniDapp. This is the 1.5.3 community build: the official 1.5.2 app with the narrow-screen fix, offered upstream as minima-global/DappStore#1.",
       "category": "Misc",
-      "version": "1.5.1",
+      "version": "1.5.3",
       "about": [
         "NOTE: If you're installing the MiniDapp from the DappStore, you will have to close the tab and go back to the MiniHub manually."
       ],
       "update": [
-        "- The description for MiniDapp stores are now correctly truncated on mobile devices"
+        "- Fixed: on a narrow phone the page was laid out wider than the screen and clipped rather than scrollable, so the settings, search and add store (+) buttons were off screen and unreachable",
+        "- The title bar now shrinks to fit any screen; the \"Create your own store\" label gives way to its info icon on phones so the title is never truncated",
+        "- Added safe area padding above the title bar and below the page content for the Android status and navigation bars",
+        "- Community build from github.com/eurobuddha/dappstore-minidapp (fork of minima-global/DappStore feature-1-5-2), not published by Minima Global"
       ],
-      "date": "March 25, 2025",
-      "history": [],
+      "date": "September 22, 2026",
+      "history": [
+        {
+          "version": "1.5.2",
+          "date": "March 25, 2025",
+          "notes": "Official release: store descriptions correctly truncated on mobile devices"
+        }
+      ],
       "gallery": [],
-      "sha256": "686d02d55da5da3cd45832ff1cb193e7d00cfac87570f60e9bdbb3d7fa90ccee"
+      "sha256": "0b6c4d7b35a1c48ee1f6d141ecb91470613537698616346ab6116acf83afd7dc"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/axes3-1.0.0.mds.zip",
