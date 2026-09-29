@@ -35,14 +35,14 @@
       "sha256": "0547df006989e1f045dd49b9732de75666b124616f1ce3e336e5a937ae095be8"
     },
     {
-      "file": "https://github.com/eurobuddha/atomix-mds/releases/download/v0.1.33/AtomiX_0.1.33.mds.zip",
+      "file": "https://github.com/eurobuddha/atomix-mds/releases/download/v0.1.36/AtomiX_0.1.36.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/atomix.png",
       "name": "AtomiX",
-      "description": "Trustless cross-chain atomic swaps: MINIMA or MxUSD with Ethereum ERC20 USDT. Live order book, market-making, best-price sweeps, OTC deals and an ETH wallet. 0.1.29 scopes your swap history to the currency you are actually trading, so switching markets no longer leaves the other one's history on screen — while any unfinished swap in the other currency stays visible, so a claimable or refundable leg is never hidden. Market prints are tagged per market, so the price chart no longer mixes the two. Interoperates with native AtomiX. Needs WRITE permission to derive keys and sign swaps. EXPERIMENTAL; test small.",
-      "version": "0.1.33",
+      "description": "Trustless cross-chain atomic swaps: MINIMA or MxUSD with Ethereum ERC20 USDT. Live order book, market-making, best-price sweeps, OTC deals and an ETH wallet. 0.1.36 makes the currency switch look like a button: the chip that moves you between the MINIMA and dollar markets was styled like the Mainnet status pill beside it, so it read as a label. It now carries a ⇄ and a moving ring drawn in the colour of the market you would switch TO — trading dollars, an orange dot orbits the edge; trading MINIMA, a green arc sweeps around it. The label still names the market your money is actually in. Mirrors Android 0.1.66.",
+      "version": "0.1.36",
       "category": "Finance",
       "repo": "https://github.com/eurobuddha/atomix-mds",
-      "sha256": "07cac4766c8e31d858bd7d810359301e394c24b6c18d20b8cd73defd259331b7"
+      "sha256": "db41d8f87eb6a52b9b51c04edda5a2849a66944ca58fab67a5fb50e7bea6e752"
     },
     {
       "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.28/PandaPools_0.6.28.mds.zip",
