@@ -79,13 +79,7 @@ sync_remote_pin(){
         return 0
     fi
 
-    # 1. free space first — unpin every remote pin that isn't the target CID
-    printf '%s\n' "$listing" \
-        | awk -v cid="$cid" '$1 ~ /^(baf|Qm)/ && $1 != cid {print $1}' \
-        | while read -r old; do
-            as_ipfs ipfs pin remote rm --service="$PIN_SERVICE" --cid="$old" --force >/dev/null 2>&1 \
-                && log "unpinned superseded $old" || true
-          done
+    # Preserve historical remote pins (owner: no purging).
 
     # 2. now add the current snapshot (skip if already pinned/queued)
     if printf '%s\n' "$listing" | grep -q "$cid"; then
@@ -102,9 +96,9 @@ sync_remote_pin(){
 mkdir -p "$STAGE" "$STATE_DIR" "$CACHE"
 
 # ── 1. Mirror the two MiniDapp catalogs from the live webroot ────────────────
-rsync -a --delete "$WEB/panda_dapps/" "$STAGE/panda_dapps/"
-rsync -a --delete "$WEB/store/" "$STAGE/store/"
-if [ -d "$WEB/skills" ]; then rsync -a --delete "$WEB/skills/" "$STAGE/skills/"; fi
+rsync -a "$WEB/panda_dapps/" "$STAGE/panda_dapps/"
+rsync -a "$WEB/store/" "$STAGE/store/"
+if [ -d "$WEB/skills" ]; then rsync -a "$WEB/skills/" "$STAGE/skills/"; fi
 cp "$WEB/pandadapps.json" "$STAGE/pandadapps.src.json"
 if [ -f "$WEB/skills.json" ]; then cp "$WEB/skills.json" "$STAGE/skills.src.json"; fi
 
@@ -271,12 +265,7 @@ if apks is not None:
             irel = f"apks/icons/{ibase}"
             if fetch(icon, os.path.join(STAGE, irel)):
                 app["icon"] = irel
-    # prune APKs no longer referenced (keeps snapshot at current-versions-only)
-    for fn in os.listdir(apks_dir):
-        p = os.path.join(apks_dir, fn)
-        if os.path.isfile(p) and fn not in referenced and not fn.endswith(".json"):
-            os.remove(p)
-            print(f"pruned stale {fn}")
+    # Preserve historical artifacts alongside the current catalogue.
     write_pair("apks/apks.json", apks, URL_FIELDS)
     print(f"apks: {len(apks.get('apps', []))} apps")
 
@@ -320,6 +309,5 @@ echo "$HASH" > "$STATE_DIR/last.hash"
 
 # ── 9. Remote pin (redundancy only) + local GC of superseded snapshots ───────
 sync_remote_pin "$CID"
-as_ipfs ipfs pin ls --type=recursive -q | grep -v "^$(as_ipfs ipfs cid base32 "$CID" 2>/dev/null || echo "$CID")$" | \
-while read -r old; do as_ipfs ipfs pin rm "$old" >/dev/null 2>&1 || true; done
+# Preserve historical local pins (owner: no purging).
 log "done - https://ipfs.eurobuddha.com/  |  /ipns/ipfs.eurobuddha.com  |  /ipfs/$CID"

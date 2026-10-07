@@ -5,14 +5,14 @@
   "version": "2.2",
   "dapps": [
     {
-      "file": "https://eurobuddha.com/panda_dapps/minimaCore-App-Store-0.3.1.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/minimaCore-App-Store-0.3.2.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/minimacore-appstore.png",
       "name": "minimaCore App Store",
-      "description": "v0.3.1: our minimaCore node build now wears a glowing Recommended badge in the Android Apps tab, so it can't be confused with the plain upstream mirror. v0.3.0: the PandaApps makeover. Apps grouped by what they do (Get Started, Wallets, Finance & Trading, Games, Tools and more), an Updates section pinned to the top when anything you have installed is behind, and a full page per app with its description, version history, details and a link to its source code \u2014 across all four tabs. Native Android apps AND MiniDapps for Minima: one-tap install of MiniDapps from the PandaDapps and official Minima catalogs straight onto this node, the minimaCore node APK and every companion app for your phone, plus an IPFS Mirror tab that keeps working even if the store server is down.",
-      "version": "0.3.1",
+      "description": "v0.3.2: correct installation of MiniDapps when the download path contains spaces, preserving read-trust installation. The Android Apps tab uses the shared catalogue for all Minima Core builds and companions. No Recommended label is applied to PandaBear. v0.3.0: the PandaApps makeover. Apps grouped by what they do (Get Started, Wallets, Finance & Trading, Games, Tools and more), an Updates section pinned to the top when anything you have installed is behind, and a full page per app with its description, version history, details and a link to its source code \u2014 across all four tabs. Native Android apps AND MiniDapps for Minima: one-tap install of MiniDapps from the PandaDapps and official Minima catalogs straight onto this node, the minimaCore node APK and every companion app for your phone, plus an IPFS Mirror tab that keeps working even if the store server is down.",
+      "version": "0.3.2",
       "category": "Store",
       "repo": "https://github.com/eurobuddha/minimacore-appstore",
-      "sha256": "48ae8823ed67003ca36dc2f59a6b2bd6ebd16ae05a26a55e5ac898a7270cd390"
+      "sha256": "5e3c056185ad60b91b4e9137ce805c3f105a432f706c867b87199814728ecae3"
     },
     {
       "file": "https://github.com/eurobuddha/dappstore-minidapp/releases/download/v1.5.3/dappStore-1.5.3.mds.zip",
