@@ -310,14 +310,14 @@
       "sha256": "123ba00f02459be3a27e19d156238281c6033fd2397625fb24f2ed036570ecc1"
     },
     {
-      "file": "https://eurobuddha.com/panda_dapps/keetchat-0.2.1.mds.zip",
+      "file": "https://eurobuddha.com/panda_dapps/keetchat-0.2.2.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/keetchat.svg",
       "name": "KeetChat",
-      "description": "v0.2.1: voice-note aware (labels inbound notes with their duration); chat over keets — pubkey-addressed E2E messages, delivered direct when your contact is online or via sealed store-and-forward mailboxes when not. No server, no configuration. maxima_chat_v1 wire schema (Parlons-compatible), photos via keets:// media refs, read receipts and pay-address exchange. Requires a keets-enabled node (minimaCore 1.9.25+ / minimaCore Desktop 0.18.3+).",
-      "version": "0.2.1",
+      "description": "v0.2.2: control messages (read receipts, pay-address exchange) are consumed, never shown as empty chat rows, and payments are labeled; per-peer message dedupe. Chat over keets — pubkey-addressed E2E messages, delivered direct when your contact is online or via sealed store-and-forward mailboxes when not. No server, no configuration. maxima_chat_v1 wire schema (Parlons-compatible), photos and voice notes via keets:// media refs, read receipts and pay-address exchange. Requires a keets-enabled node (minimaCore 1.9.25+ / minimaCore Desktop 0.18.3+).",
+      "version": "0.2.2",
       "category": "Social",
       "repo": "https://github.com/eurobuddha/keetchat",
-      "sha256": "cbdc55c29ec7462e64ce6111c3ffd9b62dcf926f68229c4444586a65531106f0"
+      "sha256": "ef85622e156af65d5d7b6673d38b04a0d142e54926ca64cc61af7d0b38fbc5b5"
     }
   ]
 }
