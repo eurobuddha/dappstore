@@ -318,6 +318,14 @@
       "category": "Social",
       "repo": "https://github.com/eurobuddha/keetchat",
       "sha256": "ef85622e156af65d5d7b6673d38b04a0d142e54926ca64cc61af7d0b38fbc5b5"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/minima-skill-1.2.0.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/minima-skill.svg",
+      "name": "Minima Skill",
+      "description": "v1.2.0 — the everything-Minima AI skill for Claude, ChatGPT, Cursor, Copilot and more: KISS VM contracts, MiniDapps/MDS, transactions & tokens, node ops, Maxima, keets (Hyperswarm transport), native Android, transaction-evidence & wallet engineering, diagnostics — with the hard lessons from a fleet of production apps. This MiniDapp is the install/info page with download links and instructions.",
+      "version": "1.2.0",
+      "sha256": "01239f3a116e131c0c08a4e67774cb5acabb44a40d736bb6301358b8ebb34890"
     }
   ]
 }

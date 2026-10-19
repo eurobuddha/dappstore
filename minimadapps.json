@@ -672,6 +672,21 @@
       "history": [],
       "gallery": [],
       "sha256": "aa56bdfe0afb43276f48520d302fd5547b5b6754ff09df6615181b8eb4e80652"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/minima-skill-1.2.0.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/minima-skill.svg",
+      "name": "Minima Skill",
+      "description": "v1.2.0 — the everything-Minima AI skill for Claude, ChatGPT, Cursor, Copilot and more: KISS VM contracts, MiniDapps/MDS, transactions & tokens, node ops, Maxima, keets (Hyperswarm transport), native Android, transaction-evidence & wallet engineering, diagnostics — with the hard lessons from a fleet of production apps. This MiniDapp is the install/info page with download links and instructions.",
+      "version": "1.2.0",
+      "category": "Misc",
+      "about": [
+        "Everything-Minima AI skill (SKILL.md + 16 references) for Claude Code, Claude.ai, ChatGPT, Cursor, VS Code and Copilot. This MiniDapp carries the download links and install instructions."
+      ],
+      "update": [
+        "v1.2.0 — hard-lessons edition: new transaction-evidence & wallet-engineering reference, key-family/WOTS lessons, Maxima wire facts, keets interop, node-ops and MDS hard lessons from a fleet of production apps."
+      ],
+      "sha256": "01239f3a116e131c0c08a4e67774cb5acabb44a40d736bb6301358b8ebb34890"
     }
   ]
 }
