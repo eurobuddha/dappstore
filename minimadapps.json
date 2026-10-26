@@ -687,6 +687,23 @@
         "v1.2.0 — hard-lessons edition: new transaction-evidence & wallet-engineering reference, key-family/WOTS lessons, Maxima wire facts, keets interop, node-ops and MDS hard lessons from a fleet of production apps."
       ],
       "sha256": "01239f3a116e131c0c08a4e67774cb5acabb44a40d736bb6301358b8ebb34890"
+    },
+    {
+      "file": "https://eurobuddha.com/panda_dapps/sweep-0.2.0.mds.zip",
+      "icon": "https://eurobuddha.com/panda_dapps/sweep.svg",
+      "name": "Sweep",
+      "description": "Sweep every spendable coin on this node to one pasted Mx address, validated three ways before anything can move: Mx-only format, the node's own SHA3 checksum decoder (checkaddress), and a byte-exact round-trip recompute of the Mx form from the decoded 0x bytes. Advanced: derive the destination from this node's seed on-device (64 classic + 32 block-as-keyuses keys, derivation proven against the node's own wallet) to migrate to a -blockaskeyuses node. Pooled exact-sum transactions with automatic split on size refusal; a failed transaction never stops the rest; nothing is called swept until the chain confirms each coin's spend. Needs WRITE permission.",
+      "version": "0.2.0",
+      "category": "Security",
+      "repo": "https://github.com/eurobuddha/sweep",
+      "sha256": "1fc1611b88a9b5c375d7696e46ccd706bfc76903b07bf09a41b0ce54daf52481",
+      "about": [
+        "Sweep every spendable coin on this node to one pasted Mx address, validated three ways before anything can move: Mx-only format, the node's own SHA3 checksum decoder (checkaddress), and a byte-exact round-trip recompute of the Mx form from the decoded 0x bytes. Advanced: derive the destination from this node's seed on-device (64 classic + 32 block-as-keyuses keys, derivation proven against the node's own wallet) to migrate to a -blockaskeyuses node. Pooled exact-sum transactions with automatic split on size refusal; a failed transaction never stops the rest; nothing is called swept until the chain confirms each coin's spend. Needs WRITE permission."
+      ],
+      "update": [
+        "0.2.0: Paste and validate an Mx destination; advanced seed-derived migration remains available."
+      ],
+      "date": "October 20, 2026"
     }
   ]
 }
