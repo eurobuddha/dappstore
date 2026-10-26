@@ -35,14 +35,14 @@
       "sha256": "0547df006989e1f045dd49b9732de75666b124616f1ce3e336e5a937ae095be8"
     },
     {
-      "file": "https://github.com/eurobuddha/atomix-mds/releases/download/v0.1.38/AtomiX_0.1.38.mds.zip",
+      "file": "https://github.com/eurobuddha/atomix-mds/releases/download/v0.1.39/AtomiX_0.1.39.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/atomix.png",
       "name": "AtomiX",
-      "description": "Trustless cross-chain atomic swaps: MINIMA or MxUSD with Ethereum ERC20 USDT. Live order book, market-making, best-price sweeps, OTC deals and an ETH wallet. 0.1.38 fixes the maker silently ignoring a swap offered at exactly its published price: the price check multiplied in floating point, and 44.4 \u00d7 0.99 comes out a billionth of a cent under the exact 43.956 the other side correctly asked for \u2014 so a perfectly priced offer was declined on every scan, invisibly, until the other trader's funds refunded at the timeout. Whether an amount survived was a rounding lottery per amount. The check now compares exact decimals, accepting exactly-priced offers and still refusing anything even one millionth of a USDT over. Mirrors minimaCore Desktop 0.17.31; the Android app always compared exactly and gains the proof that keeps it so (0.1.70).",
-      "version": "0.1.38",
+      "description": "Trustless cross-chain atomic swaps: MINIMA or MxUSD with Ethereum ERC20 USDT. Live order book, market-making, best-price sweeps, OTC deals and an ETH wallet. 0.1.39 ends silent declines: a maker whose MxUSD had split into too many coins refused every buy without saying so, while the taker waited two hours for the refund. Makers now keep their own coins tradeable (merge above 30 coins, 120 for MINIMA; split a single coin into 10; only on a settled wallet), record every buy they do not lock and send the reason, sealed, to the taker. Each swap card shows the maker's notice, the respond-by time, when the refund opens (automatic), the full refund transaction and a Refund now button. Mirrors AtomiX Android 0.1.84 and minimaCore Desktop 0.18.25.",
+      "version": "0.1.39",
       "category": "Finance",
       "repo": "https://github.com/eurobuddha/atomix-mds",
-      "sha256": "c0e1c7aa8e442c576582eed959d4f6137698084d1cc8cae61514e69bec5f1632"
+      "sha256": "42ab25c1717328f5ea8cc6a448a3c59d59e18488351043dc6b005f8387f4d175"
     },
     {
       "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.32/PandaPools_0.6.32.mds.zip",
