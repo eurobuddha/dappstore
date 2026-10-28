@@ -65,14 +65,14 @@
       "sha256": "413e97e119ab8a8e357f5e5352cbe63629c6cc8830045ce41ebab26a46ad6c40"
     },
     {
-      "file": "https://github.com/eurobuddha/dexicon/releases/download/v0.0.35/Dexicon-0.0.35.mds.zip",
+      "file": "https://github.com/eurobuddha/dexicon/releases/download/v0.0.36/Dexicon-0.0.36.mds.zip",
       "icon": "https://raw.githubusercontent.com/eurobuddha/dexicon/master/favicon.png",
       "name": "Dexicon",
       "description": "Decentralised MINIMA/MxUSD exchange that supersedes PandaDEX. Your node is your account: signed orders travel over a fleet of Parlons relays and every trade settles on-chain from your own wallet, no custodian. One-click takes, a market-making ladder that can track MEXC, and AtomiX entry/exit for Ethereum USDT holders. Wide desktop layout: Ctrl/Cmd-click a second tab to open two pages side by side. Needs WRITE permission. EXPERIMENTAL and it moves real funds \u2014 test small.",
-      "version": "0.0.35",
+      "version": "0.0.36",
       "category": "Finance",
       "repo": "https://github.com/eurobuddha/dexicon",
-      "sha256": "06e4347db2fb2caa76870835b2621fe4e1bf4e2e8ea93f898d77bb2c08831525"
+      "sha256": "e840b921942e8a8d6d7d85604f5d0fa92ce3ed1043d23774ac7e7d9eb73724c2"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/keyuses-0.1.52.mds.zip",
