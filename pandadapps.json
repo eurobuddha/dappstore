@@ -35,14 +35,14 @@
       "sha256": "0547df006989e1f045dd49b9732de75666b124616f1ce3e336e5a937ae095be8"
     },
     {
-      "file": "https://github.com/eurobuddha/atomix-mds/releases/download/v0.1.54/AtomiX_0.1.54.mds.zip",
+      "file": "https://github.com/eurobuddha/atomix-mds/releases/download/v0.1.57/AtomiX_0.1.57.mds.zip",
       "icon": "https://eurobuddha.com/panda_dapps/atomix.png",
       "name": "AtomiX",
-      "description": "v0.1.54 SECURITY: HTLC v1.3 for USDT-paid swaps (32-byte hex secrets only), lock state read exactly as the contract reads it. v0.1.42: a swap whose own Ethereum lock never landed (reverted or dropped) is cleared an hour after its timelock, once two independent endpoints agree, instead of showing as in flight forever. v0.1.41: a claim or refund pays you a plain wallet coin, so received MxUSD can fund a pool straight away. v0.1.40: security hardening. Trustless cross-chain atomic swaps: MINIMA or MxUSD with Ethereum ERC20 USDT. Live order book, market-making, best-price sweeps, OTC deals and an ETH wallet. 0.1.39 ends silent declines: a maker whose MxUSD had split into too many coins refused every buy without saying so, while the taker waited two hours for the refund. Makers now keep their own coins tradeable (merge above 30 coins, 120 for MINIMA; split a single coin into 10; only on a settled wallet), record every buy they do not lock and send the reason, sealed, to the taker. Each swap card shows the maker's notice, the respond-by time, when the refund opens (automatic), the full refund transaction and a Refund now button. Mirrors AtomiX Android 0.1.84 and minimaCore Desktop 0.18.25.",
-      "version": "0.1.54",
+      "description": "v0.1.57: AtomiX never halts trading on an incomplete key list (two complete reads needed; the halt names the full key and addresses), and a live manual market no longer shows \"Offline · market withdrawn\". v0.1.55: every new lock names the receiver's address at port 253, so the receiver's node sees the lock and its claim or refund. v0.1.54 SECURITY: HTLC v1.3 for USDT-paid swaps (32-byte hex secrets only), lock state read exactly as the contract reads it. v0.1.42: a swap whose own Ethereum lock never landed (reverted or dropped) is cleared an hour after its timelock, once two independent endpoints agree, instead of showing as in flight forever. v0.1.41: a claim or refund pays you a plain wallet coin, so received MxUSD can fund a pool straight away. v0.1.40: security hardening. Trustless cross-chain atomic swaps: MINIMA or MxUSD with Ethereum ERC20 USDT. Live order book, market-making, best-price sweeps, OTC deals and an ETH wallet. 0.1.39 ends silent declines: a maker whose MxUSD had split into too many coins refused every buy without saying so, while the taker waited two hours for the refund. Makers now keep their own coins tradeable (merge above 30 coins, 120 for MINIMA; split a single coin into 10; only on a settled wallet), record every buy they do not lock and send the reason, sealed, to the taker. Each swap card shows the maker's notice, the respond-by time, when the refund opens (automatic), the full refund transaction and a Refund now button. Mirrors AtomiX Android 0.1.84 and minimaCore Desktop 0.18.25.",
+      "version": "0.1.57",
       "category": "Finance",
       "repo": "https://github.com/eurobuddha/atomix-mds",
-      "sha256": "380f2974cdf3c038a3224d93e80fd95e672d42bd52f16a731d24eed082b527ef"
+      "sha256": "9d006e366f505806dfe2c683fa0d3e0c749bead1dcf8cbd4ada16445eb163f3a"
     },
     {
       "file": "https://github.com/eurobuddha/pandapools-mds/releases/download/v0.6.42/PandaPools_0.6.42.mds.zip",
@@ -65,14 +65,14 @@
       "sha256": "d1e7a853338056571e9881288a34d30e91acf421e77173c0830b7247090430df"
     },
     {
-      "file": "https://github.com/eurobuddha/dexicon/releases/download/v0.0.87/Dexicon-0.0.87.mds.zip",
+      "file": "https://github.com/eurobuddha/dexicon/releases/download/v0.0.88/Dexicon-0.0.88.mds.zip",
       "icon": "https://raw.githubusercontent.com/eurobuddha/dexicon/master/favicon.png",
       "name": "Dexicon",
-      "description": "v0.0.87 SECURITY: the 7 Nov 2026 review fixes, maker heartbeat (silent offers hidden), FAST sweep, faster makers first. v0.0.51: Auto-cross no longer freezes for good. Interrupted or refused crosses release themselves; a REVIEW button checks a stuck cross or PandaDEX trade on your node and lets you release it. A refused transaction no longer locks its coins. Auto-cross re-checks before every signature. v0.0.50: Auto-cross persists pending settlement across restart and checks maker enablement and live orders before posting. Adds durable input claims, preserves uncertain fills instead of clearing them on timeout, and labels unconfirmed activity as quoted amounts. Decentralised MINIMA/MxUSD exchange that supersedes PandaDEX. Your node is your account: signed orders travel over a fleet of Parlons relays and every trade settles on-chain from your own wallet, no custodian. One-click takes, a market-making ladder that can track MEXC, and AtomiX entry/exit for Ethereum USDT holders. Wide desktop layout: Ctrl/Cmd-click a second tab to open two pages side by side. Needs WRITE permission. EXPERIMENTAL and it moves real funds — test small.",
-      "version": "0.0.87",
+      "description": "v0.0.88: the AtomiX doors never halt on an incomplete key list, and every new door lock names the receiver's address at port 253. v0.0.87 SECURITY: the 7 Nov 2026 review fixes, maker heartbeat (silent offers hidden), FAST sweep, faster makers first. v0.0.51: Auto-cross no longer freezes for good. Interrupted or refused crosses release themselves; a REVIEW button checks a stuck cross or PandaDEX trade on your node and lets you release it. A refused transaction no longer locks its coins. Auto-cross re-checks before every signature. v0.0.50: Auto-cross persists pending settlement across restart and checks maker enablement and live orders before posting. Adds durable input claims, preserves uncertain fills instead of clearing them on timeout, and labels unconfirmed activity as quoted amounts. Decentralised MINIMA/MxUSD exchange that supersedes PandaDEX. Your node is your account: signed orders travel over a fleet of Parlons relays and every trade settles on-chain from your own wallet, no custodian. One-click takes, a market-making ladder that can track MEXC, and AtomiX entry/exit for Ethereum USDT holders. Wide desktop layout: Ctrl/Cmd-click a second tab to open two pages side by side. Needs WRITE permission. EXPERIMENTAL and it moves real funds — test small.",
+      "version": "0.0.88",
       "category": "Finance",
       "repo": "https://github.com/eurobuddha/dexicon",
-      "sha256": "5a9ffd681e1f9dc36682ae6ed519981c249371a8e0a39df0dbe8da6f85d1f1e5"
+      "sha256": "6abd4565adc7c69ae0c881bed13b75a7549e35fa3c1b860d1929bbd089cf3180"
     },
     {
       "file": "https://eurobuddha.com/panda_dapps/keyuses-0.1.52.mds.zip",
