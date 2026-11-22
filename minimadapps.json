@@ -604,30 +604,37 @@
       "sha256": "c34bb892713a0997a1da9ca2c953f979501470b571f89d7e6932219ccfcc4183"
     },
     {
-      "file": "https://eurobuddha.com/store/dapps/vestr-1.8.1.mds.zip",
+      "file": "https://eurobuddha.com/store/dapps/vestr-1.8.2.mds.zip",
       "icon": "https://eurobuddha.com/store/icons/vestr.png",
       "name": "Vestr",
       "description": "Create vesting contracts and collect payments",
-      "version": "1.8.1",
+      "version": "1.8.2",
       "about": [
         "Vestr facilitates the creation of vesting contracts for long term, regular payment to Minima users.\n\n",
         "Can use Minima or custom tokens\n\n",
         "Set the start/end dates, cliff period and grace period to create a contract, or collect payments from a contract."
       ],
       "update": [
-        "- Add burn feature on transactional features",
-        "- Added alias name for contracts",
-        "- Design tweaks"
+        "- Safety update for collecting (PandaDapps build of Vestr 1.8.1)",
+        "- A contract coin's stored values are checked before they are used; a coin whose values are not in the contract's shape is listed but cannot be collected",
+        "- A collect is built, checked by the node and only then sent; a half-built transaction is removed if a step fails",
+        "- No collect is offered inside the grace period or for a coin that is already being spent",
+        "- Coins that share a contract ID are each shown with their whole coin ID and withdrawal address"
       ],
-      "date": "Oct 24, 2024",
+      "date": "Nov 22, 2026",
       "history": [
+        {
+          "version": "1.8.1",
+          "file": "https://eurobuddha.com/store/dapps/vestr-1.8.1.mds.zip",
+          "update": "Add burn feature on transactional features; alias name for contracts; design tweaks"
+        },
         {
           "version": "1.8.0",
           "file": "https://storage.googleapis.com/minidapps-363120.appspot.com/minidapps_history/vestr-1.8.0.mds.zip",
           "update": "Correctly collects full amount on contract expiration"
         }
       ],
-      "sha256": "c13ca4fa24bed16b54d02a4e577945dde109e083b1108f67735907e180628c8a"
+      "sha256": "a370e114d08c1d545e5c0d3aa290c9b385a7a95c920a531ded9225c2c7e5aa3d"
     },
     {
       "file": "https://eurobuddha.com/store/dapps/webWallet-2.5.2.mds.zip",
